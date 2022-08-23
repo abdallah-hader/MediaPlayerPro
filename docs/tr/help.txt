@@ -1,0 +1,58 @@
+#Media Player Pro
+<NVDA ekran okuyucu kullanıcıları için geliştirilmiş program.
+Bu program, çeşitli medya dosyalarını oynatır ve ekran okuyucularla kontrollerinin %100 erişilebilir olmasını sağlar.
+Kullanıcının program içindeki konuşmadan istediğini kişiselleştirebilir.
+Program, aşağıdakiler dahil olmak üzere çeşitli medya formatlarını destekler:
+.mp3, .ogg, .wav, .m4a, .mp4.
+vb...
+# Programın özellikleri:
+1: aşağıdaki gibi mevcut konuşma ayarlarından istediğinizi seçebileceğiniz konuşma seçenekleri:
+* Duraklat / oynat bildir
+* İleri ve geri sararken geçen süreyi bildir
+* Ses seviyesi değişikliklerini bildir
+2: Programda bir klasörün tamamını açabilir, dosyalar arasında oldukça rahat hareket edebilirsiniz ve klasörlerle ilgili özellikler aşağıdaki gibidir:
+* Program içerisinden dosya silme özelliği mevcuttur.
+* Klasör arama özelliği, arama sonuçlarından bir dosya açabilir ve ayrıca dosya yolunu kopyalayabilir veya dosya yoluna gidip bağlam menüsünden dosyayı açabilirsiniz.
+3: Bir dosyayı açtıktan sonra tüm klasörü yükleyin: Bu özellik, oynatılan dosyayı içeren tüm klasörü açmanıza olanak tanır.
+4: Son oynatılan dosyayı durdurulduğu konumyla kaydedin, programı çalıştırdıktan sonra dosyayı yeniden açıp durduğu konuma hareket edecek, ayrıca klasörü herhangi bir şekilde açarsanız, klasörü yeniden açacaktır. Ve ayrıca ayarlardan bu özelliği devre dışı bırakabilirsiniz.
+5: Klasöre dosya numarasını yazarak bir dosyaya gidin.
+6: Video bağlantısı aracılığıyla YouTube videolarını oynatın.
+7: YouTube'da Ara: Bu özellik sayesinde YouTube'da video arayabilir ve programda oynatabilirsiniz. Ayrıca video bağlantısını ve videoyu içeren kanalın bağlantısını kopyalayabilir, videoyu tarayıcıda açabilir, kanalı tarayıcıda açabilirsiniz.
+YouTube arama penceresi, indirilen tüm sonuçları bir listeye yüklemek için bir seçim kutusu içerir ve bir klasör olarak kontrol edilir, sonuçlar arasında geçiş yapabilirsiniz ve sonuç otomatik olarak oynatılacaktır.
+Klasör özellikleri yukarıdaki özellik için de geçerlidir, program kapalı ise bu sonuçları saklar ve program açıldıktan sonra geri gelir.
+Yüklenen sonuçlar derken, listedeki sonuçları kastediyorum, ne kadar çok sonuç listenin sonuna giderseniz o kadar çok sonuç yüklenecektir.
+8: Program içinden YouTube videolarının yorumlarını okuyun.
+İlk başta sadece 20 yorum yüklenecek ve listenin sonuna geldiğinizde daha fazlası yüklenecek. Bu, çok fazla yorum varsa bazı sorunları önlemek içindir.
+9: 1/60 saniye videoyu geri/ileri alabilirsiniz. Bunu ayarlardan belirleyebilirsiniz ve videoyu Numpad üzerinden değil, klavyenin üst kısmında bulunan üst numaralar yani sayılar üzerinden değiştirebilirsiniz.
+10: Tekrar özelliği yani bittikten sonra tekrar oynatılacaktır.
+11: Sonraki dosya özelliğine git: Bu özelliğin çalışması için dosya yineleme özelliği devre dışı bırakılmalıdır ve bu özellik, varsa klasörler ve arama sonuçları için geçerlidir.
+12: Program penceresini gizleme özelliği ile programın özelliklerinin çoğunu genel kısayollar aracılığıyla kontrol edin.
+Dosyaları, kurulduktan sonra programın içerik menüsünde oluşturduğu seçenek üzerinden açabilirsiniz.
+Programı şu an için manuel olarak varsayılan program olarak da ayarlayabilirsiniz.
+youtube parçaları video olarak değil ses olarak oynatılır.
+# Program kısayolları:
+Genel programın kontrol kısayolu, varsayılan olarak alt+kontrol olarak gelir.
+Bu kısayol, Windows 11 ile uyumlu değildir, bu nedenle bu kısayolu ayarlardan değiştirebilirsiniz ve düzgün çalışması için alt+windows+control olarak ayarlamanız önerilir.
+Size her kısayolu, ve bunun genel kısayolunu söyleyeceğim, ancak alt+kontrolden belirtmiyeceğim.
+Sol/Sağ Ok: Genel kısayolun yanı sıra ileri / geri sarma için.
+Yukarı / aşağı ok: ses seviyesini kontrol etmek için: %0/200 ve genel kısayol.
+sayfa yukarı/ sayfa aşağı: sonraki/önceki parçaya ve genel kısayolun kendisine gitmek için.
+Baş: o an çalınmakta olan dosya/youtube başına gitmek içindir. Genel kısayol aynıdır.
+boşluk: duraklatmak/devam etmek için genel kısayol aynıdır.
+m: sessize almak ve sessizden çıkarma, genel kısayol.
+n: Sonraki dosyaya geçme özelliğini etkinleştirmek veya devre dışı bırakmak için.
+c: Oynatılan bir YouTube videosu varsa yorumları gösterir.
+g: klasördeki numarasına göre bir dosyaya gitmek için, yani dosyalar arasındaki sırası, genel kısayol: j.
+s: klasörde arama yapmak için.
+C: YouTube'da arama yapmak için genel kısayol aynıdır.
+y: bağlantı yoluyla bir YouTube videosunu oynatmak için, genel kısayol: l.
+r: Tekrar özelliğini etkinleştirmek veya devre dışı bırakmak için genel kısayol: e.
+i: Çalınmakta olan parça hakkında bilgi için genel kısayol aynıdır.
+Delete/numpad çalınmakta olan parçayı silmek için, bu özellik şu anda yalnızca klasörlerle çalışır, genel kısayol aynıdır.
+control+o: bir dosyayı açmak için genel kısayol o.
+control+f: bir klasörü açmak için genel kısayol: s.
+control+s: Ayarları açar.
+control+w: Programdaki, klasördeki veya YouTube sonuçlarındaki her şeyi kapatır ve o an oynatmakta olanı durdurur.
+alt+windows+h: program penceresini gizlemek/göstermek için.
+Ayarlar penceresi, seçeneklerin çoğu açıklandığı ve basit olduğu için kendiliğinden açıklayıcıdır.
+Önerilerinizi iletmek veya bir sorun hakkında bilgi vermek için hakkında menüsünden bana ulaşabilirsiniz.

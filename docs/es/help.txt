@@ -1,0 +1,59 @@
+#Media Player Pro
+<Programa diseñado para usuarios de lector de pantalla de NVDA.
+Este programa reproduce varios archivos multimedia y facilita su control accesible al 100% con los lectores de pantalla.
+De una manera fácil, donde el usuario personaliza lo que quiere del habla dentro del programa.
+El programa admite varios formatos de medios, incluidos:
+.mp3, .ogg, .wav, .m4a, .mp4.
+etc.
+# Características del programa:
+1: Control del habla, donde puedes seleccionar lo que deseas desde los ajustes de voz disponible, que son los siguientes:
+* Verbalizar reproducir / pausar.
+* Verbalizar tiempo transcurrido al adelantar y retroceder.
+* Verbalizar cambios de volumen cuando lo controlas.
+2: Puedes abrir una carpeta completa en el programa y moverte a través de los archivos con bastante facilidad, y las características relacionadas con las carpetas son las siguientes:
+* La característica para eliminar un archivo está disponible desde el programa.
+* La característica de búsqueda de carpetas, puedes ejecutar un archivo desde los resultados de la búsqueda, y también puedes copiar la ruta del archivo o ir a la ruta del archivo y colocar el cursor sobre él mediante el menú contextual.
+3: Cargar ruta completa al abrir un archivo: Esta característica te permite abrir la carpeta completa que contiene el archivo reproducido.
+4: Guardar el último archivo reproducido desde la posición donde se detuvo, después de ejecutar el programa, reabrirá el archivo y se moverá a la posición en la que se detuvo, también si abres la carpeta de alguna manera, reabrirá la carpeta cuando se ejecute El programa desde su atajo, y también puedes deshabilitar esta característica en los ajustes.
+5: Ir a un archivo escribiendo el número del archivo en la carpeta.
+6: Reproducir clips de YouTube a través del enlace de video.
+7: Buscar en YouTube: A través de esta característica, puedes buscar videos en YouTube y reproducirlos en el programa. También puedes copiar el enlace de video, o el enlace del canal que contiene el video, o abrir el video en el navegador, o abrir el canal en el navegador.
+La ventana de búsqueda de YouTube contiene un cuadro de selección, para cargar todos los resultados descargados en una lista, y se controla como una carpeta, puedes moverte entre los resultados y el resultado se reproducirá automáticamente.
+Las características de las carpetas también se aplican a la característica anterior, si el programa está cerrado, mantendrá estos resultados y los devolverá después de abrir el programa.
+Por resultados cargados, me refiero a los resultados en la lista, cuantos más resultados te mueves al final de la lista, más resultados se cargarán.
+8: Lee los comentarios de los videos de YouTube desde el programa.
+Al principio, solo se cargarán 20 comentarios, y cuando llegue al final de la lista, se cargarán más. Esto es para evitar algunos problemas si hay muchos comentarios.
+9: Elije adelantar la búsqueda de 1 / 60 segundos, puedes especificar esto desde los ajustes, y puedes retroceder el clip mediante los números, no son los números laterales, me refiero a los superiores que se encuentran en la parte superior del teclado.
+10: La característica de repetición del clip, es decir, después de que termine, el clip se reproducirá nuevamente.
+11: La característica Ir al siguiente clip: La característica   de repetición del clip debe desactivarse para que esta característica funcione, y esta característica se aplica a carpetas y resultados de búsqueda si está disponible.
+12: Controle la mayoría de las características del programa a través de atajos globales con la posibilidad de ocultar la ventana del programa.
+Puedes abrir los archivos a través de la opción que el programa crea en el menú contextual después de que esté instalado.
+También puedes establecer el programa como el programa predeterminado manualmente por el momento.
+Las pistas de YouTube se reproducen como audio, no video.
+# Atajos del programa:
+Pondré los atajos del programa desde dentro, y el atajo desde fuera del mismo.
+El atajo control desde el programa global viene por defecto alt+control.
+Este atajo no es compatible con Windows 11, por lo que puedes cambiar este atajo desde los ajustes, y se recomienda establecer  alt+windows+control para que funcione bien.
+Te diré todos los atajos, luego el atajo global para ello, pero solo el acrónimo, sin mencionar alt+control.
+Flecha izquierda / derecha: para adelantar / retroceder, así como el atajo global en sí.
+Flecha arriba / abajo: para controlar el volumen: 0 / 200%, así como el atajo general en sí.
+retroceso página / avance página: para ir a la pista siguiente / anterior, así como el atajo global en sí.
+inicio: para ir al comienzo del clip, el atajo global es el mismo.
+espacio: para pausar / reanudar, el atajo global es el mismo.
+m: para silenciar, atajo global v.
+n: para habilitar o deshabilitar la característica para moverse al siguiente archivo.
+c: Muestra comentarios si se reproduce un video de YouTube.
+g: para moverse a un archivo por su número en la carpeta, es decir, su secuencia entre archivos, el atajo global: j.
+s: para buscar en la carpeta.
+a: Para buscar en YouTube,, el atajo global es el mismo.
+y: para reproducir un clip de YouTube a través del enlace, atajo global: l.
+r: para habilitar o deshabilitar la característica de repetición del clip, atajo global: e.
+i: para obtener información sobre la pista que se reproduce, el atajo global es el mismo.
+suprimir / suprimir Teclado Numérico: para eliminar la pista que se está reproduciendo, esta característica solo funciona con carpetas en este momento, el atajo global es el mismo.
+control+o: para abrir un archivo, el atajo global o.
+control+f: para abrir una carpeta, atajo global: s.
+control+s: abrir ajustes.
+control+w: cierra todo en el programa, carpeta o los resultados en YouTube, y detiene el clip que se reproduce.
+alt+windows+h: para ocultar / mostrar la ventana del programa.
+La ventana de ajustes se explica por sí misma, porque la mayoría de las opciones se describen y son sencillas.
+Puede contactarme a través del menú acerca de para darme tus sugerencias o informarme sobre un problema.

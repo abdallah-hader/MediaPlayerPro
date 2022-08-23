@@ -1,0 +1,994 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-06-25 18:25+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1256\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:42
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:175
+msgid "لم يتم تشغيل ملف بعد..."
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:87
+msgid "القائمة الرئيسية"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:88
+msgid "الخيارات"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:89
+msgid "يوتيوب"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:90
+msgid "حول"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:91
+msgid "دليل المستخدم\tf1"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:92
+msgid "قناة البرنامج على تليجرام"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:93
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:150
+msgid "حول البرنامج"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:94
+msgid "التواصل معنا"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:95
+msgid "فتح ملف\tctrl+o"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:96
+msgid "فتح مجلد\tctrl+f"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:97
+msgid "فتح ملف ترجمة (srt)\tctrl+shift+s"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:98
+msgid "البحث في يوتيوب\ta"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:99
+msgid "تشغيل مِن رابط\ty"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:100
+msgid "سجل البحث\tctrl+h"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:101
+msgid "عرض تعليقات المقطع الحالي\tc"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:102
+msgid "نسخ الوصف\tctrl+i"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:103
+msgid "المفضلة\tf"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:104
+msgid "إضافة للمفضلة\tctrl+p"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:105
+msgid "البحث في المجلد\ts"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:106
+msgid "الذهاب إلى\tg"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:107
+msgid "الإختيار العشوائي\tctrl+r"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:108
+msgid "الإعدادات\tctrl+s"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:109
+msgid "البحث عن تحديثات"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:110
+msgid "خروج"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:111
+msgid "تليجرام"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:112
+msgid "فيسبوك"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:113
+msgid "تويتر"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:145
+msgid ""
+"\n"
+"{name}:\n"
+"الإصدار: {version}.\n"
+"المُطوِر: {author}.\n"
+"الوصف: برنامج يُسَهِل على مستخدمي قارئات الشاشة تشغيل مختلف الوسائط والتحكم بها بشكل سهل ومِن أي مكان من داخل البرنامج أو مِن خارجه مع إتاحة تحكمات النطق للمستخدم في حال أراد تفعيلها أو تعطيلها..."
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:153
+msgid "يتم التحقق من وجود تحديث جديد ، يرجى الانتظار"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:157
+msgid "فتح ملف"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:169
+msgid "قم بإختيار المجلد الذي تريد فتحه في البرنامج..."
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:179
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:316
+msgid "تم إعادة تشغيل المقطع"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:184
+msgid "تم الإيقاف المؤقت"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:186
+msgid "تم الإستئناف"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:189
+msgid "تم إيقاف الملف"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:210
+msgid "لا يمكن تشغيل هذا المقطع"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:230
+msgid "هل أنت متأكد بأنك تريد حذف الملف {f}. في حال تم الحذف لا يمكنك إسترجاعه مرةً أُخرى"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:230
+#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:48
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:56
+#: C:\Users\Administrator\mediaplayer\source\includes\history.py:52
+#: C:\Users\Administrator\mediaplayer\source\includes\history.py:63
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:93
+msgid "تنبيه"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:236
+msgid "تم حذف {f}"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:257
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:262
+msgid "لم يتم التشغيل من يوتيوب"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:265
+msgid "تم نسخ الوصف إلى الحافظة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:266
+msgid "لا يوجد وصف لنسخه"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:302
+msgid "تم تعطيل التشغيل العشوائي"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:305
+msgid "تم تفعيل التشغيل العشوائي"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:322
+msgid "تم تعيين أقصى قيمة للسرعة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:324
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:332
+msgid "تم تعيين السرعة على {rate}"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:330
+msgid "تم تعيين أدنى قيمة للسرعة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:362
+msgid "تم إلغاء كتم الصوت"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:365
+msgid "تم كتم الصوت"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:367
+msgid "لا يمكن كتم الصوت"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:372
+msgid "تم إنتهاء تشغيل المقطع"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:375
+msgid "{title}, المدة: {duration}, الوقت المُنقَضي: {elapsed}, مستوى الصوت الحالي: {volume}"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:439
+msgid "الرابط"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:439
+msgid "قم بإدخال رابط اليوتيوب المُراد تشغيله"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:472
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:481
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:525
+msgid "يتمفتح المجلد {} / {}"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:473
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:482
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:526
+msgid "لا يوجد هناك مجلد"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:477
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:510
+msgid "تم الإعادة من المقطع الأول"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:485
+msgid "تم الإنتقال إلى آخِر ملف"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:506
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:515
+msgid "لا توجد هناك قائمة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:518
+msgid "تم الإنتقال إلى آخِر مقطع"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:527
+msgid "اكتب رقم الملف لتشغيله, 0/{l}"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:527
+msgid "الذهاب إلى"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:532
+msgid "تم الإعادة من الملف الأول"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:537
+msgid "تم تعطيل التكرار"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:540
+msgid "تم تفعيل التكرار"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:546
+msgid "تم تعطيل تشغيل الملف التالي"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:549
+msgid "تم تمكين تشغيل الملف التالي"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:554
+msgid "تم إظهار البرنامج"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:556
+msgid "تم إخفاء البرنامج, اضغط على الإختصار العام لديك + h لإظهاره"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:588
+msgid "تم تعيين نقطة البداية"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:592
+msgid "تم تعيين نقطة النهاية"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:598
+msgid "لا يتناسَق وقت نقطة البداية مع وقت نقطة النهاية"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:601
+msgid "تم إيقاف تكرار المقطع المحدد"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:603
+msgid "تم تمكين تكرار المقطع المحدد"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\docs_handler.py:13
+msgid "تعذر العثور على ملف المساعدة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\docs_handler.py:13
+#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:33
+#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:100
+#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:118
+#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:21
+#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:72
+msgid "خطأ"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\globals.py:28
+msgid "دقيقة واحدة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\globals.py:30
+msgid "دقيقتان"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\globals.py:32
+msgid "{} دقائق"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\globals.py:34
+msgid "{} دقيقة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\globals.py:37
+msgid "ثانية"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\globals.py:39
+msgid "ثانيتين"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\globals.py:41
+msgid "{} ثواني"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\globals.py:43
+msgid "{} ثانية"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\globals.py:46
+msgid "ساعة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\globals.py:48
+msgid "ساعتان"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\globals.py:50
+msgid "{} ساعات"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\globals.py:52
+msgid "{} ساعة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\globals.py:56
+msgid "{} و{}"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\globals.py:58
+msgid "{} و{} و{}"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\InputBox.py:18
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:171
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:30
+msgid "إلغاء"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\InputBox.py:19
+msgid "موافق"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\InputBox.py:29
+msgid "تم الإلغاء"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:10
+msgid "التعليقات"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:14
+msgid "قائمة التعليقات"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:17
+msgid "نص التعليق"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:19
+msgid "نسخ التعليق"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:21
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:30
+#: C:\Users\Administrator\mediaplayer\source\includes\help_dialog.py:11
+#: C:\Users\Administrator\mediaplayer\source\includes\history.py:25
+#: C:\Users\Administrator\mediaplayer\source\includes\search.py:107
+#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:49
+msgid "إغلاق"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:34
+#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:64
+msgid "{content}, المُعلق: {author}, {published}"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:48
+msgid "لا تتوفر تعليقات لِهذا الفيديو"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:59
+msgid "يتم تحميل المزيد من التعليقات"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:61
+msgid "لا يوجد هناك المزيد من التعليقات"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:67
+msgid "اكتمل تحميل المزيد من التعليقات"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:78
+msgid "أشهر"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:79
+msgid "شهر"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:80
+msgid "يوم"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:81
+msgid "أيام"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:82
+msgid "إسبوع"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:83
+msgid "أسابيع"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:84
+msgid "سنة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:85
+msgid "سنين"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:87
+msgid "منذ {t1} {t2}"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:14
+msgid "المفضلة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:18
+msgid "الفئات"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:21
+msgid "قائمة المفضلة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:24
+msgid "فتح جميع العناصر كقائمة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:26
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:169
+msgid "إضافة فئة جديدة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:28
+msgid "حذف الفئة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:56
+msgid "في حال تم الضغط فوق نعم, سيتم حذف الفئة {c} مع العناصر في داخل هذه الفئة, هل تريد الحذف؟"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:69
+msgid "لقد تم حذف الفئة بنجاح"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:69
+#: C:\Users\Administrator\mediaplayer\source\includes\history.py:60
+#: C:\Users\Administrator\mediaplayer\source\includes\history.py:72
+#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:108
+msgid "نجاح"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:76
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:166
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:182
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:200
+msgid "الإسم"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:76
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:182
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:200
+msgid "قم بإدخال إسم الفئة المراد إضافتها"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:95
+msgid "{t}, يبدأ المقطع عند ({p}), النوع ({iu}), تم الإضافة في ({time})."
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:95
+msgid "رابط"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:95
+msgid "ملف"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:100
+msgid "حذف"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:100
+msgid "هل تريد إزالة {t} مِن المفضلة?"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:159
+msgid "إضافة {t} إلى المفضلة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:164
+msgid "اختر الفئة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:168
+msgid "إضافة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:180
+msgid "لا توجد هناك فئات متوفرة, يبدو تم حذف جميع الفئات مع الفئة الإفتراضية )الفئة الإفتراضية(, في حال لا يوجد هناك أي فئة متوفرة, لا يمكن إضافة عناصر للمفضلة, هل تريد إنشاء فئة الآن?"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:180
+msgid "لم يتم العثور على فئات"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:219
+msgid "الفئة الإفتراضية"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:226
+msgid "تم الإضافة إلى المفضلة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:240
+msgid "تم إضافة الفئة بنجاح"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\help_dialog.py:5
+msgid "دليل الإستخدام"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\history.py:13
+msgid "سجل البحث"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\history.py:17
+msgid "التاريخ"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\history.py:19
+#: C:\Users\Administrator\mediaplayer\source\includes\search.py:99
+msgid "نتائج البحث"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\history.py:21
+msgid "حذف التاريخ المحدد"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\history.py:23
+msgid "محو السجل"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\history.py:52
+msgid "في حال تم الضغط فوق نعم, سيتم حذف سجل البحث بأكمله ولا يمكنك إسترجاعه مرةً أخرى, هل تريد الحذف؟"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\history.py:60
+msgid "لقد تم حذف جميع سجل البحث"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\history.py:63
+msgid "في حال تم الضغط فوق نعم, سيتم حذف التاريخ المحدد ولا يمكنك إسترجاعه مرةً أخرى, هل تريد الحذف؟"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\history.py:72
+msgid "لقد تم حذف التاريخ المحدد مِن سجل البحث"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\search.py:42
+msgid "بواسطة {b} "
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\search.py:82
+msgid "عدد المشاهدات {}"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\search.py:84
+msgid "بث مباشر"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\search.py:88
+msgid "المدة: {}"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\search.py:94
+msgid "البحث في المجلد"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\search.py:97
+#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:42
+msgid "كلمة البحث"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\search.py:105
+msgid "بحث"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\search.py:116
+msgid "قم بإدخال كلمة بحث أولا"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\search.py:123
+msgid "لا توجد نتائج"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\search.py:123
+msgid "لم يتم العثور على نتائج مطابِقة لكلمة البحث هذه"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\search.py:126
+msgid "نتيجة واحدة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\search.py:128
+msgid "نتيجتان"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\search.py:130
+msgid "نتائج"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\search.py:131
+msgid "نتائج البحث عن {w}, هناك {rc} {rc2}"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\search.py:153
+msgid "فتح مسار الملف"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\search.py:154
+msgid "نسخ مسار الملف"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:14
+msgid "إعدادات البرنامج"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:17
+msgid "اختر ما تريد تعديله من الإعدادات"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:20
+msgid "الإعدادات العامة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:22
+msgid "إعدادات النطق"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:24
+msgid "إعدادات الترجمات"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:26
+msgid "إعدادات الإختصارات العامة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:27
+msgid "حفظ الإعدادات"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:93
+msgid "لقد قمت بتغيير بعض الإعدادات التي تتطلب إعادة تشغيل البرنامج لتطبيقها, هل تريد إعادة تشغيل البرنامج الآن؟"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:100
+msgid "لغة البرنامج, يتطلب هذا الأمر إعادة تشغيل البرنامج كَي تتطبق الإعدادات"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:103
+msgid "عدد الثواني للتقديم"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:110
+msgid "التحقق من وجود تحديثات عند البدئ"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:112
+msgid "تحميل المسار كاملًا عند فتح ملف, في حال تفعيل هذا الخيار, عند فتح أي ملف, سيقوم البرنامج بفتح الملف مع المجلد كاملًا في البرنامج, هذا يسبب بطء في التحميل"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:114
+msgid "حفظ آخر مقطع مع الموضع عند الخروج, يقوم هذا الخيار بالتحقق مِن آخر مقطع تم تشغيله عند البدئ, ثم يقوم بتشغيله والإنتقال إلى النقطة التي تم الوقوف عندها."
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:116
+msgid "تشغيل أول ملف بعد فتح مجلد"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:118
+msgid "تفعيل سجل البحث"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:124
+msgid "نطق الإيقاف المؤقت والإستئناف"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:126
+msgid "نطق مستوى الصوت عند تغييره"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:128
+msgid "نطق الوقت المنقضي عند التقديم والتأخير"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:130
+msgid "النطق عند إعادة تشغيل المقطع"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:132
+msgid "نطق معدل السرعة عند تغييره"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:138
+msgid "control موصى إستخدامه في windows11 مع الإختصارات الأخرا alt و windows"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:142
+msgid "استبدال الأزرار page_up / page_down بالأزرار tab / shift+tab"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:158
+msgid "بطيء"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:158
+msgid "بطيء جدا"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:158
+msgid "سريع"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:158
+msgid "سريع جدا"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:158
+msgid "متوسط"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:159
+msgid "قرائة الترجمات"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:161
+msgid "تحميل ملف الترجمة تلقائيًا"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:163
+msgid "استخدام sapi5 لِقِراءة الترجمات"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:164
+msgid "اختر الصوت"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:166
+msgid "اختبار"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:167
+msgid "سرعة القِراءة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:169
+msgid "مستوى الصوت"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\subtitle.py:17
+msgid "اختيار ملف ترجمة (.srt)|*.srt"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\subtitle.py:30
+msgid "تم تحميل ملف الترجمة {subfile}"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:33
+msgid "لم نتمكن من الوصول إلى خدمة التحديثات, قد تكون هناك مشكلة مؤقتة, أو مشكلة في الإتصال لديك, تأكد مِن الإتصال بالأنترنت ثم عاود مجددًا."
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:37
+msgid "تم العثور على تحديث جديد"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:37
+msgid "هناك تحديث جديد {name} الإصدار {ver} هل تريد التحديث الآن؟"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:41
+msgid "لديك أحدث إصدار مِن MediaPlayerPro"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:41
+msgid "لم يتم العثور على تحديثات"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:43
+msgid "حدث خطأ أثناء محاولة الإتصال بخدمة التحديثات, يرجى المحاولة لاحقًا"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:43
+msgid "خطأ في الإتصال"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:48
+msgid "يتم تحميل التحديثات"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:51
+msgid "حالة التحميل"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:54
+msgid "إيقاف التحميل"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:100
+msgid "حدث خطأ أثناء عملية التحديث ، يرجى المحاولة مرة أخرى في وقت لاحق."
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:105
+msgid "يتم تحميل التحديث {}"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:108
+msgid "تم تحميل التحديث بنجاح, انقر فوق موافق لِتبدأ عملية التثبيت."
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:114
+msgid "يتم تثبيت التحديث"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:118
+msgid "حدث خطأ غير متوقع عند محاولة فتح الملف للتثبيت، أعد تنزيل التحديث مرة أخرى، وإذا استمرت المشكلة، فقم بالإتصال بالمطور لحلها"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:21
+msgid "لقد أدخلت رابط غير صالح."
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:25
+msgid ""
+"\n"
+"\t\t يتم التشغيل مِن يوتيوب: {title}\n"
+"\n"
+"\t\tالمشاهدات: {views}\n"
+"\n"
+"\t\tالمالك: {author}\n"
+"\n"
+"\t\tعدد الإعجابات: {likes}\n"
+"\n"
+"\t\tالوصف: {description}\n"
+"\t"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:37
+msgid "البحث في يوتيوب"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:44
+msgid "قائمة النتائج"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:48
+msgid "تحميل جميع النتائج الحالية في قائمة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:68
+msgid "يتم البحث عن {q}"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:72
+msgid "حدث خطأ أثناء محاولة البحث, قد تكون هناك مشكلة بالإتصال, إذا استمرت المشكلة بالظهور قم بمراسلة المطور لحل المشكلة"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:75
+msgid "اكتمل تحميل النتائج"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:138
+msgid "يتم تحميل المزيد من النتائج"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:140
+msgid "لا توجد نتائج أُخرى"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:142
+msgid "تم تحميل المزيد من النتائج"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:156
+msgid "فتح الفيديو في المتصفح\tv"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:157
+msgid "فتح القناة في المتصفح\tc"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:158
+msgid "نسخ رابط الفيديو\tu"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:159
+msgid "نسخ رابط القناة\tl"
+msgstr ""
+
+#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:170
+#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:174
+msgid "يتم الفتح في المتصفح"
+msgstr ""
+

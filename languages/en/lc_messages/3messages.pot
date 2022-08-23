@@ -1,0 +1,858 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-06-15 01:54+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1256\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:41
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:164
+msgid "لم يتم تشغيل ملف بعد..."
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:84
+msgid "القائمة الرئيسية"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:85
+msgid "الخيارات"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:86
+msgid "يوتيوب"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:87
+msgid "حول"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:88
+msgid "دليل المستخدم\tf1"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:89
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:139
+msgid "حول البرنامج"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:90
+msgid "التواصل معنا"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:91
+msgid "فتح ملف\tctrl+o"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:92
+msgid "فتح مجلد\tctrl+f"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:93
+msgid "البحث في يوتيوب\ta"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:94
+msgid "تشغيل مِن رابط\ty"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:95
+msgid "سجل البحث\tctrl+h"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:96
+msgid "عرض تعليقات المقطع الحالي\tc"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:97
+msgid "إضافة للمفضلة\tctrl+p"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:98
+msgid "البحث في المجلد\ts"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:99
+msgid "الذهاب إلى\tg"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:100
+msgid "الإختيار العشوائي\tctrl+r"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:101
+msgid "الإعدادات\tctrl+s"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:102
+msgid "البحث عن تحديثات"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:103
+msgid "خروج"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:104
+msgid "تليجرام"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:105
+msgid "فيسبوك"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:106
+msgid "تويتر"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:134
+msgid ""
+"\n"
+"{name}:\n"
+"الإصدار: {version}.\n"
+"المُطوِر: {author}.\n"
+"الوصف: برنامج يُسَهِل على مستخدمي قارئات الشاشة تشغيل مختلف الوسائط والتحكم بها بشكل سهل ومِن أي مكان من داخل البرنامج أو مِن خارجه مع إتاحة تحكمات النطق للمستخدم في حال أراد تفعيلها أو تعطيلها..."
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:142
+msgid "يتم التحقق من وجود تحديث جديد ، يرجى الانتظار"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:146
+msgid "فتح ملف"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:158
+msgid "قم بإختيار المجلد الذي تريد فتحه في البرنامج..."
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:168
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:295
+msgid "تم إعادة تشغيل المقطع"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:173
+msgid "تم الإيقاف المؤقت"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:175
+msgid "تم الإستئناف"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:178
+msgid "تم إيقاف الملف"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:197
+msgid "لا يمكن تشغيل هذا المقطع"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:217
+msgid "هل أنت متأكد بأنك تريد حذف الملف {f}. في حال تم الحذف لا يمكنك إسترجاعه مرةً أُخرى"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:217
+#: D:\المشغل\mediaplayer\source\includes\comments.py:46
+#: D:\المشغل\mediaplayer\source\includes\favorite.py:37
+#: D:\المشغل\mediaplayer\source\includes\history.py:52
+#: D:\المشغل\mediaplayer\source\includes\history.py:63
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:74
+msgid "تنبيه"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:223
+msgid "تم حذف {f}"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:244
+msgid "لم يتم التشغيل من يوتيوب"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:281
+msgid "تم تعطيل التشغيل العشوائي"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:284
+msgid "تم تفعيل التشغيل العشوائي"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:301
+msgid "تم تعيين أقصى قيمة للسرعة"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:303
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:311
+msgid "تم تعيين السرعة على {rate}"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:309
+msgid "تم تعيين أدنى قيمة للسرعة"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:341
+msgid "تم إلغاء كتم الصوت"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:344
+msgid "تم كتم الصوت"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:346
+msgid "لا يمكن كتم الصوت"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:351
+msgid "تم إنتهاء تشغيل المقطع"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:354
+msgid "{title}, المدة: {duration}, الوقت المُنقَضي: {elapsed}, مستوى الصوت الحالي: {volume}"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:418
+msgid "الرابط"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:418
+msgid "قم بإدخال رابط اليوتيوب المُراد تشغيله"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:451
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:460
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:500
+msgid "يتمفتح المجلد {} / {}"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:452
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:461
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:501
+msgid "لا يوجد هناك مجلد"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:456
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:485
+msgid "تم الإعادة من المقطع الأول"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:464
+msgid "تم الإنتقال إلى آخِر ملف"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:481
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:490
+msgid "لا توجد هناك قائمة"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:493
+msgid "تم الإنتقال إلى آخِر مقطع"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:502
+msgid "اكتب رقم الملف لتشغيله, 0/{l}"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:502
+msgid "الذهاب إلى"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:507
+msgid "تم الإعادة من الملف الأول"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:512
+msgid "تم تعطيل التكرار"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:515
+msgid "تم تفعيل التكرار"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:521
+msgid "تم تعطيل تشغيل الملف التالي"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:524
+msgid "تم تمكين تشغيل الملف التالي"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:529
+msgid "تم إظهار البرنامج"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:531
+msgid "تم إخفاء البرنامج, اضغط على الإختصار العام لديك + h لإظهاره"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:560
+msgid "تم تعيين نقطة البداية"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:564
+msgid "تم تعيين نقطة النهاية"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:570
+msgid "لا يتناسَق وقت نقطة البداية مع وقت نقطة النهاية"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:573
+msgid "تم إيقاف تكرار المقطع المحدد"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\MediaPlayerPro.py:575
+msgid "تم تمكين تكرار المقطع المحدد"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\docs_handler.py:13
+msgid "تعذر العثور على ملف المساعدة"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\docs_handler.py:13
+#: D:\المشغل\mediaplayer\source\includes\updater.py:33
+#: D:\المشغل\mediaplayer\source\includes\updater.py:100
+#: D:\المشغل\mediaplayer\source\includes\updater.py:115
+#: D:\المشغل\mediaplayer\source\includes\youtube.py:21
+#: D:\المشغل\mediaplayer\source\includes\youtube.py:72
+msgid "خطأ"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\globals.py:22
+msgid "دقيقة واحدة"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\globals.py:24
+msgid "دقيقتان"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\globals.py:26
+msgid "{} دقائق"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\globals.py:28
+msgid "{} دقيقة"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\globals.py:31
+msgid "ثانية"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\globals.py:33
+msgid "ثانيتين"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\globals.py:35
+msgid "{} ثواني"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\globals.py:37
+msgid "{} ثانية"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\globals.py:40
+msgid "ساعة"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\globals.py:42
+msgid "ساعتان"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\globals.py:44
+msgid "{} ساعات"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\globals.py:46
+msgid "{} ساعة"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\globals.py:50
+msgid "{} و{}"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\globals.py:52
+msgid "{} و{} و{}"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\InputBox.py:18
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:26
+msgid "إلغاء"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\InputBox.py:19
+msgid "موافق"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\InputBox.py:29
+msgid "تم الإلغاء"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\comments.py:9
+msgid "التعليقات"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\comments.py:13
+msgid "قائمة التعليقات"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\comments.py:15
+msgid "ترتيب التعليقات حسب:"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\comments.py:16
+msgid "الأحدث للأقدم"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\comments.py:16
+msgid "الأقدم للأحدث"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\comments.py:19
+#: D:\المشغل\mediaplayer\source\includes\favorite.py:21
+#: D:\المشغل\mediaplayer\source\includes\help_dialog.py:11
+#: D:\المشغل\mediaplayer\source\includes\history.py:25
+#: D:\المشغل\mediaplayer\source\includes\search.py:107
+#: D:\المشغل\mediaplayer\source\includes\youtube.py:48
+msgid "إغلاق"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\comments.py:32
+#: D:\المشغل\mediaplayer\source\includes\comments.py:58
+msgid "{content}, المُعلق: {author}, {published}"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\comments.py:46
+msgid "لا تتوفر تعليقات لِهذا الفيديو"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\comments.py:53
+msgid "يتم تحميل المزيد من التعليقات"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\comments.py:55
+msgid "لا يوجد هناك المزيد من التعليقات"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\comments.py:61
+msgid "اكتمل تحميل المزيد من التعليقات"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\comments.py:72
+msgid "أشهر"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\comments.py:73
+msgid "شهر"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\comments.py:74
+msgid "يوم"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\comments.py:75
+msgid "أيام"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\comments.py:76
+msgid "إسبوع"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\comments.py:77
+msgid "أسابيع"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\comments.py:78
+msgid "سنة"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\comments.py:79
+msgid "سنين"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\comments.py:81
+msgid "منذ {t1} {t2}"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\favorite.py:12
+msgid "المفضلة"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\favorite.py:16
+msgid "قائمة المفضلة"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\favorite.py:19
+msgid "محو جميع عناصر المفضلة"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\favorite.py:31
+msgid "{t}, يبدأ المقطع عند ({p}), النوع ({iu}), تم الإضافة في ({time})."
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\favorite.py:31
+msgid "رابط"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\favorite.py:31
+msgid "ملف"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\favorite.py:37
+msgid "في حال تم الضغط فوق نعم, سيتم حذف جميع العناصر في المفضلة, ولا يمكنك إسترجاعهم مرةً أُخرى, هل تريد الحذف؟"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\favorite.py:43
+msgid "لقد تم حذف جميع عناصر المفضلة"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\favorite.py:43
+#: D:\المشغل\mediaplayer\source\includes\history.py:60
+#: D:\المشغل\mediaplayer\source\includes\history.py:72
+#: D:\المشغل\mediaplayer\source\includes\updater.py:108
+msgid "نجاح"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\favorite.py:52
+msgid "حذف"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\favorite.py:52
+msgid "هل تريد إزالة {t} مِن المفضلة?"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\favorite.py:118
+msgid "تم الإضافة إلى المفضلة"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\help_dialog.py:5
+msgid "دليل الإستخدام"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\history.py:13
+msgid "سجل البحث"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\history.py:17
+msgid "التاريخ"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\history.py:19
+#: D:\المشغل\mediaplayer\source\includes\search.py:99
+msgid "نتائج البحث"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\history.py:21
+msgid "حذف التاريخ المحدد"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\history.py:23
+msgid "محو السجل"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\history.py:52
+msgid "في حال تم الضغط فوق نعم, سيتم حذف سجل البحث بأكمله ولا يمكنك إسترجاعه مرةً أخرى, هل تريد الحذف؟"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\history.py:60
+msgid "لقد تم حذف جميع سجل البحث"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\history.py:63
+msgid "في حال تم الضغط فوق نعم, سيتم حذف التاريخ المحدد ولا يمكنك إسترجاعه مرةً أخرى, هل تريد الحذف؟"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\history.py:72
+msgid "لقد تم حذف التاريخ المحدد مِن سجل البحث"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\search.py:42
+msgid "بواسطة {b} "
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\search.py:82
+msgid "عدد المشاهدات {}"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\search.py:84
+msgid "بث مباشر"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\search.py:88
+msgid "المدة: {}"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\search.py:94
+msgid "البحث في المجلد"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\search.py:97
+#: D:\المشغل\mediaplayer\source\includes\youtube.py:41
+msgid "كلمة البحث"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\search.py:105
+msgid "بحث"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\search.py:116
+msgid "قم بإدخال كلمة بحث أولا"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\search.py:123
+msgid "لا توجد نتائج"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\search.py:123
+msgid "لم يتم العثور على نتائج مطابِقة لكلمة البحث هذه"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\search.py:126
+msgid "نتيجة واحدة"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\search.py:128
+msgid "نتيجتان"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\search.py:130
+msgid "نتائج"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\search.py:131
+msgid "نتائج البحث عن {w}, هناك {rc} {rc2}"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\search.py:153
+msgid "فتح مسار الملف"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\search.py:154
+msgid "نسخ مسار الملف"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:12
+msgid "إعدادات البرنامج"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:15
+msgid "اختر ما تريد تعديله من الإعدادات"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:18
+msgid "الإعدادات العامة"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:20
+msgid "إعدادات النطق"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:22
+msgid "إعدادات الإختصارات العامة"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:23
+msgid "حفظ الإعدادات"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:74
+msgid "لقد قمت بتغيير بعض الإعدادات التي تتطلب إعادة تشغيل البرنامج لتطبيقها, هل تريد إعادة تشغيل البرنامج الآن؟"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:81
+msgid "لغة البرنامج, يتطلب هذا الأمر إعادة تشغيل البرنامج كَي تتطبق الإعدادات"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:84
+msgid "عدد الثواني للتقديم"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:91
+msgid "التحقق من وجود تحديثات عند البدئ"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:93
+msgid "تحميل المسار كاملًا عند فتح ملف, في حال تفعيل هذا الخيار, عند فتح أي ملف, سيقوم البرنامج بفتح الملف مع المجلد كاملًا في البرنامج, هذا يسبب بطء في التحميل"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:95
+msgid "حفظ آخر مقطع مع الموضع عند الخروج, يقوم هذا الخيار بالتحقق مِن آخر مقطع تم تشغيله عند البدئ, ثم يقوم بتشغيله والإنتقال إلى النقطة التي تم الوقوف عندها."
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:97
+msgid "تشغيل أول ملف بعد فتح مجلد"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:99
+msgid "تفعيل سجل البحث"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:105
+msgid "نطق الإيقاف المؤقت والإستئناف"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:107
+msgid "نطق مستوى الصوت عند تغييره"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:109
+msgid "نطق الوقت المنقضي عند التقديم والتأخير"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:111
+msgid "النطق عند إعادة تشغيل المقطع"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:113
+msgid "نطق معدل السرعة عند تغييره"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:119
+msgid "control موصى إستخدامه في windows11 مع الإختصارات الأخرا alt و windows"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\settingsdialog.py:123
+msgid "استبدال الأزرار page_up / page_down بالأزرار tab / shift+tab"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\updater.py:33
+msgid "لم نتمكن من الوصول إلى خدمة التحديثات, قد تكون هناك مشكلة مؤقتة, أو مشكلة في الإتصال لديك, تأكد مِن الإتصال بالأنترنت ثم عاود مجددًا."
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\updater.py:37
+msgid "تم العثور على تحديث جديد"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\updater.py:37
+msgid "هناك تحديث جديد {name} الإصدار {ver} هل تريد التحديث الآن؟"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\updater.py:41
+msgid "لديك أحدث إصدار مِن MediaPlayerPro"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\updater.py:41
+msgid "لم يتم العثور على تحديثات"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\updater.py:43
+msgid "حدث خطأ أثناء محاولة الإتصال بخدمة التحديثات, يرجى المحاولة لاحقًا"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\updater.py:43
+msgid "خطأ في الإتصال"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\updater.py:48
+msgid "يتم تحميل التحديثات"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\updater.py:51
+msgid "حالة التحميل"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\updater.py:54
+msgid "إيقاف التحميل"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\updater.py:100
+msgid "حدث خطأ أثناء عملية التحديث ، يرجى المحاولة مرة أخرى في وقت لاحق."
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\updater.py:105
+msgid "يتم تحميل التحديث {}"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\updater.py:108
+msgid "تم تحميل التحديث بنجاح, انقر فوق موافق لِتبدأ عملية التثبيت."
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\updater.py:111
+msgid "يتم تثبيت التحديث"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\updater.py:115
+msgid "حدث خطأ غير متوقع عند محاولة فتح الملف للتثبيت، أعد تنزيل التحديث مرة أخرى، وإذا استمرت المشكلة، فقم بالإتصال بالمطور لحلها"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\youtube.py:21
+msgid "لقد أدخلت رابط غير صالح."
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\youtube.py:25
+msgid ""
+"\n"
+"\t\t يتم التشغيل مِن يوتيوب: {title}\n"
+"\n"
+"\t\tالمشاهدات: {views}\n"
+"\n"
+"\t\tالمالك: {author}\n"
+"\n"
+"\t\tعدد الإعجابات: {likes}\n"
+"\n"
+"\t\tالوصف: {description}\n"
+"\t"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\youtube.py:36
+msgid "البحث في يوتيوب"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\youtube.py:43
+msgid "قائمة النتائج"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\youtube.py:47
+msgid "تحميل جميع النتائج الحالية في قائمة"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\youtube.py:68
+msgid "يتم البحث عن {q}"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\youtube.py:72
+msgid "حدث خطأ أثناء محاولة البحث, قد تكون هناك مشكلة بالإتصال, إذا استمرت المشكلة بالظهور قم بمراسلة المطور لحل المشكلة"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\youtube.py:75
+msgid "اكتمل تحميل النتائج"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\youtube.py:135
+msgid "يتم تحميل المزيد من النتائج"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\youtube.py:137
+msgid "لا توجد نتائج أُخرى"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\youtube.py:139
+msgid "تم تحميل المزيد من النتائج"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\youtube.py:153
+msgid "فتح الفيديو في المتصفح\tv"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\youtube.py:154
+msgid "فتح القناة في المتصفح\tc"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\youtube.py:155
+msgid "نسخ رابط الفيديو\tu"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\youtube.py:156
+msgid "نسخ رابط القناة\tl"
+msgstr ""
+
+#: D:\المشغل\mediaplayer\source\includes\youtube.py:167
+#: D:\المشغل\mediaplayer\source\includes\youtube.py:171
+msgid "يتم الفتح في المتصفح"
+msgstr ""
+
