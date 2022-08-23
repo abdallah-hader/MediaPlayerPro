@@ -109,7 +109,7 @@ class SearchDialog(wx.Dialog):
 				for track in range(len(self.Results.Strings)):
 					g.tracks_list.append([self.search.get_title(track), self.search.get_url(track)])
 			if g.player==None:
-				g.player=MediaPlayer.Player(link, wx.GetApp().GetTopWindow().GetHandle())
+				g.player=media_player.Player(link, wx.GetApp().GetTopWindow().GetHandle())
 				g.set_title(title)
 				g.player.title=title
 				g.player.url=g.youtube_url
