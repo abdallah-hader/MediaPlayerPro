@@ -5,7 +5,7 @@ from settingsconfig import get
 def get_doc():
 	lang=get("language")
 	try:
-		f=open(f"docs/help_{lang}.txt", "r", encoding="utf-8")
+		f=open(f"docs/{lang}/help.txt", "r", encoding="utf-8")
 		help=f.read()
 		f.close()
 		return help

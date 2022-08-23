@@ -49,7 +49,6 @@ class main(wx.Frame):
 				temp.write(str(path)+":::=true")
 				return sys.exit()
 		wx.Frame.__init__(self, parent=None, title=application.name)
-		self.runing=True
 		self.SetupHotKeys()
 		self.Center()
 		self.SetSize(wx.DisplaySize())
@@ -58,7 +57,6 @@ class main(wx.Frame):
 		threading.Thread(target=updater.cfu, args=[True]).start() if get("check_for_updates_at_startup") else None
 		self.types=['mp3','mp4','ogg','m4a','wav','occ'] #files typs to select them when open a folder
 		self.loading=False
-		self.stream=False
 		g.handle=self.GetHandle()
 		self.length=0
 		self.opened=0
@@ -192,15 +190,14 @@ class main(wx.Frame):
 			g.player.media.play()
 			speak(_("تم إعادة تشغيل المقطع")) if get("speak_play_pause") else None
 		elif state in (State.Playing, State.Paused):
-			if not self.stream:
-				g.player.media.pause()
-				if state==State.Playing:
-					speak(_("تم الإيقاف المؤقت")) if get("speak_play_pause") else None
-				else:
-					speak(_("تم الإستئناف")) if get("speak_play_pause") else None
-			else: 
-				g.player.media.stop()
-				speak(_("تم إيقاف الملف")) if get("speak_play_pause") else None
+			g.player.media.pause()
+			if state==State.Playing:
+				speak(_("تم الإيقاف المؤقت")) if get("speak_play_pause") else None
+			else:
+				speak(_("تم الإستئناف")) if get("speak_play_pause") else None
+		else: 
+			g.player.media.stop()
+			speak(_("تم إيقاف الملف")) if get("speak_play_pause") else None
 
 	def new_track(self, fn):
 		self.Title=f"{os.path.basename(fn)} {application.name}"
@@ -709,7 +706,6 @@ class main(wx.Frame):
 		self.RegisterHotKey(self.ForwardId, k, wx.WXK_RIGHT)
 
 	def openloop(self):
-		global FromPath
 		while g.pathloop:
 			self.tempcheck()
 			sleep(0.01)
