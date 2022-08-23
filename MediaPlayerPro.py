@@ -55,8 +55,7 @@ class main(wx.Frame):
 		self.SetSize(wx.DisplaySize())
 		self.Maximize(True)
 		g.parent=self
-		if get("check_for_updates_at_startup"):
-			threading.Thread(target=updater.cfu, args=[True]).start()
+		threading.Thread(target=updater.cfu, args=[True]).start() if get("check_for_updates_at_startup") else None
 		self.types=['mp3','mp4','ogg','m4a','wav','occ'] #files typs to select them when open a folder
 		self.loading=False
 		self.stream=False
@@ -72,6 +71,10 @@ class main(wx.Frame):
 			self.load_last()
 		if path:
 			self.play_from_path(path)
+		self.MenuBarSetup()
+		self.Show()
+
+	def MenuBarSetup(self):
 		menubar=wx.MenuBar()
 		MainMenu=wx.Menu()
 		OptionsMenu=wx.Menu()
@@ -82,24 +85,24 @@ class main(wx.Frame):
 		menubar.Append(OptionsMenu, _("الخيارات"))
 		menubar.Append(YoutubeMenu, _("يوتيوب"))
 		menubar.Append(about, _("حول"))
-		user_guide=about.Append(-1, _("دليل المستخدم\tf1"))
+		user_guide=about.Append(-1, _("دليل المستخدم: f1"))
 		TelegramChannel=about.Append(-1, _("قناة البرنامج على تليجرام"))
 		about_the_program=about.Append(-1, _("حول البرنامج"))
 		about.AppendSubMenu(contact, _("التواصل معنا"))
-		openfile=MainMenu.Append(-1, _("فتح ملف\tctrl+o"))
-		open_folder=MainMenu.Append(-1, _("فتح مجلد\tctrl+f"))
-		open_subtitle=MainMenu.Append(-1, _("فتح ملف ترجمة (srt)\tctrl+shift+s"))
-		youtube_search=YoutubeMenu.Append(-1, _("البحث في يوتيوب\ta"))
-		from_url=YoutubeMenu.Append(-1, _("تشغيل مِن رابط\ty"))
-		history=YoutubeMenu.Append(-1, _("سجل البحث\tctrl+h"))
-		GetComments=YoutubeMenu.Append(-1, _("عرض تعليقات المقطع الحالي\tc"))
-		CopyDescription = YoutubeMenu.Append(-1, _("نسخ الوصف\tctrl+i"))
-		ShowFavorite=OptionsMenu.Append(-1, _("المفضلة\tf"))
-		addfavorite=OptionsMenu.Append(-1, _("إضافة للمفضلة\tctrl+p"))
-		folder_search=OptionsMenu.Append(-1, _("البحث في المجلد\ts"))
-		go_to=OptionsMenu.Append(-1, _("الذهاب إلى\tg"))
-		random_choos=OptionsMenu.Append(-1, _("الإختيار العشوائي\tctrl+r"))
-		settings=MainMenu.Append(-1, _("الإعدادات\tctrl+s"))
+		openfile=MainMenu.Append(-1, _("فتح ملف: ctrl+o"))
+		open_folder = MainMenu.Append(-1, _("فتح مجلد: ctrl+f"))
+		open_subtitle = MainMenu.Append(-1, _("فتح ملف ترجمة (srt): ctrl+shift+s"))
+		youtube_search=YoutubeMenu.Append(-1, _("البحث في يوتيوب: a"))
+		from_url = YoutubeMenu.Append(-1, _("تشغيل مِن رابط: y"))
+		history = YoutubeMenu.Append(-1, _("سجل البحث: ctrl+h"))
+		GetComments = YoutubeMenu.Append(-1, _("عرض تعليقات المقطع الحالي: c"))
+		CopyDescription = YoutubeMenu.Append(-1, _("نسخ الوصف: ctrl+i"))
+		ShowFavorite = OptionsMenu.Append(-1, _("المفضلة: f"))
+		addfavorite =OptionsMenu.Append(-1, _("إضافة للمفضلة: ctrl+p"))
+		folder_search = OptionsMenu.Append(-1, _("البحث في المجلد: s"))
+		go_to = OptionsMenu.Append(-1, _("الذهاب إلى: g"))
+		random_choos = OptionsMenu.Append(-1, _("الإختيار العشوائي: ctrl+r"))
+		settings = MainMenu.Append(-1, _("الإعدادات: ctrl+s"))
 		update=MainMenu.Append(-1, _("البحث عن تحديثات"))
 		close=MainMenu.Append(-1, _("خروج"))
 		telegram=contact.Append(-1, _("تليجرام"))
@@ -128,7 +131,24 @@ class main(wx.Frame):
 		self.Bind(wx.EVT_MENU, self.AboutMessage, about_the_program)
 		self.Bind(wx.EVT_MENU, self.ShowUserGuide, user_guide)
 		self.SetMenuBar(menubar)
-		self.Show()
+		shortcuts = wx.AcceleratorTable((
+			(wx.ACCEL_CTRL, ord("O"), openfile.GetId()),
+			(0, wx.WXK_F1, user_guide.GetId()),
+			(wx.ACCEL_CTRL, ord("F"), open_folder.GetId()),
+			(wx.ACCEL_CTRL+wx.ACCEL_SHIFT, ord("S"), open_subtitle.GetId()),
+			(0, ord("A"), youtube_search.GetId()),
+			(0, ord("Y"), from_url.GetId()),
+			(wx.ACCEL_CTRL, ord("h"), history.GetId()),
+			(0, ord("C"), GetComments.GetId()),
+			(wx.ACCEL_CTRL, ord("I"), CopyDescription.GetId()),
+			(0, ord("F"), ShowFavorite.GetId()),
+			(wx.ACCEL_CTRL, ord("P"), addfavorite.GetId()),
+			(0, ord("S"), folder_search.GetId()),
+			(0, ord("G"), go_to.GetId()),
+			(wx.ACCEL_CTRL, ord("R"), random_choos.GetId()),
+			(wx.ACCEL_CTRL, ord("S"), settings.GetId()),
+		))
+		self.SetAcceleratorTable(shortcuts)
 
 	def ShowUserGuide(self, event):
 		value=docs_handler.get_doc()
@@ -183,7 +203,6 @@ class main(wx.Frame):
 				speak(_("تم إيقاف الملف")) if get("speak_play_pause") else None
 
 	def new_track(self, fn):
-#		sleep(0.05)
 		self.Title=f"{os.path.basename(fn)} {application.name}"
 		if g.playing_from_youtube: g.playing_from_youtube=not g.playing_from_youtube
 		g.current_subtitle = {}
@@ -261,7 +280,6 @@ class main(wx.Frame):
 
 	@has_player
 	def forward(self,event=None):
-#		sleep(0.05)
 		position = g.player.media.get_position()
 		if g.player.repeate_some:
 			g.player.media.set_position(position+g.player.seek(int(get("seek"))))
@@ -273,7 +291,6 @@ class main(wx.Frame):
 
 	@has_player
 	def rewind(self, event=None):
-#		sleep(0.05)
 		position = g.player.media.get_position()
 		if g.player.repeate_some:
 			g.player.media.set_position(position-g.player.seek(int(get("seek"))))
@@ -403,7 +420,6 @@ class main(wx.Frame):
 			speak("error"+str(e))
 
 	def open_folder(self, path, title="", from_option=False):
-#		sleep(0.09)
 		if g.playing_from_youtube: g.playing_from_youtube=False
 		g.tracks_list=[]
 		self.loading=True
@@ -430,7 +446,7 @@ class main(wx.Frame):
 		if HasUrl:
 			data=youtube.get_url(url)
 		else:
-			link=InputBox.Input(self, _("الرابط"), _("قم بإدخال رابط اليوتيوب المُراد تشغيله"))
+			link = input_box.Input(self, _("الرابط"), _("قم بإدخال رابط اليوتيوب المُراد تشغيله"))
 			if link.canceled: return
 			url=link.text()
 			g.youtube_url=url
@@ -483,16 +499,12 @@ class main(wx.Frame):
 	def go_to_previous(self, event=None):
 		if not g.playing_from_youtube:
 			self.previous()
-#		elif g.FavoriteLoaded:
-#			self.PreviousFavoriteItem()
 		else:
 			self.previous_youtube_video()
 
 	def go_to_next(self, event=None):
 		if not g.playing_from_youtube:
 			self.next()
-#		elif g.FavoriteLoaded:
-#			self.NextFavoriteItem()
 		else:
 			self.next_youtube_video()
 
@@ -502,7 +514,6 @@ class main(wx.Frame):
 		if g.index>=len(g.tracks_list):
 			g.index=0
 			speak(_("تم الإعادة من المقطع الأول"))
-#		sleep(0.05)
 		threading.Thread(target=self.play_from_youtube, args=[g.tracks_list[g.index][1], True]).start()
 
 	def previous_youtube_video(self, event=None):
@@ -511,7 +522,6 @@ class main(wx.Frame):
 			g.index=len(g.tracks_list)
 			speak(_("تم الإنتقال إلى آخِر مقطع"))
 		g.index-=1
-#		sleep(0.05)
 		threading.Thread(target=self.play_from_youtube, args=[g.tracks_list[g.index][1], True]).start()
 
 
@@ -552,7 +562,6 @@ class main(wx.Frame):
 
 
 	def shortcuts(self, event):
-#		event.Skip()
 		if get("replace_pages", "keybord") and event.shiftDown and event.GetKeyCode()==wx.WXK_TAB:
 			self.go_to_previous()
 		elif get("replace_pages", "keybord") and event.GetKeyCode()==wx.WXK_TAB:
@@ -608,8 +617,6 @@ class main(wx.Frame):
 			self.go_to_next()
 		elif not get("replace_pages", "keybord") and key==wx.WXK_PAGEUP:
 			self.go_to_previous()
-#		elif key==ord("C"):
-#			self.GetComments()
 		elif key==wx.WXK_LEFT:
 			self.rewind()
 		elif key==wx.WXK_UP:
