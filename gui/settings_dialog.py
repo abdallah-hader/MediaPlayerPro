@@ -83,7 +83,6 @@ class settingsgui(wx.Dialog):
 		if not int(get("speed", "subtitles")) == self.subtitles.speed_choice.Selection:
 			new("speed", self.subtitles.speed_choice.Selection, "subtitles")
 			g.sapi.set_speed(self.subtitles.speed_choice.Selection)
-#			restart=True
 		if not get("sapi", "subtitles") == self.subtitles.sapi.Value:
 			new("sapi", self.subtitles.sapi.Value, "subtitles")
 		if not get("autodetect", "subtitles") == self.subtitles.AutoDetect.Value:
@@ -102,7 +101,7 @@ class GeneralSettings(wx.Panel):
 		self.lang=wx.Choice(self, -1)
 		self.lang.Set(list(supported_languages.keys()))
 		wx.StaticText(self, -1, _("عدد الثواني للتقديم"))
-		self.seek=wx.SpinCtrl(self, -1, min=1, max=60)
+		self.seek=wx.SpinCtrl(self, -1, min=1, max=1800)
 		self.seek.Value=get("seek")
 		try:
 			self.lang.Selection = languages[get("language")]
@@ -180,7 +179,7 @@ class subtitles(wx.Panel):
 			self.volume.Selection = 4
 			self.read.Value = True
 			self.AutoDetect.Value = False
-		self.sapi.Value = False
+			self.sapi.Value = False
 
 		self.OnCheckBox(None)
 		self.sapi.Bind(wx.EVT_CHECKBOX, self.OnCheckBox)

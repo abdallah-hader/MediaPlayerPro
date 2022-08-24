@@ -28,9 +28,9 @@ def has_player(method):
 	"""
 a decorater to check if there is a player or not, to stop executeing some functions when call its
 	"""
-	def rapper(self, *args):
+	def rapper(self, *args, **kwargs):
 		if g.player is not None:
-			method(self, *args)
+			method(self, *args, **kwargs)
 		else: return speak(_("لم يتم تشغيل ملف بعد..."))
 	return rapper
 
@@ -138,7 +138,7 @@ class main(wx.Frame):
 			(wx.ACCEL_CTRL+wx.ACCEL_SHIFT, ord("S"), open_subtitle.GetId()),
 			(0, ord("A"), youtube_search.GetId()),
 			(0, ord("Y"), from_url.GetId()),
-			(wx.ACCEL_CTRL, ord("h"), history.GetId()),
+			(wx.ACCEL_CTRL, ord("H"), history.GetId()),
 			(0, ord("C"), GetComments.GetId()),
 			(wx.ACCEL_CTRL, ord("I"), CopyDescription.GetId()),
 			(0, ord("F"), ShowFavorite.GetId()),
@@ -208,6 +208,8 @@ class main(wx.Frame):
 		subtitle.auto_detect(fn) if get("autodetect", "subtitles") else None
 		if g.player is None:
 			g.player=media_player.Player(fn, self.GetHandle())
+#some people told me facing mute problem after restart the program, so i put this code.
+			g.player.media.audio_set_mute(False)
 			return
 		try:
 			g.player.media.stop()
@@ -278,25 +280,25 @@ class main(wx.Frame):
 		speak(_("لا يوجد وصف لنسخه"))
 
 	@has_player
-	def forward(self,event=None):
+	def forward(self,event=None, count=None):
 		position = g.player.media.get_position()
 		if g.player.repeate_some:
-			g.player.media.set_position(position+g.player.seek(int(get("seek"))))
+			g.player.media.set_position(position+g.player.seek(int(get("seek")) if not count else count))
 			if g.player.media.get_position()>g.player.endpoint:
 				g.player.media.set_position(g.player.endpoint)
 		else:
-			g.player.media.set_position(position+g.player.seek(int(get("seek"))))
+			g.player.media.set_position(position+g.player.seek(int(get("seek")) if not count else count))
 		speak(f"{g.player.get_elapsed()}") if get("speakfr") else None
 
 	@has_player
-	def rewind(self, event=None):
+	def rewind(self, event=None, count=None):
 		position = g.player.media.get_position()
 		if g.player.repeate_some:
-			g.player.media.set_position(position-g.player.seek(int(get("seek"))))
+			g.player.media.set_position(position-g.player.seek(int(get("seek")) if not count else count))
 			if g.player.media.get_position()<g.player.startpoint:
 				g.player.media.set_position(g.player.startpoint)
 		else:
-			g.player.media.set_position(position-g.player.seek(int(get("seek"))))
+			g.player.media.set_position(position-g.player.seek(int(get("seek")) if not count else count))
 		speak(f"{g.player.get_elapsed()}") if get("speakfr") else None
 
 	@has_player
@@ -561,103 +563,121 @@ class main(wx.Frame):
 			self.go_to_previous()
 		elif get("replace_pages", "keybord") and event.GetKeyCode()==wx.WXK_TAB:
 			self.go_to_next()
-		elif event.GetKeyCode() == wx.WXK_F5:
-			current = int(get("speed", "subtitles"))
-			if current>0:
-				g.sapi.set_speed(current-1)
-				new("speed", g.sapi.get_speed(), "subtitles")
-				speak(_("تم تعيين السرعة على {s}").format(s=int(get("speed", "subtitles"))))
-		elif event.GetKeyCode() == wx.WXK_F6:
-			current = int(get("speed", "subtitles"))
-			if current<10:
-				g.sapi.set_speed(current+1)
-				new("speed", g.sapi.get_speed(), "subtitles")
-				speak(_("تم تعيين السرعة على {s}").format(s=int(get("speed", "subtitles"))))
-		elif event.GetKeyCode() == wx.WXK_F7:
-			current = int(get("volume", "subtitles"))
-			if current>5:
-				g.sapi.set_volume(current-5)
-				new("volume", g.sapi.get_volume(), "subtitles")
-				speak(_("تم تعيين مستوى الصوت على {v}%").format(v=int(get("volume", "subtitles"))))
+		if event.controlDown and event.shiftDown:
+			if event.GetKeyCode() == wx.WXK_RIGHT:
+				self.forward(count=30)
+			elif event.GetKeyCode() == wx.WXK_LEFT:
+				self.rewind(count=30)
+		if event.controlDown:
+			if event.GetKeyCode()==ord("W"):
+				with shelve.open(os.path.join(datapath, "data")) as f:
+					f["data"]=[]
+				try:
+					g.player.media.stop()
+					g.player.filename=""
+					g.player.url=""
+					g.player.startpoint=None
+					g.player.endpoint=None
+					g.player.repeate_some=False
+					g.player=None
+					g.folder_path=""
+					g.tracks_list=[]
+					g.playing_from_youtube=False
+					g.set_title("")
+				except: pass
+			elif event.GetKeyCode() == wx.WXK_RIGHT:
+				self.forward(count=15)
+			elif event.GetKeyCode() == wx.WXK_LEFT:
+				self.rewind(count=15)
+		elif event.shiftDown:
+			if event.GetKeyCode() == wx.WXK_DOWN:
+				return self.DecreaceSpeedRate()
+			elif event.GetKeyCode() == wx.WXK_UP:
+				return self.IncreaceSpeedRate()
+			elif event.GetKeyCode() == wx.WXK_RIGHT:
+				self.forward(count=10)
+			elif event.GetKeyCode() == wx.WXK_LEFT:
+				self.rewind(count=10)
+		elif event.altDown:
+			if event.GetKeyCode() == wx.WXK_RIGHT:
+					self.forward(count=60)
+			elif event.GetKeyCode() == wx.WXK_LEFT:
+				self.rewind(count=60)
+
+		elif not event.controlDown and not event.shiftDown and not event.altDown:
+			key=event.GetKeyCode()
+			if key==wx.WXK_SPACE:
+				self.play()
+			elif key==ord("Q"):
+				if g.player is None or g.player.repeate_some: return
+				g.player.startpoint=g.player.media.get_position()
+				speak(_("تم تعيين نقطة البداية"))
+			elif key==ord("W"):
+				if g.player is None or g.player.repeate_some: return
+				g.player.endpoint=g.player.media.get_position()
+				speak(_("تم تعيين نقطة النهاية"))
+			elif key==wx.WXK_F2 and not g.player is None:
+				if g.player.endpoint is None or g.player.startpoint is None or g.player.startpoint>g.player.endpoint: return speak(_("لا يتناسَق وقت نقطة البداية مع وقت نقطة النهاية"))
+				if g.player.repeate_some==True:
+					g.player.repeate_some=False
+					speak(_("تم إيقاف تكرار المقطع المحدد"))
+				else:
+					speak(_("تم تمكين تكرار المقطع المحدد"))
+					g.player.repeate_some=True
+					threading.Thread(target=g.player.repeate_some_track).start()
+			elif key==wx.WXK_RIGHT:
+				self.forward()
+			elif not get("replace_pages", "keybord") and key==wx.WXK_PAGEDOWN:
+				self.go_to_next()
+			elif not get("replace_pages", "keybord") and key==wx.WXK_PAGEUP:
+				self.go_to_previous()
+			elif key==wx.WXK_LEFT:
+				self.rewind()
+			elif key==wx.WXK_UP:
+				self.IncreaceVolume()
+			elif key==wx.WXK_DOWN:
+				self.DecreaceVolume()
+			elif key==wx.WXK_DELETE or key==wx.WXK_NUMPAD_DELETE:
+				self.delete()
+			elif key==wx.WXK_HOME:
+				self.replay()
+			elif key==ord("I"):
+				self.info()
+			elif key==ord("N"):
+				self.set_next_track()
+			elif key==ord("R"):
+				self.set_repeate()
+			elif key == ord("M"):
+				self.set_mute()
+			elif key==ord("G"):
+				self.goto()
+			elif event.KeyCode in range(49, 58):
+				if g.player is not None and g.player.repeate_some: return
+				self.set_position_by_numbers(event.KeyCode)
+			elif key == wx.WXK_F5:
+				current = int(get("speed", "subtitles"))
+				if current>0:
+					g.sapi.set_speed(current-1)
+					new("speed", g.sapi.get_speed(), "subtitles")
+					speak(_("تم تعيين السرعة على {s}").format(s=int(get("speed", "subtitles"))))
+			elif key == wx.WXK_F6:
+				current = int(get("speed", "subtitles"))
+				if current<10:
+					g.sapi.set_speed(current+1)
+					new("speed", g.sapi.get_speed(), "subtitles")
+					speak(_("تم تعيين السرعة على {s}").format(s=int(get("speed", "subtitles"))))
+			elif key == wx.WXK_F7:
 				current = int(get("volume", "subtitles"))
-			if current<100:
-				g.sapi.set_volume(current+5)
-				new("volume", g.sapi.get_volume(), "subtitles")
-			speak(_("تم تعيين مستوى الصوت على {v}%").format(v=int(get("volume", "subtitles"))))
-		if event.controlDown and event.GetKeyCode()==ord("W"):
-			with shelve.open(os.path.join(datapath, "data")) as f:
-				f["data"]=[]
-			try:
-				g.player.media.stop()
-				g.player.filename=""
-				g.player.url=""
-				g.player.startpoint=None
-				g.player.endpoint=None
-				g.player.repeate_some=False
-				g.player=None
-				g.folder_path=""
-				g.tracks_list=[]
-				g.playing_from_youtube=False
-				g.set_title("")
-			except: pass
-		key=event.GetKeyCode()
-		if key==wx.WXK_SPACE:
-			self.play()
-		elif key==ord("Q"):
-			if g.player is None or g.player.repeate_some: return
-			g.player.startpoint=g.player.media.get_position()
-			speak(_("تم تعيين نقطة البداية"))
-		elif key==ord("W"):
-			if g.player is None or g.player.repeate_some: return
-			g.player.endpoint=g.player.media.get_position()
-			speak(_("تم تعيين نقطة النهاية"))
-		elif key==ord("-"):
-			self.DecreaceSpeedRate()
-		elif key==ord("="):
-			self.IncreaceSpeedRate()
-		elif key==wx.WXK_F2 and not g.player is None:
-			if g.player.endpoint is None or g.player.startpoint is None or g.player.startpoint>g.player.endpoint: return speak(_("لا يتناسَق وقت نقطة البداية مع وقت نقطة النهاية"))
-			if g.player.repeate_some==True:
-				g.player.repeate_some=False
-				speak(_("تم إيقاف تكرار المقطع المحدد"))
-			else:
-				speak(_("تم تمكين تكرار المقطع المحدد"))
-				g.player.repeate_some=True
-				threading.Thread(target=g.player.repeate_some_track).start()
-		elif key==ord("0"):
-			e=vlc.AudioEqualizer()
-			g.player.media.set_equalizer(e)
-			e.set_preamp(3)
-			e.release()
-		elif key==wx.WXK_RIGHT:
-			self.forward()
-		elif not get("replace_pages", "keybord") and key==wx.WXK_PAGEDOWN:
-			self.go_to_next()
-		elif not get("replace_pages", "keybord") and key==wx.WXK_PAGEUP:
-			self.go_to_previous()
-		elif key==wx.WXK_LEFT:
-			self.rewind()
-		elif key==wx.WXK_UP:
-			self.IncreaceVolume()
-		elif key==wx.WXK_DOWN:
-			self.DecreaceVolume()
-		elif key==wx.WXK_DELETE or key==wx.WXK_NUMPAD_DELETE:
-			self.delete()
-		elif key==wx.WXK_HOME:
-			self.replay()
-		elif key==ord("I"):
-			self.info()
-		elif key==ord("N"):
-			self.set_next_track()
-		elif key==ord("R"):
-			self.set_repeate()
-		elif key == ord("M"):
-			self.set_mute()
-		elif key==ord("G"):
-			self.goto()
-		elif event.KeyCode in range(49, 58):
-			if g.player is not None and g.player.repeate_some: return
-			self.set_position_by_numbers(event.KeyCode)
+				if current>5:
+					g.sapi.set_volume(current-5)
+					new("volume", g.sapi.get_volume(), "subtitles")
+					speak(_("تم تعيين مستوى الصوت على {v}%").format(v=int(get("volume", "subtitles"))))
+			elif key == wx.WXK_F8:
+				current = int(get("volume", "subtitles"))
+				if current<100:
+					g.sapi.set_volume(current+5)
+					new("volume", g.sapi.get_volume(), "subtitles")
+					speak(_("تم تعيين مستوى الصوت على {v}%").format(v=int(get("volume", "subtitles"))))
 		event.Skip()
 
 	def SetupHotKeys(self,):
