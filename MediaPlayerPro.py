@@ -18,11 +18,12 @@ from scripts.Speak import speak
 from scripts.Speak import sapi
 from settingsconfig import*
 from language import init_translation
-from gui import youtube, search, input_box, history, comments, favorite, help_dialog, updater, settings_dialog
+from gui import youtube, search, input_box, history, comments, favorite, help_dialog, updater, settings_dialog, language_update
 import application
 
 init_translation("MediaPlayerPro") #init the translation for the program
 init_config() #initialize the program settings file
+g.path = os.getcwd()
 
 def has_player(method):
 	"""
@@ -57,6 +58,8 @@ class main(wx.Frame):
 		g.parent=self
 		g.sapi = sapi()
 		threading.Thread(target=updater.cfu, args=[True]).start() if get("check_for_updates_at_startup") else None
+		if get("language")!="ar":
+			threading.Thread(target=language_update.lcfu).start() if get("languageupdates") else None
 		self.types=['mp3','mp4','ogg','m4a','wav','occ'] #files typs to select them when open a folder
 		self.loading=False
 		g.handle=self.GetHandle()
@@ -104,6 +107,8 @@ class main(wx.Frame):
 		random_choos = OptionsMenu.Append(-1, _("الإختيار العشوائي: ctrl+r"))
 		settings = MainMenu.Append(-1, _("الإعدادات: ctrl+s"))
 		update=MainMenu.Append(-1, _("البحث عن تحديثات"))
+		if get("language")!="ar":
+			languageUpdate = MainMenu.Append(-1, _("التحقق مِن تحديث اللغة"))
 		close=MainMenu.Append(-1, _("خروج"))
 		telegram=contact.Append(-1, _("تليجرام"))
 		facebook=contact.Append(-1, _("فيسبوك"))
@@ -123,6 +128,7 @@ class main(wx.Frame):
 		self.Bind(wx.EVT_MENU, lambda e: web.Open("https://twitter.com/abdallahhayder5"), twitter)
 		self.Bind(wx.EVT_MENU, lambda e: web.Open("https://m.facebook.com/profile.php?id=100009657259379"), facebook)
 		self.Bind(wx.EVT_MENU, self.OnOpen, openfile)
+		self.Bind(wx.EVT_MENU, lambda e:threading.Thread(target=language_update.lcfu, args=[False]).start(), languageUpdate) if not get("language") == "ar" else None
 		self.Bind(wx.EVT_MENU, self.CheckForUpdates, update)
 		self.Bind(wx.EVT_MENU, self.OnClose, close)
 		self.Bind(wx.EVT_MENU, self.OnFolder, open_folder)
@@ -565,9 +571,9 @@ class main(wx.Frame):
 			self.go_to_next()
 		if event.controlDown and event.shiftDown:
 			if event.GetKeyCode() == wx.WXK_RIGHT:
-				self.forward(count=30)
+				return self.forward(count=30)
 			elif event.GetKeyCode() == wx.WXK_LEFT:
-				self.rewind(count=30)
+				return self.rewind(count=30)
 		if event.controlDown:
 			if event.GetKeyCode()==ord("W"):
 				with shelve.open(os.path.join(datapath, "data")) as f:

@@ -44,6 +44,8 @@ class settingsgui(wx.Dialog):
 			key=key+"win"
 		if not get("check_for_updates_at_startup") == self.general_settings.CFU.GetValue():
 			new("check_for_updates_at_startup", self.general_settings.CFU.GetValue())
+		if not get("languageupdates") == self.general_settings.LCFU.GetValue():
+			new("languageupdates", self.general_settings.LCFU.GetValue())
 		if not get("save_at_exit") == self.general_settings.SaveLast.GetValue():
 			new("save_at_exit", self.general_settings.SaveLast.GetValue())
 		if not get("load_first_file")==self.general_settings.load_first_file.GetValue():
@@ -109,6 +111,8 @@ class GeneralSettings(wx.Panel):
 			self.lang.Selection = 0
 		self.CFU=wx.CheckBox(self, -1, _("التحقق من وجود تحديثات عند البدئ"))
 		self.CFU.SetValue(get("check_for_updates_at_startup"))
+		self.LCFU=wx.CheckBox(self, -1, _("التحقق مِن تحديثات اللغة عند البدء"))
+		self.LCFU.SetValue(get("languageupdates"))
 		self.load_directory_file=wx.CheckBox(self, -1, _("تحميل المسار كاملًا عند فتح ملف, في حال تفعيل هذا الخيار, عند فتح أي ملف, سيقوم البرنامج بفتح الملف مع المجلد كاملًا في البرنامج, هذا يسبب بطء في التحميل"))
 		self.load_directory_file.SetValue(get("load_directory_file"))
 		self.SaveLast=wx.CheckBox(self, -1, _("حفظ آخر مقطع مع الموضع عند الخروج, يقوم هذا الخيار بالتحقق مِن آخر مقطع تم تشغيله عند البدئ, ثم يقوم بتشغيله والإنتقال إلى النقطة التي تم الوقوف عندها."))

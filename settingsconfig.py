@@ -10,6 +10,7 @@ defaults={
 	"volume":50,
 	"seek":1,
 	"check_for_updates_at_startup":True,
+	"languageupdates":True,
 	"repeate":True,
 	"save_at_exit":False,
 	"load_directory_file":False,
