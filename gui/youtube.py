@@ -108,6 +108,7 @@ class SearchDialog(wx.Dialog):
 			if self.LoadAll.Value==True:
 				for track in range(len(self.Results.Strings)):
 					g.tracks_list.append([self.search.get_title(track), self.search.get_url(track)])
+				g.index = index
 			if g.player==None:
 				g.player=media_player.Player(link, wx.GetApp().GetTopWindow().GetHandle())
 				g.set_title(title)

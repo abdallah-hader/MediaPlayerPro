@@ -15,6 +15,7 @@ from scripts import media_player, instance_running, thread, subtitle
 from vlc import State, Media, VLCException
 import vlc
 from scripts.Speak import speak
+from scripts.Speak import sapi
 from settingsconfig import*
 from language import init_translation
 from gui import youtube, search, input_box, history, comments, favorite, help_dialog, updater, settings_dialog
@@ -54,6 +55,7 @@ class main(wx.Frame):
 		self.SetSize(wx.DisplaySize())
 		self.Maximize(True)
 		g.parent=self
+		g.sapi = sapi()
 		threading.Thread(target=updater.cfu, args=[True]).start() if get("check_for_updates_at_startup") else None
 		self.types=['mp3','mp4','ogg','m4a','wav','occ'] #files typs to select them when open a folder
 		self.loading=False
@@ -125,7 +127,7 @@ class main(wx.Frame):
 		self.Bind(wx.EVT_MENU, self.OnClose, close)
 		self.Bind(wx.EVT_MENU, self.OnFolder, open_folder)
 		self.Bind(wx.EVT_MENU, self.play_from_youtube, from_url)
-		self.Bind(wx.EVT_MENU, lambda e: settingsdialog.settingsgui(self), settings)
+		self.Bind(wx.EVT_MENU, lambda e: settings_dialog.settingsgui(self), settings)
 		self.Bind(wx.EVT_MENU, self.AboutMessage, about_the_program)
 		self.Bind(wx.EVT_MENU, self.ShowUserGuide, user_guide)
 		self.SetMenuBar(menubar)
@@ -205,7 +207,7 @@ class main(wx.Frame):
 		g.current_subtitle = {}
 		subtitle.auto_detect(fn) if get("autodetect", "subtitles") else None
 		if g.player is None:
-			g.player=MediaPlayer.Player(fn, self.GetHandle())
+			g.player=media_player.Player(fn, self.GetHandle())
 			return
 		try:
 			g.player.media.stop()
@@ -314,7 +316,6 @@ class main(wx.Frame):
 
 	@has_player
 	def replay(self, event=None):
-#		sleep(0.05)
 		if g.player.repeate_some:
 			g.player.media.set_position(g.player.startpoint)
 		else:
@@ -341,7 +342,6 @@ class main(wx.Frame):
 
 	@has_player
 	def IncreaceVolume(self, event=None):
-#		sleep(0.05)
 		if g.player.volume>=200:
 			g.player.volume=200
 			return
@@ -352,7 +352,6 @@ class main(wx.Frame):
 
 	@has_player
 	def DecreaceVolume(self, event=None):
-#		sleep(0.05)
 		if g.player.volume<=0:
 			g.player.volume=0
 			return
@@ -363,7 +362,6 @@ class main(wx.Frame):
 
 	@has_player
 	def set_mute(self, event=None):
-#		sleep(0.05)
 		try:
 			if g.player.media.audio_get_mute():
 				g.player.media.audio_set_mute(False)
@@ -455,7 +453,7 @@ class main(wx.Frame):
 		title=data[2]
 		g.youtube_file_info=data[1]
 		if g.player is None:
-				g.player=MediaPlayer.Player(link, self.GetHandle())
+				g.player=media_player.Player(link, self.GetHandle())
 				g.playing_from_youtube=True
 				self.Title=f"{title} {application.name}"
 				g.player.title=title
@@ -563,6 +561,31 @@ class main(wx.Frame):
 			self.go_to_previous()
 		elif get("replace_pages", "keybord") and event.GetKeyCode()==wx.WXK_TAB:
 			self.go_to_next()
+		elif event.GetKeyCode() == wx.WXK_F5:
+			current = int(get("speed", "subtitles"))
+			if current>0:
+				g.sapi.set_speed(current-1)
+				new("speed", g.sapi.get_speed(), "subtitles")
+				speak(_("تم تعيين السرعة على {s}").format(s=int(get("speed", "subtitles"))))
+		elif event.GetKeyCode() == wx.WXK_F6:
+			current = int(get("speed", "subtitles"))
+			if current<10:
+				g.sapi.set_speed(current+1)
+				new("speed", g.sapi.get_speed(), "subtitles")
+				speak(_("تم تعيين السرعة على {s}").format(s=int(get("speed", "subtitles"))))
+		elif event.GetKeyCode() == wx.WXK_F7:
+			current = int(get("volume", "subtitles"))
+			if current>5:
+				g.sapi.set_volume(current-5)
+				new("volume", g.sapi.get_volume(), "subtitles")
+				speak(_("تم تعيين مستوى الصوت على {v}%").format(v=int(get("volume", "subtitles"))))
+		elif event.GetKeyCode() == wx.WXK_F8:
+			current = int(get("volume", "subtitles"))
+			if current<100:
+				g.sapi.set_volume(current+5)
+				new("volume", g.sapi.get_volume(), "subtitles")
+				speak(_("تم تعيين مستوى الصوت على {v}%").format(v=int(get("volume", "subtitles"))))
+
 		if event.controlDown and event.GetKeyCode()==ord("W"):
 			with shelve.open(os.path.join(datapath, "data")) as f:
 				f["data"]=[]

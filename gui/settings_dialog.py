@@ -4,8 +4,8 @@ from settingsconfig import get, new
 import sys
 from language import supported_languages
 from scripts.Speak import speak
-from scripts.Speak import sapi
 from threading import Thread
+import globals as g
 
 languages = {index:language for language, index in enumerate(supported_languages.values())}
 
@@ -74,15 +74,16 @@ class settingsgui(wx.Dialog):
 		if not lang[self.general_settings.lang.Selection] == get("language"):
 			new("language", lang[self.general_settings.lang.Selection])
 			restart=True
-		if not float(get("volume", "subtitles")) == self.subtitles.volume.Value:
-			new("volume", self.subtitles.volume.Value, "subtitles")
-			restart=True
+		if not int(get("volume", "subtitles")) == self.subtitles.volume.Selection+1:
+			new("volume", self.subtitles.volume.Selection+1, "subtitles")
+			g.sapi.set_volume(self.subtitles.volume.Selection+1)
 		if not int(get("voice", "subtitles")) == self.subtitles.voice.Selection:
 			new("voice", self.subtitles.voice.Selection, "subtitles")
-			restart=True
+			g.sapi.set_voice(self.subtitles.voice.Selection)
 		if not int(get("speed", "subtitles")) == self.subtitles.speed_choice.Selection:
 			new("speed", self.subtitles.speed_choice.Selection, "subtitles")
-			restart=True
+			g.sapi.set_speed(self.subtitles.speed_choice.Selection)
+#			restart=True
 		if not get("sapi", "subtitles") == self.subtitles.sapi.Value:
 			new("sapi", self.subtitles.sapi.Value, "subtitles")
 		if not get("autodetect", "subtitles") == self.subtitles.AutoDetect.Value:
@@ -154,8 +155,6 @@ class HotKeys(wx.Panel):
 class subtitles(wx.Panel):
 	def __init__(self, parent):
 		wx.Panel.__init__(self, parent)
-		self.speed_rate={"بطيء جدا":10, "بطيء":70, "متوسط":180, "سريع":220, "سريع جدا":300}
-		self.speeds=[_("بطيء جدا"), _("بطيء"), _("متوسط"), _("سريع"), _("سريع جدا")]
 		self.read=wx.CheckBox(self, -1, _("قرائة الترجمات"))
 		self.read.Value=get("read", "subtitles")
 		self.AutoDetect=wx.CheckBox(self, -1, _("تحميل ملف الترجمة تلقائيًا"))
@@ -167,22 +166,24 @@ class subtitles(wx.Panel):
 		wx.StaticText(self, -1, _("سرعة القِراءة"), name="sapi")
 		self.speed_choice=wx.Choice(self, -1, name="sapi")
 		wx.StaticText(self, -1, _("مستوى الصوت"), name="sapi")
-		self.volume=wx.SpinCtrlDouble(self, -1, min=0.1, max=1.0, inc=0.1, name="sapi")
-		self.volume.Value=get("volume", "subtitles")
-		sapi5=sapi()
-		voices=sapi5.get_voices()
+		self.volume=wx.Choice(self, -1, name="sapi")
+		self.volume.Set([str(i)+"%" for i in range(1, 101)])
+		voices = g.sapi.get_voices()
 		voices_list=[i for i in voices]
 		self.voice.Set(voices_list)
 		try:
-			self.voice.SetStringSelection(voices_list[int(get("voice", "subtitles"))])
+			self.voice.Selection = int(get("voice", "subtitles"))
+			self.volume.Selection = int(get("volume", "subtitles"))
 		except:
-			self.voice.Selection=0
+			self.voice.Selection = 0
+			self.volume.Selection = 4
 		self.sapi.Value=get("sapi", "subtitles")
 		self.OnCheckBox(None)
 		self.sapi.Bind(wx.EVT_CHECKBOX, self.OnCheckBox)
 		test.Bind(wx.EVT_BUTTON, self.OnTest)
-		self.speed_choice.Set(self.speeds)
+		self.speed_choice.Set([str(i) for i in range(1, 11)])
 		self.speed_choice.Selection=int(get("speed", "subtitles"))
+		self.Sapi = g.sapi
 
 	def OnCheckBox(self, event):
 		if self.sapi.Value==False:
@@ -193,14 +194,15 @@ class subtitles(wx.Panel):
 				i.Show() if i.Name=="sapi" else None
 
 	def OnTest(self, event):
-		s=sapi()
-		voice=self.voice.GetStringSelection()
-		speed=self.speed_rate[self.speed_choice.GetStringSelection()]
-		volume=self.volume.Value
-		s.set_voice(s.get_voice_id(voice))
-		s.set_speed(speed)
-		s.set_volume(volume)
+		if self.Sapi.engine.GetStatus() == 2:
+			return
+		voice = self.voice.Selection
+		speed = self.speed_choice.Selection+1
+		volume = self.volume.Selection+1
+		self.Sapi.set_voice(voice)
+		self.Sapi.set_speed(speed)
+		self.Sapi.set_volume(volume)
 		text="Hello, I am a voice this program using me to read subtitles files, this is an experiment that enables you to know if my voice is clear in reading, thanks for testing me."
-		if "leila" in voice.lower() or "mehdi" in voice.lower() or "nizar" in voice.lower() or "salma" in voice.lower():
+		if "leila" in self.voice.StringSelection.lower() or "mehdi" in self.voice.StringSelection.lower() or "nizar" in self.voice.StringSelection.lower() or "salma" in self.voice.StringSelection.lower():
 			text="مرحبا, أنا صوت يقوم بإستخدامي هذا البرنامج لِقراءة ملفات الترجمة, هذه تجربة تمكنك من معرفة في حال كان صوتي واضحًا في القراءة, شكرًا على تجربتي."
-		Thread(target=s.speak, args=[text]).start()
+		Thread(target=self.Sapi.speak, args=[text]).start()

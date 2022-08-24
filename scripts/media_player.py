@@ -84,7 +84,6 @@ class Player:
 				else: g.index+=1
 				if g.index>=len(g.tracks_list):
 					g.index=0
-#					speak(_("تم الإعادة من الملف الأول"))
 				p=f"{g.folder_path}/{g.tracks_list[g.index]}"
 				self.set_media(p)
 				self.media.play()
@@ -96,7 +95,6 @@ class Player:
 				else: g.index+=1
 				if g.index>=len(g.tracks_list):
 					g.index=0
-#					speak(_("تم الإعادة من المقطع الأول"))
 				data=get_url(g.tracks_list[g.index][1])
 				try:
 					link=data[0]
@@ -135,9 +133,13 @@ class Player:
 		current=g.time_to_ms(dt.datetime.utcfromtimestamp(self.media.get_time()//1000).strftime("%H:%M:%S"))
 		if current in g.current_subtitle and current>=g.time_to_ms(g.current_subtitle[current]["start"]) and current<=g.time_to_ms(g.current_subtitle[current]["end"]):
 			text=str(g.current_subtitle[current]["text"]).replace("<i>", "").replace("</i>", "").replace(r"{\i1}", "").replace(r"{\i0}", "")
+#			if text==self.spoked:
+#			speak(str(text==self.spoked))
 			sleep(0.5)
 			if get("sapi", "subtitles"):
-				self.sapi.speak(text) if text!=self.spoked else None
+				if not text==self.spoked:
+					self.spoked=text
+					g.sapi.speak(text, )
 			else:
 				speak(text) if text!=self.spoked else None
 			self.spoked=text

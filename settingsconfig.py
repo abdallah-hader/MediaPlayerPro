@@ -34,8 +34,8 @@ subtitles={
 	"autodetect":False,
 	"sapi":False,
 	"voice":0,
-	"speed":2,
-	"volume":0.5,
+	"speed":4,
+	"volume":40,
 }
 
 def s_to_b(what):
