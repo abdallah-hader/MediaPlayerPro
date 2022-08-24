@@ -11,7 +11,7 @@ from scripts.Speak import speak
 from scripts import media_player
 from datetime import datetime
 from settingsconfig import get
-
+from time import sleep
 
 def get_url(url):
 	pafy.set_api_key("AIzaSyCEXsh-68oxoE-pdWYEmaa8OwNoMsoFGJI")
@@ -84,8 +84,9 @@ class SearchDialog(wx.Dialog):
 			h=history().add_to_date(date, self.query.Value)
 		if self.from_history:
 			try:
-				g.hy.Destroy()
-			except RuntimeError:
+				sleep(0.5)
+				self.from_history.Destroy()
+			except:
 				pass
 		self.query.Value=""
 

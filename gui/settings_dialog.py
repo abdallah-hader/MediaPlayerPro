@@ -156,9 +156,7 @@ class subtitles(wx.Panel):
 	def __init__(self, parent):
 		wx.Panel.__init__(self, parent)
 		self.read=wx.CheckBox(self, -1, _("قرائة الترجمات"))
-		self.read.Value=get("read", "subtitles")
 		self.AutoDetect=wx.CheckBox(self, -1, _("تحميل ملف الترجمة تلقائيًا"))
-		self.AutoDetect.Value=get("autodetect", "subtitles")
 		self.sapi=wx.CheckBox(self, -1, _("استخدام sapi5 لِقِراءة الترجمات"))
 		wx.StaticText(self, -1, _("اختر الصوت"), name="sapi")
 		self.voice=wx.Choice(self, -1, name="sapi")
@@ -174,10 +172,16 @@ class subtitles(wx.Panel):
 		try:
 			self.voice.Selection = int(get("voice", "subtitles"))
 			self.volume.Selection = int(get("volume", "subtitles"))
+			self.read.Value = get("read", "subtitles")
+			self.AutoDetect.Value=get("autodetect", "subtitles")
+			self.sapi.Value=get("sapi", "subtitles")
 		except:
 			self.voice.Selection = 0
 			self.volume.Selection = 4
-		self.sapi.Value=get("sapi", "subtitles")
+			self.read.Value = True
+			self.AutoDetect.Value = False
+		self.sapi.Value = False
+
 		self.OnCheckBox(None)
 		self.sapi.Bind(wx.EVT_CHECKBOX, self.OnCheckBox)
 		test.Bind(wx.EVT_BUTTON, self.OnTest)

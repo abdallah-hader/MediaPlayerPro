@@ -579,13 +579,11 @@ class main(wx.Frame):
 				g.sapi.set_volume(current-5)
 				new("volume", g.sapi.get_volume(), "subtitles")
 				speak(_("تم تعيين مستوى الصوت على {v}%").format(v=int(get("volume", "subtitles"))))
-		elif event.GetKeyCode() == wx.WXK_F8:
-			current = int(get("volume", "subtitles"))
+				current = int(get("volume", "subtitles"))
 			if current<100:
 				g.sapi.set_volume(current+5)
 				new("volume", g.sapi.get_volume(), "subtitles")
-				speak(_("تم تعيين مستوى الصوت على {v}%").format(v=int(get("volume", "subtitles"))))
-
+			speak(_("تم تعيين مستوى الصوت على {v}%").format(v=int(get("volume", "subtitles"))))
 		if event.controlDown and event.GetKeyCode()==ord("W"):
 			with shelve.open(os.path.join(datapath, "data")) as f:
 				f["data"]=[]

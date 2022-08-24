@@ -23,8 +23,7 @@ class historygui(wx.Dialog):
 		self.delete_date.Bind(wx.EVT_BUTTON, self.OnDeleteDate)
 		self.clear=wx.Button(self.p, -1, _("محو السجل"))
 		self.clear.Bind(wx.EVT_BUTTON, self.OnClear)
-		close=wx.Button(self.p, -1, _("إغلاق"))
-		close.Bind(wx.EVT_BUTTON, lambda e:self.Destroy())
+		close=wx.Button(self.p, wx.ID_CANCEL, _("إغلاق"))
 		self.Bind(wx.EVT_CHAR_HOOK, self.shortcuts)
 		self.date.Bind(wx.EVT_CHOICE, self.OnDate)
 		self.HistoryList.Bind(wx.EVT_CHAR_HOOK, self.shortcuts)
@@ -74,11 +73,10 @@ class historygui(wx.Dialog):
 
 	def shortcuts(self, event):
 		key=event.GetKeyCode()
-		if key==wx.WXK_ESCAPE:
-			self.Destroy()
-		elif key==wx.WXK_RETURN or key==wx.WXK_NUMPAD_ENTER and self.FindFocus()==self.HistoryList:
+		if key==wx.WXK_RETURN or key==wx.WXK_NUMPAD_ENTER:
+			if not self.FindFocus()==self.HistoryList: return
 			g.hy=self
-			y=youtube.SearchDialog(g.parent, self.HistoryList.GetStringSelection(), True)
+			y = youtube.SearchDialog(self.Parent, self.HistoryList.GetStringSelection(), self)
 		event.Skip()
 
 class history:
