@@ -14,7 +14,7 @@ from settingsconfig import get
 from time import sleep
 
 def get_url(url):
-	pafy.set_api_key("AIzaSyCEXsh-68oxoE-pdWYEmaa8OwNoMsoFGJI")
+	pafy.set_api_key("")
 	try:
 		video=pafy.new(url)
 	except ValueError:

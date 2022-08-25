@@ -1,0 +1,8 @@
+wxpython==4.1.1
+pyperclip
+requests
+python-vlc
+psutil
+youtubesearchpython
+NBSapi
+pysubs2
