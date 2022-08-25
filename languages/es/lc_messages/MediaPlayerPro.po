@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-06-25 18:25+0300\n"
-"PO-Revision-Date: 2022-06-28 10:16+0300\n"
+"POT-Creation-Date: 2022-08-24 17:56-0700\n"
+"PO-Revision-Date: 2022-08-25 00:54-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -15,966 +15,1019 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.1.1\n"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:42
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:175
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:35
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:195
 msgid "لم يتم تشغيل ملف بعد..."
 msgstr "Aún no se está reproduciendo ningún archivo."
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:87
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:48
+msgid "هناك نسخة مِن البرنامج تعمل بالفعل"
+msgstr "Ya existe una instancia del programa en ejecución"
+
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:48
+#: D:\progects\github\MPP\source\docs_handler.py:13
+#: D:\progects\github\MPP\source\gui\language_update.py:20
+#: D:\progects\github\MPP\source\gui\language_update.py:85
+#: D:\progects\github\MPP\source\gui\updater.py:33
+#: D:\progects\github\MPP\source\gui\updater.py:100
+#: D:\progects\github\MPP\source\gui\updater.py:118
+#: D:\progects\github\MPP\source\gui\youtube.py:21
+#: D:\progects\github\MPP\source\gui\youtube.py:72
+msgid "خطأ"
+msgstr "error"
+
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:87
 msgid "القائمة الرئيسية"
 msgstr "Menú principal"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:88
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:88
 msgid "الخيارات"
 msgstr "opciones"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:89
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:89
 msgid "يوتيوب"
 msgstr "youtube"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:90
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:90
 msgid "حول"
 msgstr "acerca de"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:91
-msgid "دليل المستخدم\tf1"
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:91
+msgid "دليل المستخدم: f1"
 msgstr "Guía del usuario\tf1"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:92
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:92
 msgid "قناة البرنامج على تليجرام"
 msgstr "canal del programa en telegram"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:93
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:150
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:93
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:170
 msgid "حول البرنامج"
 msgstr "Acerca del programa"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:94
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:94
 msgid "التواصل معنا"
 msgstr "ponte en contacto con nosotros"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:95
-msgid "فتح ملف\tctrl+o"
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:95
+msgid "فتح ملف: ctrl+o"
 msgstr "abrir archivo\tctrl+o"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:96
-msgid "فتح مجلد\tctrl+f"
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:96
+msgid "فتح مجلد: ctrl+f"
 msgstr "abrir carpeta\tctrl+f"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:97
-msgid "فتح ملف ترجمة (srt)\tctrl+shift+s"
-msgstr "abrir archivo de sutítulos (srt)\tctrl+shift+s"
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:97
+msgid "فتح ملف ترجمة (srt): ctrl+shift+s"
+msgstr "abrir archivo de subtítulos (srt)\tctrl+shift+s"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:98
-msgid "البحث في يوتيوب\ta"
-msgstr "Buscar en YouTube\ta"
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:98
+msgid "البحث في يوتيوب: a"
+msgstr "Buscar en YouTube\a"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:99
-msgid "تشغيل مِن رابط\ty"
-msgstr "reproducir desde URL\ty"
-
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:100
-msgid "سجل البحث\tctrl+h"
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:99
+msgid "سجل البحث: ctrl+h"
 msgstr "Historial de búsquedas\tctrl+h"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:101
-msgid "عرض تعليقات المقطع الحالي\tc"
-msgstr "Mostrar comentarios para el clip actual\tc"
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:100
+msgid "عرض تعليقات المقطع الحالي: c"
+msgstr "Mostrar comentarios para el clip actual\\c"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:102
-msgid "نسخ الوصف\tctrl+i"
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:101
+msgid "نسخ الوصف: ctrl+i"
 msgstr "copiar descripción\tctrl+i"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:103
-msgid "المفضلة\tf"
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:102
+msgid "تشغيل مِن رابط: y"
+msgstr "reproducir desde URL\\y"
+
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:103
+msgid "المفضلة: f"
 msgstr "favoritos\tf"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:104
-msgid "إضافة للمفضلة\tctrl+p"
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:104
+msgid "إضافة للمفضلة: ctrl+p"
 msgstr "añadir a favoritos\tctrl+p"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:105
-msgid "البحث في المجلد\ts"
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:105
+msgid "البحث في المجلد: s"
 msgstr "buscar en carpeta\ts"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:106
-msgid "الذهاب إلى\tg"
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:106
+msgid "الذهاب إلى: g"
 msgstr "ir a\tg"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:107
-msgid "الإختيار العشوائي\tctrl+r"
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:107
+msgid "الإختيار العشوائي: ctrl+r"
 msgstr "selección aleatoria\tctrl+r"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:108
-msgid "الإعدادات\tctrl+s"
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:108
+msgid "الإعدادات: ctrl+s"
 msgstr "Ajustes\tctrl+s"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:109
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:109
 msgid "البحث عن تحديثات"
 msgstr "buscar actualizaciones"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:110
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:111
+msgid "التحقق مِن تحديث اللغة"
+msgstr "Buscar una actualización de idioma"
+
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:112
 msgid "خروج"
 msgstr "salir"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:111
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:113
 msgid "تليجرام"
 msgstr "telegram"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:112
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:114
 msgid "فيسبوك"
 msgstr "facebook"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:113
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:115
 msgid "تويتر"
 msgstr "twitter"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:145
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:165
 msgid ""
 "\n"
 "{name}:\n"
 "الإصدار: {version}.\n"
 "المُطوِر: {author}.\n"
-"الوصف: برنامج يُسَهِل على مستخدمي قارئات الشاشة تشغيل مختلف الوسائط والتحكم بها بشكل سهل ومِن أي "
-"مكان من داخل البرنامج أو مِن خارجه مع إتاحة تحكمات النطق للمستخدم في حال أراد تفعيلها أو "
-"تعطيلها..."
+"الوصف: برنامج يُسَهِل على مستخدمي قارئات الشاشة تشغيل مختلف الوسائط والتحكم بها "
+"بشكل سهل ومِن أي مكان من داخل البرنامج أو مِن خارجه مع إتاحة تحكمات النطق "
+"للمستخدم في حال أراد تفعيلها أو تعطيلها..."
 msgstr ""
 "\n"
 "{name}:\n"
 "versión: {version}.\n"
 "autor: {author}.\n"
-"descripción: Un programa que hace más fácil que los usuarios de lectores de pantallas "
-"reproduzcan y controlen varios archivos multimedia desde cualquier parte, ya sea desde dentro "
-"del programa o fuera del mismo, proporcionando respuesta de voz al usuario si así lo desea."
+"descripción: Un programa que hace más fácil que los usuarios de lectores de "
+"pantallas reproduzcan y controlen varios archivos multimedia desde cualquier "
+"parte, ya sea desde dentro del programa o fuera del mismo, proporcionando "
+"respuesta de voz al usuario si así lo desea."
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:153
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:173
 msgid "يتم التحقق من وجود تحديث جديد ، يرجى الانتظار"
 msgstr "Comprobando si hay nuevas actualizaciones, por favor espera"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:157
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:177
 msgid "فتح ملف"
 msgstr "Abrir archivo"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:169
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:189
 msgid "قم بإختيار المجلد الذي تريد فتحه في البرنامج..."
 msgstr "Elige la carpeta que deseas abrir."
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:179
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:316
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:199
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:333
 msgid "تم إعادة تشغيل المقطع"
 msgstr "La pista se ha vuelto a reproducir"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:184
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:203
 msgid "تم الإيقاف المؤقت"
 msgstr "pausado"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:186
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:205
 msgid "تم الإستئناف"
 msgstr "reanudado"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:189
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:208
 msgid "تم إيقاف الملف"
 msgstr "detenido"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:210
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:230
 msgid "لا يمكن تشغيل هذا المقطع"
 msgstr "Este archivo no se puede reproducir"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:230
-msgid "هل أنت متأكد بأنك تريد حذف الملف {f}. في حال تم الحذف لا يمكنك إسترجاعه مرةً أُخرى"
-msgstr "¿Estás seguro que quieres eliminar el archivo {f}? Si se elimina, no lo puedes restaurar"
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:250
+msgid ""
+"هل أنت متأكد بأنك تريد حذف الملف {f}. في حال تم الحذف لا يمكنك إسترجاعه مرةً أُخرى"
+msgstr ""
+"¿Estás seguro que quieres eliminar el archivo {f}? Si se elimina, no lo puedes "
+"restaurar"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:230
-#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:48
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:56
-#: C:\Users\Administrator\mediaplayer\source\includes\history.py:52
-#: C:\Users\Administrator\mediaplayer\source\includes\history.py:63
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:93
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:250
+#: D:\progects\github\MPP\source\gui\comments.py:48
+#: D:\progects\github\MPP\source\gui\favorite.py:57
+#: D:\progects\github\MPP\source\gui\history.py:52
+#: D:\progects\github\MPP\source\gui\history.py:63
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:95
 msgid "تنبيه"
 msgstr "alerta"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:236
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:256
 msgid "تم حذف {f}"
 msgstr "{f} eliminado"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:257
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:262
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:277
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:282
 msgid "لم يتم التشغيل من يوتيوب"
 msgstr "No se reproduce desde YouTube"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:265
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:285
 msgid "تم نسخ الوصف إلى الحافظة"
 msgstr "Descripción copiada al portapapeles"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:266
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:286
 msgid "لا يوجد وصف لنسخه"
 msgstr "No hay descripción que copiar"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:302
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:320
 msgid "تم تعطيل التشغيل العشوائي"
 msgstr "Reproducción aleatoria desactivada"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:305
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:323
 msgid "تم تفعيل التشغيل العشوائي"
 msgstr "Reproducción aleatoria activada"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:322
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:339
 msgid "تم تعيين أقصى قيمة للسرعة"
 msgstr "Velocidad establecida al máximo"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:324
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:332
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:341
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:349
 msgid "تم تعيين السرعة على {rate}"
 msgstr "Velocidad ​​establecida en {rate}"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:330
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:347
 msgid "تم تعيين أدنى قيمة للسرعة"
 msgstr "Velocidad establecida al mínimo"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:362
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:376
 msgid "تم إلغاء كتم الصوت"
 msgstr "Sonido desilenciado"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:365
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:379
 msgid "تم كتم الصوت"
 msgstr "Sonido silenciado"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:367
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:381
 msgid "لا يمكن كتم الصوت"
 msgstr "No se puede silenciar el sonido"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:372
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:386
 msgid "تم إنتهاء تشغيل المقطع"
 msgstr "La pista ha terminado de reproducirse"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:375
-msgid "{title}, المدة: {duration}, الوقت المُنقَضي: {elapsed}, مستوى الصوت الحالي: {volume}"
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:389
+msgid ""
+"{title}, المدة: {duration}, الوقت المُنقَضي: {elapsed}, مستوى الصوت الحالي: "
+"{volume}"
 msgstr ""
-"{title}. Duración: {duration}. Tiempo transcurrido: {elapsed}. Nivel actual de volumen: {volume}"
+"{title}. Duración: {duration}. Tiempo transcurrido: {elapsed}. Nivel actual de "
+"volumen: {volume}"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:439
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:451
 msgid "الرابط"
 msgstr "URL"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:439
-msgid "قم بإدخال رابط اليوتيوب المُراد تشغيله"
-msgstr "Ingresa la URL de YouTube que quieres reproducir"
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:451
+msgid "قم بإدخال الرابط المُراد تشغيله"
+msgstr "Ingresa el enlace a reproducir"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:472
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:481
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:525
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:488
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:497
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:535
 msgid "يتمفتح المجلد {} / {}"
 msgstr "abriendo la carpeta {} / {}"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:473
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:482
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:526
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:489
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:498
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:536
 msgid "لا يوجد هناك مجلد"
 msgstr "no hay carpeta"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:477
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:510
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:493
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:522
 msgid "تم الإعادة من المقطع الأول"
 msgstr "restaurado desde la primera pista"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:485
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:501
 msgid "تم الإنتقال إلى آخِر ملف"
 msgstr "Movido al último archivo"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:506
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:515
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:518
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:526
 msgid "لا توجد هناك قائمة"
 msgstr "No hay lista"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:518
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:529
 msgid "تم الإنتقال إلى آخِر مقطع"
 msgstr "Movido a la última pista"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:527
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:537
 msgid "اكتب رقم الملف لتشغيله, 0/{l}"
 msgstr "Escribe el número del archivo para reproducir, 0/{l}"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:527
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:537
 msgid "الذهاب إلى"
 msgstr "ir a"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:532
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:542
 msgid "تم الإعادة من الملف الأول"
 msgstr "Restaurado desde el último archivo"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:537
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:547
 msgid "تم تعطيل التكرار"
 msgstr "Repetir desactivado"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:540
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:550
 msgid "تم تفعيل التكرار"
 msgstr "Repetir activado"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:546
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:556
 msgid "تم تعطيل تشغيل الملف التالي"
 msgstr "Reproducción del siguiente archivo desactivada"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:549
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:559
 msgid "تم تمكين تشغيل الملف التالي"
 msgstr "reproducción del siguiente archivo activada"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:554
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:564
 msgid "تم إظهار البرنامج"
 msgstr "Se muestra el programa"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:556
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:566
 msgid "تم إخفاء البرنامج, اضغط على الإختصار العام لديك + h لإظهاره"
 msgstr "El programa está oculto. Presiona tu atajo global + h para mostrarlo"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:588
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:623
 msgid "تم تعيين نقطة البداية"
 msgstr "Se ha establecido el punto de inicio"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:592
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:627
 msgid "تم تعيين نقطة النهاية"
 msgstr "se ha establecido el punto de finalización"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:598
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:629
 msgid "لا يتناسَق وقت نقطة البداية مع وقت نقطة النهاية"
-msgstr "El tiempo en el punto de inicio no coincide con el tiempo en el punto de finalización"
+msgstr ""
+"El tiempo en el punto de inicio no coincide con el tiempo en el punto de "
+"finalización"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:601
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:632
 msgid "تم إيقاف تكرار المقطع المحدد"
 msgstr "Repetición del clip seleccionado detenida"
 
-#: C:\Users\Administrator\mediaplayer\source\MediaPlayerPro.py:603
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:634
 msgid "تم تمكين تكرار المقطع المحدد"
 msgstr "repetición del clip seleccionado activada"
 
-#: C:\Users\Administrator\mediaplayer\source\docs_handler.py:13
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:671
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:677
+msgid "تم تعيين السرعة على {s}"
+msgstr "Velocidad establecida en {s}"
+
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:683
+#: D:\progects\github\MPP\source\MediaPlayerPro.py:689
+msgid "تم تعيين مستوى الصوت على {v}%"
+msgstr "El volumen está configurado en {v}%"
+
+#: D:\progects\github\MPP\source\docs_handler.py:13
 msgid "تعذر العثور على ملف المساعدة"
 msgstr "No se pudo encontrar el archivo de ayuda"
 
-#: C:\Users\Administrator\mediaplayer\source\docs_handler.py:13
-#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:33
-#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:100
-#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:118
-#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:21
-#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:72
-msgid "خطأ"
-msgstr "error"
-
-#: C:\Users\Administrator\mediaplayer\source\globals.py:28
+#: D:\progects\github\MPP\source\globals.py:34
 msgid "دقيقة واحدة"
 msgstr "un minuto"
 
-#: C:\Users\Administrator\mediaplayer\source\globals.py:30
+#: D:\progects\github\MPP\source\globals.py:36
 msgid "دقيقتان"
 msgstr "dos minutos"
 
-#: C:\Users\Administrator\mediaplayer\source\globals.py:32
+#: D:\progects\github\MPP\source\globals.py:38
 msgid "{} دقائق"
 msgstr "{} minutos"
 
-#: C:\Users\Administrator\mediaplayer\source\globals.py:34
+#: D:\progects\github\MPP\source\globals.py:40
 msgid "{} دقيقة"
 msgstr "{} minuto"
 
-#: C:\Users\Administrator\mediaplayer\source\globals.py:37
+#: D:\progects\github\MPP\source\globals.py:43
 msgid "ثانية"
 msgstr "segundo"
 
-#: C:\Users\Administrator\mediaplayer\source\globals.py:39
+#: D:\progects\github\MPP\source\globals.py:45
 msgid "ثانيتين"
 msgstr "dos segundos"
 
-#: C:\Users\Administrator\mediaplayer\source\globals.py:41
+#: D:\progects\github\MPP\source\globals.py:47
 msgid "{} ثواني"
 msgstr "{} Segundos"
 
-#: C:\Users\Administrator\mediaplayer\source\globals.py:43
+#: D:\progects\github\MPP\source\globals.py:49
 msgid "{} ثانية"
 msgstr "{} segundo"
 
-#: C:\Users\Administrator\mediaplayer\source\globals.py:46
+#: D:\progects\github\MPP\source\globals.py:52
 msgid "ساعة"
 msgstr "hora"
 
-#: C:\Users\Administrator\mediaplayer\source\globals.py:48
+#: D:\progects\github\MPP\source\globals.py:54
 msgid "ساعتان"
 msgstr "dos horas"
 
-#: C:\Users\Administrator\mediaplayer\source\globals.py:50
+#: D:\progects\github\MPP\source\globals.py:56
 msgid "{} ساعات"
 msgstr "{} horas"
 
-#: C:\Users\Administrator\mediaplayer\source\globals.py:52
+#: D:\progects\github\MPP\source\globals.py:58
 msgid "{} ساعة"
 msgstr "{} hora"
 
-#: C:\Users\Administrator\mediaplayer\source\globals.py:56
+#: D:\progects\github\MPP\source\globals.py:62
 msgid "{} و{}"
 msgstr "{} y {}"
 
-#: C:\Users\Administrator\mediaplayer\source\globals.py:58
+#: D:\progects\github\MPP\source\globals.py:64
 msgid "{} و{} و{}"
 msgstr "{} y {} y {}"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\InputBox.py:18
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:171
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:30
-msgid "إلغاء"
-msgstr "cancelar"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\InputBox.py:19
-msgid "موافق"
-msgstr "aceptar"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\InputBox.py:29
-msgid "تم الإلغاء"
-msgstr "cancelado"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:10
+#: D:\progects\github\MPP\source\gui\comments.py:10
 msgid "التعليقات"
 msgstr "comentarios"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:14
+#: D:\progects\github\MPP\source\gui\comments.py:14
 msgid "قائمة التعليقات"
 msgstr "Lista de comentarios"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:17
+#: D:\progects\github\MPP\source\gui\comments.py:17
 msgid "نص التعليق"
 msgstr "Comentarios"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:19
+#: D:\progects\github\MPP\source\gui\comments.py:19
 msgid "نسخ التعليق"
 msgstr "copiado de comentarios"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:21
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:30
-#: C:\Users\Administrator\mediaplayer\source\includes\help_dialog.py:11
-#: C:\Users\Administrator\mediaplayer\source\includes\history.py:25
-#: C:\Users\Administrator\mediaplayer\source\includes\search.py:107
-#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:49
+#: D:\progects\github\MPP\source\gui\comments.py:21
+#: D:\progects\github\MPP\source\gui\favorite.py:31
+#: D:\progects\github\MPP\source\gui\help_dialog.py:11
+#: D:\progects\github\MPP\source\gui\history.py:26
+#: D:\progects\github\MPP\source\gui\search.py:107
+#: D:\progects\github\MPP\source\gui\youtube.py:49
 msgid "إغلاق"
 msgstr "cerrar"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:34
-#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:64
+#: D:\progects\github\MPP\source\gui\comments.py:34
+#: D:\progects\github\MPP\source\gui\comments.py:64
 msgid "{content}, المُعلق: {author}, {published}"
 msgstr "{content}. autor del comentario: {author}. {published}"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:48
+#: D:\progects\github\MPP\source\gui\comments.py:48
 msgid "لا تتوفر تعليقات لِهذا الفيديو"
 msgstr "No hay comentarios para este video"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:59
+#: D:\progects\github\MPP\source\gui\comments.py:59
 msgid "يتم تحميل المزيد من التعليقات"
 msgstr "Cargando más comentarios"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:61
+#: D:\progects\github\MPP\source\gui\comments.py:61
 msgid "لا يوجد هناك المزيد من التعليقات"
 msgstr "No hay más comentarios"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:67
+#: D:\progects\github\MPP\source\gui\comments.py:67
 msgid "اكتمل تحميل المزيد من التعليقات"
 msgstr "Más comentarios cargados"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:78
+#: D:\progects\github\MPP\source\gui\comments.py:78
 msgid "أشهر"
 msgstr "Meses"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:79
+#: D:\progects\github\MPP\source\gui\comments.py:79
 msgid "شهر"
 msgstr "Mes"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:80
+#: D:\progects\github\MPP\source\gui\comments.py:80
 msgid "يوم"
 msgstr "día"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:81
+#: D:\progects\github\MPP\source\gui\comments.py:81
 msgid "أيام"
 msgstr "días"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:82
+#: D:\progects\github\MPP\source\gui\comments.py:82
 msgid "إسبوع"
 msgstr "semana"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:83
+#: D:\progects\github\MPP\source\gui\comments.py:83
 msgid "أسابيع"
 msgstr "semanas"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:84
+#: D:\progects\github\MPP\source\gui\comments.py:84
 msgid "سنة"
 msgstr "año"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:85
+#: D:\progects\github\MPP\source\gui\comments.py:85
 msgid "سنين"
 msgstr "años"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\comments.py:87
+#: D:\progects\github\MPP\source\gui\comments.py:87
 msgid "منذ {t1} {t2}"
 msgstr "hace {t1} {t2}"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:14
+#: D:\progects\github\MPP\source\gui\favorite.py:15
 msgid "المفضلة"
 msgstr "favoritos"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:18
+#: D:\progects\github\MPP\source\gui\favorite.py:19
 msgid "الفئات"
 msgstr "Categorías"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:21
+#: D:\progects\github\MPP\source\gui\favorite.py:22
 msgid "قائمة المفضلة"
 msgstr "lista de favoritos"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:24
+#: D:\progects\github\MPP\source\gui\favorite.py:25
 msgid "فتح جميع العناصر كقائمة"
 msgstr "Abrir todos los elementos como una lista"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:26
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:169
+#: D:\progects\github\MPP\source\gui\favorite.py:27
+#: D:\progects\github\MPP\source\gui\favorite.py:170
 msgid "إضافة فئة جديدة"
 msgstr "Añadir nueva categoría"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:28
+#: D:\progects\github\MPP\source\gui\favorite.py:29
 msgid "حذف الفئة"
 msgstr "Eliminar categoría"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:56
-msgid "في حال تم الضغط فوق نعم, سيتم حذف الفئة {c} مع العناصر في داخل هذه الفئة, هل تريد الحذف؟"
+#: D:\progects\github\MPP\source\gui\favorite.py:57
+msgid ""
+"في حال تم الضغط فوق نعم, سيتم حذف الفئة {c} مع العناصر في داخل هذه الفئة, هل "
+"تريد الحذف؟"
 msgstr ""
-"Al presionar sí, la categoría {c} se eliminará junto con todos sus elementos. ¿Quieres "
-"eliminarla?"
+"Al presionar sí, la categoría {c} se eliminará junto con todos sus elementos. "
+"¿Quieres eliminarla?"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:69
+#: D:\progects\github\MPP\source\gui\favorite.py:70
 msgid "لقد تم حذف الفئة بنجاح"
 msgstr "La categoría se ha eliminado con éxito"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:69
-#: C:\Users\Administrator\mediaplayer\source\includes\history.py:60
-#: C:\Users\Administrator\mediaplayer\source\includes\history.py:72
-#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:108
+#: D:\progects\github\MPP\source\gui\favorite.py:70
+#: D:\progects\github\MPP\source\gui\history.py:60
+#: D:\progects\github\MPP\source\gui\history.py:72
+#: D:\progects\github\MPP\source\gui\language_update.py:94
+#: D:\progects\github\MPP\source\gui\updater.py:108
 msgid "نجاح"
 msgstr "éxito"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:76
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:166
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:182
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:200
+#: D:\progects\github\MPP\source\gui\favorite.py:77
+#: D:\progects\github\MPP\source\gui\favorite.py:167
+#: D:\progects\github\MPP\source\gui\favorite.py:183
+#: D:\progects\github\MPP\source\gui\favorite.py:201
 msgid "الإسم"
 msgstr "nnombre"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:76
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:182
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:200
+#: D:\progects\github\MPP\source\gui\favorite.py:77
+#: D:\progects\github\MPP\source\gui\favorite.py:183
+#: D:\progects\github\MPP\source\gui\favorite.py:201
 msgid "قم بإدخال إسم الفئة المراد إضافتها"
 msgstr "Ingresa el nombre de la categoría a añadir"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:95
+#: D:\progects\github\MPP\source\gui\favorite.py:96
 msgid "{t}, يبدأ المقطع عند ({p}), النوع ({iu}), تم الإضافة في ({time})."
 msgstr "{t}, la pista comienza en ({p}), tipo ({iu}), agregado ({time})."
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:95
+#: D:\progects\github\MPP\source\gui\favorite.py:96
 msgid "رابط"
 msgstr "URL"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:95
+#: D:\progects\github\MPP\source\gui\favorite.py:96
 msgid "ملف"
 msgstr "Abrir archivo"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:100
+#: D:\progects\github\MPP\source\gui\favorite.py:101
 msgid "حذف"
 msgstr "Eliminar"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:100
+#: D:\progects\github\MPP\source\gui\favorite.py:101
 msgid "هل تريد إزالة {t} مِن المفضلة?"
 msgstr "¿quieres eliminar {t} de favoritos?"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:159
+#: D:\progects\github\MPP\source\gui\favorite.py:160
 msgid "إضافة {t} إلى المفضلة"
 msgstr "Añadir {t} a favoritos"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:164
+#: D:\progects\github\MPP\source\gui\favorite.py:165
 msgid "اختر الفئة"
 msgstr "Elegir categoría"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:168
+#: D:\progects\github\MPP\source\gui\favorite.py:169
 msgid "إضافة"
 msgstr "añadir"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:180
-msgid ""
-"لا توجد هناك فئات متوفرة, يبدو تم حذف جميع الفئات مع الفئة الإفتراضية )الفئة الإفتراضية(, في حال "
-"لا يوجد هناك أي فئة متوفرة, لا يمكن إضافة عناصر للمفضلة, هل تريد إنشاء فئة الآن?"
-msgstr ""
-"No hay categorías disponibles. Parece que todas las categorías se han eliminado con la categoría "
-"predeterminada, (categoría predeterminada). Si no hay categorías disponibles, no se pueden "
-"añadir elementos a favoritos. ¿Quieres crear una categoría ahora?"
+#: D:\progects\github\MPP\source\gui\favorite.py:172
+#: D:\progects\github\MPP\source\gui\input_box.py:18
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:30
+msgid "إلغاء"
+msgstr "cancelar"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:180
+#: D:\progects\github\MPP\source\gui\favorite.py:181
+msgid ""
+"لا توجد هناك فئات متوفرة, يبدو تم حذف جميع الفئات مع الفئة الإفتراضية )الفئة "
+"الإفتراضية(, في حال لا يوجد هناك أي فئة متوفرة, لا يمكن إضافة عناصر للمفضلة, هل "
+"تريد إنشاء فئة الآن?"
+msgstr ""
+"No hay categorías disponibles. Parece que todas las categorías se han eliminado "
+"con la categoría predeterminada, (categoría predeterminada). Si no hay "
+"categorías disponibles, no se pueden añadir elementos a favoritos. ¿Quieres "
+"crear una categoría ahora?"
+
+#: D:\progects\github\MPP\source\gui\favorite.py:181
 msgid "لم يتم العثور على فئات"
 msgstr "No se encontraron categorías"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:219
+#: D:\progects\github\MPP\source\gui\favorite.py:220
 msgid "الفئة الإفتراضية"
 msgstr "Categoría predeterminada"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:226
+#: D:\progects\github\MPP\source\gui\favorite.py:227
 msgid "تم الإضافة إلى المفضلة"
 msgstr "Añadido a favoritos"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\favorite.py:240
+#: D:\progects\github\MPP\source\gui\favorite.py:241
 msgid "تم إضافة الفئة بنجاح"
 msgstr "Categoría añadida con éxito"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\help_dialog.py:5
+#: D:\progects\github\MPP\source\gui\help_dialog.py:5
 msgid "دليل الإستخدام"
 msgstr "Guía del usuario"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\history.py:13
+#: D:\progects\github\MPP\source\gui\history.py:14
 msgid "سجل البحث"
 msgstr "Historial de búsquedas"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\history.py:17
+#: D:\progects\github\MPP\source\gui\history.py:18
 msgid "التاريخ"
 msgstr "Fecha"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\history.py:19
-#: C:\Users\Administrator\mediaplayer\source\includes\search.py:99
+#: D:\progects\github\MPP\source\gui\history.py:20
+#: D:\progects\github\MPP\source\gui\search.py:99
 msgid "نتائج البحث"
 msgstr "Resultados de búsqueda"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\history.py:21
+#: D:\progects\github\MPP\source\gui\history.py:22
 msgid "حذف التاريخ المحدد"
 msgstr "Eliminar la fecha seleccionada"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\history.py:23
+#: D:\progects\github\MPP\source\gui\history.py:24
 msgid "محو السجل"
 msgstr "Limpiar historial"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\history.py:52
+#: D:\progects\github\MPP\source\gui\history.py:52
 msgid ""
-"في حال تم الضغط فوق نعم, سيتم حذف سجل البحث بأكمله ولا يمكنك إسترجاعه مرةً أخرى, هل تريد الحذف؟"
+"في حال تم الضغط فوق نعم, سيتم حذف سجل البحث بأكمله ولا يمكنك إسترجاعه مرةً أخرى, "
+"هل تريد الحذف؟"
 msgstr ""
-"Al presionar sí, todo el historial de búsquedas se eliminará sin posibilidad de recuperarlo. "
-"¿Quieres eliminarlo?"
+"Al presionar sí, todo el historial de búsquedas se eliminará sin posibilidad de "
+"recuperarlo. ¿Quieres eliminarlo?"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\history.py:60
+#: D:\progects\github\MPP\source\gui\history.py:60
 msgid "لقد تم حذف جميع سجل البحث"
 msgstr "Se ha eliminado todo el historial de búsquedas"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\history.py:63
+#: D:\progects\github\MPP\source\gui\history.py:63
 msgid ""
-"في حال تم الضغط فوق نعم, سيتم حذف التاريخ المحدد ولا يمكنك إسترجاعه مرةً أخرى, هل تريد الحذف؟"
+"في حال تم الضغط فوق نعم, سيتم حذف التاريخ المحدد ولا يمكنك إسترجاعه مرةً أخرى, "
+"هل تريد الحذف؟"
 msgstr ""
-"Al presionar sí, la fecha seleccionada se eliminará sin posibilidad de recuperar. ¿Quieres "
-"eliminarla?"
+"Al presionar sí, la fecha seleccionada se eliminará sin posibilidad de "
+"recuperar. ¿Quieres eliminarla?"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\history.py:72
+#: D:\progects\github\MPP\source\gui\history.py:72
 msgid "لقد تم حذف التاريخ المحدد مِن سجل البحث"
 msgstr "La fecha seleccionada se ha eliminado del historial de búsquedas"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\search.py:42
-msgid "بواسطة {b} "
-msgstr "por {b} "
+#: D:\progects\github\MPP\source\gui\input_box.py:19
+msgid "موافق"
+msgstr "aceptar"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\search.py:82
-msgid "عدد المشاهدات {}"
-msgstr "Visualizaciones {}"
+#: D:\progects\github\MPP\source\gui\input_box.py:29
+msgid "تم الإلغاء"
+msgstr "cancelado"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\search.py:84
-msgid "بث مباشر"
-msgstr "en vivo"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\search.py:88
-msgid "المدة: {}"
-msgstr "Duración: {}"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\search.py:94
-msgid "البحث في المجلد"
-msgstr "Buscar en la carpeta"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\search.py:97
-#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:42
-msgid "كلمة البحث"
-msgstr "Buscar palabra"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\search.py:105
-msgid "بحث"
-msgstr "buscar"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\search.py:116
-msgid "قم بإدخال كلمة بحث أولا"
-msgstr "Primero ingresa un término de búsqueda"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\search.py:123
-msgid "لا توجد نتائج"
-msgstr "sin resultados"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\search.py:123
-msgid "لم يتم العثور على نتائج مطابِقة لكلمة البحث هذه"
-msgstr "No se encontraron resultados para este término de búsqueda"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\search.py:126
-msgid "نتيجة واحدة"
-msgstr "un resultado"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\search.py:128
-msgid "نتيجتان"
-msgstr "dos resultados"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\search.py:130
-msgid "نتائج"
-msgstr "resultados"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\search.py:131
-msgid "نتائج البحث عن {w}, هناك {rc} {rc2}"
-msgstr "Resultados de búsqueda para {w}, hay {rc} {rc2}"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\search.py:153
-msgid "فتح مسار الملف"
-msgstr "Abrir ruta de archivo"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\search.py:154
-msgid "نسخ مسار الملف"
-msgstr "Copiar ruta de archivo"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:14
-msgid "إعدادات البرنامج"
-msgstr "Ajustes del programa"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:17
-msgid "اختر ما تريد تعديله من الإعدادات"
-msgstr "Elige lo que deseas modificar de los ajustes"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:20
-msgid "الإعدادات العامة"
-msgstr "Ajustes generales"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:22
-msgid "إعدادات النطق"
-msgstr "Ajustes de voz"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:24
-msgid "إعدادات الترجمات"
-msgstr "Ajustes de subtítulos"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:26
-msgid "إعدادات الإختصارات العامة"
-msgstr "Ajustes de atajos globales"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:27
-msgid "حفظ الإعدادات"
-msgstr "Guardar ajustes"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:93
+#: D:\progects\github\MPP\source\gui\language_update.py:20
+#: D:\progects\github\MPP\source\gui\updater.py:33
 msgid ""
-"لقد قمت بتغيير بعض الإعدادات التي تتطلب إعادة تشغيل البرنامج لتطبيقها, هل تريد إعادة تشغيل "
-"البرنامج الآن؟"
+"لم نتمكن من الوصول إلى خدمة التحديثات, قد تكون هناك مشكلة مؤقتة, أو مشكلة في "
+"الإتصال لديك, تأكد مِن الإتصال بالأنترنت ثم عاود مجددًا."
 msgstr ""
-"Has cambiado algunas configuraciones que requieren que el programa se reinicie para surtir "
-"efecto. ¿Quieres reiniciar el programa ahora?"
+"No pudimos comunicarnos con el servicio de actualizaciones. Puede que haya un "
+"problema temporalo de conexión. Asegúrate que estás conectado a internet y "
+"vuelve a intentarlo."
 
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:100
-msgid "لغة البرنامج, يتطلب هذا الأمر إعادة تشغيل البرنامج كَي تتطبق الإعدادات"
+#: D:\progects\github\MPP\source\gui\language_update.py:24
+msgid "تم إكتشاف هناك تحديث جديد للغة {lang} هل تريد التحديث الآن?"
 msgstr ""
-"Idioma del programa, esta opción requiere un reinicio del programa para que los ajustes surtan "
-"efecto"
+"Se ha encontrado una nueva actualización del idioma {lang} ¿Quieres actualizar "
+"ahora?"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:103
-msgid "عدد الثواني للتقديم"
-msgstr "Número de segundos para adelantar/retroceder"
+#: D:\progects\github\MPP\source\gui\language_update.py:24
+msgid "هناك تحديث جديد للغة"
+msgstr "Hay una nueva actualización de idioma"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:110
-msgid "التحقق من وجود تحديثات عند البدئ"
-msgstr "Comprobar actualizaciones al reiniciar"
+#: D:\progects\github\MPP\source\gui\language_update.py:28
+msgid "لديك أحدث تحديث للغة"
+msgstr "Tienes la última actualización de idioma"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:112
-msgid ""
-"تحميل المسار كاملًا عند فتح ملف, في حال تفعيل هذا الخيار, عند فتح أي ملف, سيقوم البرنامج بفتح "
-"الملف مع المجلد كاملًا في البرنامج, هذا يسبب بطء في التحميل"
-msgstr ""
-"Cargar ruta completa al abrir un archivo, si se activa esta opción, al abrir cualquier archivo, "
-"el programa abrirá dicho archivo junto con su carpeta completa. Esto causará que la carga sea "
-"lenta"
+#: D:\progects\github\MPP\source\gui\language_update.py:28
+msgid "لم يتم العثور على تحديث"
+msgstr "No se ha encontrado ninguna actualización"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:114
-msgid ""
-"حفظ آخر مقطع مع الموضع عند الخروج, يقوم هذا الخيار بالتحقق مِن آخر مقطع تم تشغيله عند البدئ, ثم "
-"يقوم بتشغيله والإنتقال إلى النقطة التي تم الوقوف عندها."
-msgstr ""
-"Guardar la posición del último clip al salir. Esta opción comprueba el último clip reproducido "
-"desde el comienzo, y lo reproduce desde la posición donde se detuvo."
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:116
-msgid "تشغيل أول ملف بعد فتح مجلد"
-msgstr "reproducir el primer archivo después de abrir una carpeta"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:118
-msgid "تفعيل سجل البحث"
-msgstr "Habilitar historial de búsquedas"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:124
-msgid "نطق الإيقاف المؤقت والإستئناف"
-msgstr "verbalizar reproducir / pausar"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:126
-msgid "نطق مستوى الصوت عند تغييره"
-msgstr "Verbalizar cambios de volumen"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:128
-msgid "نطق الوقت المنقضي عند التقديم والتأخير"
-msgstr "verbalizar tiempo transcurrido al adelantar y retroceder"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:130
-msgid "النطق عند إعادة تشغيل المقطع"
-msgstr "Verbalizar si la pista se vuelve a reproducir"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:132
-msgid "نطق معدل السرعة عند تغييره"
-msgstr "Verbalizar cambios de velocidad"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:138
-msgid "control موصى إستخدامه في windows11 مع الإختصارات الأخرا alt و windows"
-msgstr "en Windows 11 se recomienda usar control con otros atajos como alt y Windows."
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:142
-msgid "استبدال الأزرار page_up / page_down بالأزرار tab / shift+tab"
-msgstr "reemplazar las teclas retroceso de página/ avance de página con tab / shift+tab"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:158
-msgid "بطيء"
-msgstr "lento"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:158
-msgid "بطيء جدا"
-msgstr "muy lento"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:158
-msgid "سريع"
-msgstr "rápido"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:158
-msgid "سريع جدا"
-msgstr "Muy rápido"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:158
-msgid "متوسط"
-msgstr "Promedio"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:159
-msgid "قرائة الترجمات"
-msgstr "Leer subtítulos"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:161
-msgid "تحميل ملف الترجمة تلقائيًا"
-msgstr "Cargar el archivo de subtítulos automáticamente"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:163
-msgid "استخدام sapi5 لِقِراءة الترجمات"
-msgstr "Usar sapi5 para leer subtítulos"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:164
-msgid "اختر الصوت"
-msgstr "Elegir voz"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:166
-msgid "اختبار"
-msgstr "probar"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:167
-msgid "سرعة القِراءة"
-msgstr "índice de velocidad"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\settingsdialog.py:169
-msgid "مستوى الصوت"
-msgstr "nivel de volumen"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\subtitle.py:17
-msgid "اختيار ملف ترجمة (.srt)|*.srt"
-msgstr "Elegir un archivo de traducción (.srt)|*.srt"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\subtitle.py:30
-msgid "تم تحميل ملف الترجمة {subfile}"
-msgstr "Se ha cargado el archivo de subtítulos {subfile}."
-
-#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:33
-msgid ""
-"لم نتمكن من الوصول إلى خدمة التحديثات, قد تكون هناك مشكلة مؤقتة, أو مشكلة في الإتصال لديك, تأكد "
-"مِن الإتصال بالأنترنت ثم عاود مجددًا."
-msgstr ""
-"No pudimos comunicarnos con el servicio de actualizaciones. Puede que haya un problema temporalo "
-"de conexión. Asegúrate que estás conectado a internet y vuelve a intentarlo."
-
-#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:37
-msgid "تم العثور على تحديث جديد"
-msgstr "Se ha encontrado una nueva actualización"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:37
-msgid "هناك تحديث جديد {name} الإصدار {ver} هل تريد التحديث الآن؟"
-msgstr "Hay una nueva actualización {name} versión {ver} ¿Quieres actualizar ahora?"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:41
-msgid "لديك أحدث إصدار مِن MediaPlayerPro"
-msgstr "Tienes la versión más reciente de MediaPlayerPro"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:41
-msgid "لم يتم العثور على تحديثات"
-msgstr "No se encontraron actualizaciones"
-
-#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:43
+#: D:\progects\github\MPP\source\gui\language_update.py:30
+#: D:\progects\github\MPP\source\gui\updater.py:43
 msgid "حدث خطأ أثناء محاولة الإتصال بخدمة التحديثات, يرجى المحاولة لاحقًا"
 msgstr ""
-"Se produjo un error al intentar conectar al servicio de actualizaciones. Por favor vuelve a "
-"intentar más tarde."
+"Se produjo un error al intentar conectar al servicio de actualizaciones. Por "
+"favor vuelve a intentar más tarde."
 
-#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:43
+#: D:\progects\github\MPP\source\gui\language_update.py:30
+#: D:\progects\github\MPP\source\gui\updater.py:43
 msgid "خطأ في الإتصال"
 msgstr "Error de conexión"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:48
+#: D:\progects\github\MPP\source\gui\language_update.py:37
+#: D:\progects\github\MPP\source\gui\updater.py:48
 msgid "يتم تحميل التحديثات"
 msgstr "Descargando actualizaciones"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:51
+#: D:\progects\github\MPP\source\gui\language_update.py:40
+#: D:\progects\github\MPP\source\gui\updater.py:51
 msgid "حالة التحميل"
 msgstr "Estado de la descarga"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:54
+#: D:\progects\github\MPP\source\gui\language_update.py:43
+#: D:\progects\github\MPP\source\gui\updater.py:54
 msgid "إيقاف التحميل"
 msgstr "Detener descarga"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:100
+#: D:\progects\github\MPP\source\gui\language_update.py:85
+#: D:\progects\github\MPP\source\gui\updater.py:100
 msgid "حدث خطأ أثناء عملية التحديث ، يرجى المحاولة مرة أخرى في وقت لاحق."
 msgstr ""
-"Se produjo un error al intentar conectarse al servicio de actualizaciones. Por favor vuelve a "
-"intentar más tarde."
+"Se produjo un error al intentar conectarse al servicio de actualizaciones. Por "
+"favor vuelve a intentar más tarde."
 
-#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:105
+#: D:\progects\github\MPP\source\gui\language_update.py:89
+#: D:\progects\github\MPP\source\gui\updater.py:105
 msgid "يتم تحميل التحديث {}"
 msgstr "Descargando actualización {}"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:108
+#: D:\progects\github\MPP\source\gui\language_update.py:94
+msgid ""
+"تم تحميل التحديث بنجاح, انقر فوق موافق لإعادة تشغيل البرنامج وتطبيق التحديث "
+"الجديد للغة"
+msgstr ""
+"La actualización se descargó correctamente, haz clic en Aceptar para reiniciar "
+"el programa y aplicar la nueva actualización al idioma"
+
+#: D:\progects\github\MPP\source\gui\search.py:42
+msgid "بواسطة {b} "
+msgstr "por {b} "
+
+#: D:\progects\github\MPP\source\gui\search.py:82
+msgid "عدد المشاهدات {}"
+msgstr "Visualizaciones {}"
+
+#: D:\progects\github\MPP\source\gui\search.py:84
+msgid "بث مباشر"
+msgstr "en vivo"
+
+#: D:\progects\github\MPP\source\gui\search.py:88
+msgid "المدة: {}"
+msgstr "Duración: {}"
+
+#: D:\progects\github\MPP\source\gui\search.py:94
+msgid "البحث في المجلد"
+msgstr "Buscar en la carpeta"
+
+#: D:\progects\github\MPP\source\gui\search.py:97
+#: D:\progects\github\MPP\source\gui\youtube.py:42
+msgid "كلمة البحث"
+msgstr "Buscar palabra"
+
+#: D:\progects\github\MPP\source\gui\search.py:105
+msgid "بحث"
+msgstr "buscar"
+
+#: D:\progects\github\MPP\source\gui\search.py:116
+msgid "قم بإدخال كلمة بحث أولا"
+msgstr "Primero ingresa un término de búsqueda"
+
+#: D:\progects\github\MPP\source\gui\search.py:123
+msgid "لا توجد نتائج"
+msgstr "sin resultados"
+
+#: D:\progects\github\MPP\source\gui\search.py:123
+msgid "لم يتم العثور على نتائج مطابِقة لكلمة البحث هذه"
+msgstr "No se encontraron resultados para este término de búsqueda"
+
+#: D:\progects\github\MPP\source\gui\search.py:126
+msgid "نتيجة واحدة"
+msgstr "un resultado"
+
+#: D:\progects\github\MPP\source\gui\search.py:128
+msgid "نتيجتان"
+msgstr "dos resultados"
+
+#: D:\progects\github\MPP\source\gui\search.py:130
+msgid "نتائج"
+msgstr "resultados"
+
+#: D:\progects\github\MPP\source\gui\search.py:131
+msgid "نتائج البحث عن {w}, هناك {rc} {rc2}"
+msgstr "Resultados de búsqueda para {w}, hay {rc} {rc2}"
+
+#: D:\progects\github\MPP\source\gui\search.py:153
+msgid "فتح مسار الملف"
+msgstr "Abrir ruta de archivo"
+
+#: D:\progects\github\MPP\source\gui\search.py:154
+msgid "نسخ مسار الملف"
+msgstr "Copiar ruta de archivo"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:14
+msgid "إعدادات البرنامج"
+msgstr "Ajustes del programa"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:17
+msgid "اختر ما تريد تعديله من الإعدادات"
+msgstr "Elige lo que deseas modificar de los ajustes"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:20
+msgid "الإعدادات العامة"
+msgstr "Ajustes generales"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:22
+msgid "إعدادات النطق"
+msgstr "Ajustes de voz"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:24
+msgid "إعدادات الترجمات"
+msgstr "Ajustes de subtítulos"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:26
+msgid "إعدادات الإختصارات العامة"
+msgstr "Ajustes de atajos globales"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:27
+msgid "حفظ الإعدادات"
+msgstr "Guardar ajustes"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:95
+msgid ""
+"لقد قمت بتغيير بعض الإعدادات التي تتطلب إعادة تشغيل البرنامج لتطبيقها, هل تريد "
+"إعادة تشغيل البرنامج الآن؟"
+msgstr ""
+"Has cambiado algunas configuraciones que requieren que el programa se reinicie "
+"para surtir efecto. ¿Quieres reiniciar el programa ahora?"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:102
+msgid "لغة البرنامج, يتطلب هذا الأمر إعادة تشغيل البرنامج كَي تتطبق الإعدادات"
+msgstr ""
+"Idioma del programa, esta opción requiere un reinicio del programa para que los "
+"ajustes surtan efecto"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:105
+msgid "عدد الثواني للتقديم"
+msgstr "Número de segundos para adelantar/retroceder"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:112
+msgid "التحقق من وجود تحديثات عند البدئ"
+msgstr "Comprobar actualizaciones al reiniciar"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:114
+msgid "التحقق مِن تحديثات اللغة عند البدء"
+msgstr "Comprobar si hay actualizaciones de idioma al iniciar"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:116
+msgid ""
+"تحميل المسار كاملًا عند فتح ملف, في حال تفعيل هذا الخيار, عند فتح أي ملف, سيقوم "
+"البرنامج بفتح الملف مع المجلد كاملًا في البرنامج, هذا يسبب بطء في التحميل"
+msgstr ""
+"Cargar ruta completa al abrir un archivo, si se activa esta opción, al abrir "
+"cualquier archivo, el programa abrirá dicho archivo junto con su carpeta "
+"completa. Esto causará que la carga sea lenta"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:118
+msgid ""
+"حفظ آخر مقطع مع الموضع عند الخروج, يقوم هذا الخيار بالتحقق مِن آخر مقطع تم "
+"تشغيله عند البدئ, ثم يقوم بتشغيله والإنتقال إلى النقطة التي تم الوقوف عندها."
+msgstr ""
+"Guardar la posición del último clip al salir. Esta opción comprueba el último "
+"clip reproducido desde el comienzo, y lo reproduce desde la posición donde se "
+"detuvo."
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:120
+msgid "تشغيل أول ملف بعد فتح مجلد"
+msgstr "reproducir el primer archivo después de abrir una carpeta"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:122
+msgid "تفعيل سجل البحث"
+msgstr "Habilitar historial de búsquedas"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:128
+msgid "نطق الإيقاف المؤقت والإستئناف"
+msgstr "verbalizar reproducir / pausar"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:130
+msgid "نطق مستوى الصوت عند تغييره"
+msgstr "Verbalizar cambios de volumen"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:132
+msgid "نطق الوقت المنقضي عند التقديم والتأخير"
+msgstr "verbalizar tiempo transcurrido al adelantar y retroceder"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:134
+msgid "النطق عند إعادة تشغيل المقطع"
+msgstr "Verbalizar si la pista se vuelve a reproducir"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:136
+msgid "نطق معدل السرعة عند تغييره"
+msgstr "Verbalizar cambios de velocidad"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:142
+msgid "control موصى إستخدامه في windows11 مع الإختصارات الأخرا alt و windows"
+msgstr ""
+"en Windows 11 se recomienda usar control con otros atajos como alt y Windows."
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:146
+msgid "استبدال الأزرار page_up / page_down بالأزرار tab / shift+tab"
+msgstr ""
+"reemplazar las teclas retroceso de página/ avance de página con tab / shift+tab"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:161
+msgid "قرائة الترجمات"
+msgstr "Leer subtítulos"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:162
+msgid "تحميل ملف الترجمة تلقائيًا"
+msgstr "Cargar el archivo de subtítulos automáticamente"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:163
+msgid "استخدام sapi5 لِقِراءة الترجمات"
+msgstr "Usar sapi5 para leer subtítulos"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:164
+msgid "اختر الصوت"
+msgstr "Elegir voz"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:166
+msgid "اختبار"
+msgstr "probar"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:167
+msgid "سرعة القِراءة"
+msgstr "índice de velocidad"
+
+#: D:\progects\github\MPP\source\gui\settings_dialog.py:169
+msgid "مستوى الصوت"
+msgstr "nivel de volumen"
+
+#: D:\progects\github\MPP\source\gui\updater.py:37
+msgid "تم العثور على تحديث جديد"
+msgstr "Se ha encontrado una nueva actualización"
+
+#: D:\progects\github\MPP\source\gui\updater.py:37
+msgid "هناك تحديث جديد {name} الإصدار {ver} هل تريد التحديث الآن؟"
+msgstr ""
+"Hay una nueva actualización {name} versión {ver} ¿Quieres actualizar ahora?"
+
+#: D:\progects\github\MPP\source\gui\updater.py:41
+msgid "لديك أحدث إصدار مِن MediaPlayerPro"
+msgstr "Tienes la versión más reciente de MediaPlayerPro"
+
+#: D:\progects\github\MPP\source\gui\updater.py:41
+msgid "لم يتم العثور على تحديثات"
+msgstr "No se encontraron actualizaciones"
+
+#: D:\progects\github\MPP\source\gui\updater.py:108
 msgid "تم تحميل التحديث بنجاح, انقر فوق موافق لِتبدأ عملية التثبيت."
 msgstr ""
-"Actualización descargada con éxito, Haz clic en aceptar para comenzar el proceso de instalación."
+"Actualización descargada con éxito, Haz clic en aceptar para comenzar el "
+"proceso de instalación."
 
-#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:114
+#: D:\progects\github\MPP\source\gui\updater.py:114
 msgid "يتم تثبيت التحديث"
 msgstr "Instalando actualización"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\updater.py:118
+#: D:\progects\github\MPP\source\gui\updater.py:118
 msgid ""
-"حدث خطأ غير متوقع عند محاولة فتح الملف للتثبيت، أعد تنزيل التحديث مرة أخرى، وإذا استمرت المشكلة، "
-"فقم بالإتصال بالمطور لحلها"
+"حدث خطأ غير متوقع عند محاولة فتح الملف للتثبيت، أعد تنزيل التحديث مرة أخرى، "
+"وإذا استمرت المشكلة، فقم بالإتصال بالمطور لحلها"
 msgstr ""
-"Ocurrió un error inesperado al intentar abrir el archivo de instalación. vuelve a descargar la "
-"actualización, y si el problema persiste, ponte en contacto con el desarrollador para "
-"solucionarlo."
+"Ocurrió un error inesperado al intentar abrir el archivo de instalación. vuelve "
+"a descargar la actualización, y si el problema persiste, ponte en contacto con "
+"el desarrollador para solucionarlo."
 
-#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:21
+#: D:\progects\github\MPP\source\gui\youtube.py:21
 msgid "لقد أدخلت رابط غير صالح."
 msgstr "Has ingresado una URL inválida."
 
-#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:25
+#: D:\progects\github\MPP\source\gui\youtube.py:25
 msgid ""
 "\n"
 "\t\t يتم التشغيل مِن يوتيوب: {title}\n"
@@ -999,66 +1052,89 @@ msgstr ""
 "\n"
 "\t\tdescripción: {description} "
 
-#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:37
+#: D:\progects\github\MPP\source\gui\youtube.py:37
 msgid "البحث في يوتيوب"
 msgstr "Buscar en YouTube"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:44
+#: D:\progects\github\MPP\source\gui\youtube.py:44
 msgid "قائمة النتائج"
 msgstr "Lista de resultados"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:48
+#: D:\progects\github\MPP\source\gui\youtube.py:48
 msgid "تحميل جميع النتائج الحالية في قائمة"
 msgstr "Cargar todos los resultados actuales en una lista"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:68
+#: D:\progects\github\MPP\source\gui\youtube.py:68
 msgid "يتم البحث عن {q}"
 msgstr "Buscando {q}"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:72
+#: D:\progects\github\MPP\source\gui\youtube.py:72
 msgid ""
-"حدث خطأ أثناء محاولة البحث, قد تكون هناك مشكلة بالإتصال, إذا استمرت المشكلة بالظهور قم بمراسلة "
-"المطور لحل المشكلة"
+"حدث خطأ أثناء محاولة البحث, قد تكون هناك مشكلة بالإتصال, إذا استمرت المشكلة "
+"بالظهور قم بمراسلة المطور لحل المشكلة"
 msgstr ""
-"Ocurrió un error al intentar buscar. Puede que haya un problema de conexión. Si sigue "
-"apareciendo el problema, Ponte en contacto con el desarrollador."
+"Ocurrió un error al intentar buscar. Puede que haya un problema de conexión. Si "
+"sigue apareciendo el problema, Ponte en contacto con el desarrollador."
 
-#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:75
+#: D:\progects\github\MPP\source\gui\youtube.py:75
 msgid "اكتمل تحميل النتائج"
 msgstr "Se ha completado la carga de resultados"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:138
+#: D:\progects\github\MPP\source\gui\youtube.py:140
 msgid "يتم تحميل المزيد من النتائج"
 msgstr "Cargando más resultados"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:140
+#: D:\progects\github\MPP\source\gui\youtube.py:142
 msgid "لا توجد نتائج أُخرى"
 msgstr "No hay más resultados"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:142
+#: D:\progects\github\MPP\source\gui\youtube.py:144
 msgid "تم تحميل المزيد من النتائج"
 msgstr "Más resultados cargados"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:156
+#: D:\progects\github\MPP\source\gui\youtube.py:158
 msgid "فتح الفيديو في المتصفح\tv"
 msgstr "Abrir el video en el navegador \tv"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:157
+#: D:\progects\github\MPP\source\gui\youtube.py:159
 msgid "فتح القناة في المتصفح\tc"
 msgstr "Abrir canal en el navegador \tc"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:158
+#: D:\progects\github\MPP\source\gui\youtube.py:160
 msgid "نسخ رابط الفيديو\tu"
 msgstr "Copiar enlace del video \tu"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:159
+#: D:\progects\github\MPP\source\gui\youtube.py:161
 msgid "نسخ رابط القناة\tl"
 msgstr "Copiar enlace del canal \tl"
 
-#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:170
-#: C:\Users\Administrator\mediaplayer\source\includes\youtube.py:174
+#: D:\progects\github\MPP\source\gui\youtube.py:172
+#: D:\progects\github\MPP\source\gui\youtube.py:176
 msgid "يتم الفتح في المتصفح"
 msgstr "Abriendo en el navegador"
+
+#: D:\progects\github\MPP\source\scripts\subtitle.py:17
+msgid "اختيار ملف ترجمة (.srt)|*.srt"
+msgstr "Elegir un archivo de traducción (.srt)|*.srt"
+
+#: D:\progects\github\MPP\source\scripts\subtitle.py:30
+msgid "تم تحميل ملف الترجمة {subfile}"
+msgstr "Se ha cargado el archivo de subtítulos {subfile}."
+
+#~ msgid "بطيء"
+#~ msgstr "lento"
+
+#~ msgid "بطيء جدا"
+#~ msgstr "muy lento"
+
+#~ msgid "سريع"
+#~ msgstr "rápido"
+
+#~ msgid "سريع جدا"
+#~ msgstr "Muy rápido"
+
+#~ msgid "متوسط"
+#~ msgstr "Promedio"
 
 #, fuzzy
 #~| msgid "قائمة التعليقات"
@@ -1066,11 +1142,11 @@ msgstr "Abriendo en el navegador"
 #~ msgstr "comments list"
 
 #~ msgid ""
-#~ "في حال تم الضغط فوق نعم, سيتم حذف جميع العناصر في المفضلة, ولا يمكنك إسترجاعهم مرةً أُخرى, هل "
-#~ "تريد الحذف؟"
+#~ "في حال تم الضغط فوق نعم, سيتم حذف جميع العناصر في المفضلة, ولا يمكنك "
+#~ "إسترجاعهم مرةً أُخرى, هل تريد الحذف؟"
 #~ msgstr ""
-#~ "If you click Yes, all the items in your favourites will be deleted, and you cannot get them "
-#~ "back. Do you want to delete?"
+#~ "If you click Yes, all the items in your favourites will be deleted, and you "
+#~ "cannot get them back. Do you want to delete?"
 
 #~ msgid "لقد تم حذف جميع عناصر المفضلة"
 #~ msgstr "All favourites have been deleted"
