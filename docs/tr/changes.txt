@@ -1,0 +1,22 @@
+* Program artık açık kaynak
+* Artık program açıkken tekrar çalıştırdığınızda hiçbir şey yapmamak yerine açık olduğunu söyleyecektir.
+* Şimdi YouTube'da arama yaptığınızda ve sonuçları bir listeye yükleme seçeneğini belirlediğinizde, beşinci sonucun oynatılmak üzere seçildiğini varsayalım, sonucun sırasını kaydeder ve bir sonraki sonuca gittiğinizde, altıncı sonuçtan başlar ve bir sonraki klibin oynatılması otomatik olarak devam eder.
+* Sapi 5'i kontrol etmek için başka bir kütüphane kullanıldı. Bazılarının karşılaştığı ses. Hız kontrolü gibi bazı sorunları çözebilir.
+Ayrıca sapi5 ayarlarının değiştirilmesi programın yeniden başlatılmasını gerektirmiyor.
+Ayrıca, konuşma hızını kontrol etmek için f5/f6'ya, ses seviyesini kontrol etmek için f7/f8'e basarak ayarların dışındayken hız ve ses seviyesini ayarlayabilirsiniz.
+* Ayarları güncelledikten veya sildikten sonra ayarların açılamama sorunu çözüldü.
+* Arama geçmişi sorunları çözüldü.
+* Bazı kullanıcılara görünen programı çalıştırdıktan sonra sessize alma sorunu çözüldü.
+* Artık programı mpp yazarak çalıştır penceresi üzerinden çalıştırabilirsiniz. Program direkt olarak başlayacaktır.
+* Klibin hızlanma ve yavaşlama kısaltmaları - ve = iken shift+down-ok ve shift+up-ok-hızlanma olarak değiştirildi, çünkü bazı arkadaşlar dillerinden dolayı klavyelerinde bu işaretlerin olmadığını bildirdiler. .
+* İleri/geri sarma için ek tuşlar aşağıdaki gibi eklendi:
+shift+sağ ok: / sol ok: 10 saniye ileri / geri.
+kontrol+sağ ok: / sol ok: 15 saniye ileri/geri.
+control+shift+sağ ok: / sol ok: 30 saniye ileri / geri.
+alt+sağ ok: / sol ok: bir dakika ileri/geri.
+Sağ ve sol ok için ise ayarlardan istediğiniz süreyi ayarlayabilirsiniz ve kişiselleştirme imkanı 60 saniyeden 1800 saniyeye yani yaklaşık 30 dakikaya yükseltilmiştir.
+* The ability to search for the specific language update has been added, i.e. it is possible to issue an update for language files only so that they are easily updated, especially if an update is issued from the program and the translation of a language has not been completed if the translator is busy and so on, but so far this feature is not supported Arabic language, you can search for updates manually from the main menu, or activate the option to check the language update when starting, the verification is done on the basis of the program language, that is, if the program language is English, it does not come with updates for a language other than English.
+* Artık herhangi bir doğrudan bağlantıdan oynatabilirsiniz, yani bir bağlantıdan oynatma yalnızca YouTube ile sınırlı değildir.
+Aynı şekilde bir link üzerinden herhangi bir şey çalıştırırsanız ve srt çeviri dosyası bilgisayarda varsa ve srt dosyasını açarsanız sorunsuz okunur yani çevrilen şeyin bilgisayarınızda olması gerekmez.
+* Artık bir altyazı dosyası açtığınızda: tüm dosyalar yerine sadece srt dosyaları görünecek
+* Program artık Türkçe, Fransızca ve İspanyolca dillerini desteklemektedir.

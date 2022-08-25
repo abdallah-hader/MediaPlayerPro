@@ -1,0 +1,23 @@
+* Le programme est open source
+* Maintenant, lorsque vous exécutez le programme et qu'il est déjà en cours d'exécution, il vous dira au lieu de rien.
+* Maintenant, lorsque vous effectuez une recherche sur YouTube et sélectionnez l'option de téléchargement des résultats dans une liste, disons que le cinquième résultat est choisi pour être lu, il enregistrera la séquence du résultat, et lorsque vous passerez au résultat suivant, il commencera à partir de le sixième résultat, et ainsi de suite avec la lecture automatique du clip suivant.
+* Une autre bibliothèque a été utilisée pour contrôler sapi 5, et cela peut résoudre certains problèmes auxquels certains sont confrontés, tels que le contrôle du volume et de la vitesse.
+De plus, la modification des éléments sapi5 n'a pas nécessité un redémarrage du programme.
+De plus, vous pouvez maintenant régler la vitesse et le volume depuis l'extérieur des paramètres, en appuyant sur f5/f6 pour contrôler la vitesse de parole, f7/f8 pour contrôler le volume.
+* Résoudre un problème où certains raccourcis se bloquent parfois.
+* Résolvez le problème de ne pas pouvoir ouvrir les paramètres après la mise à jour ou la suppression des paramètres.
+* Les problèmes d'historique de recherche ont été résolus.
+* Résoudre le problème de la mise en sourdine du programme après l'avoir exécuté, qui est apparu à certaines personnes.
+* Vous pouvez maintenant exécuter le programme via la fenêtre d'exécution en tapant mpp et le programme démarrera directement.
+* Les abréviations d'accélération et de décélération du clip ont été modifiées de - et = à shift+down-arrow et shift+up-arrow-to-acceleration, car certains frères ont signalé que leurs claviers n'ont pas ces marques en raison de leur langue .
+* Des touches supplémentaires pour l'avance/le délai ont été ajoutées comme suit :
+shift+flèche droite : / flèche gauche : avancer / reculer de 10 secondes.
+control+flèche droite : / flèche gauche : avance/retard 15 secondes.
+control+shift+flèche droite : / flèche gauche : avancer / reculer de 30 secondes.
+alt+flèche droite : / flèche gauche : avancer/retarder d'une minute.
+Quant à la flèche droite avec la gauche, vous pouvez ajuster la durée souhaitée à partir des paramètres, et la possibilité de personnalisation a été augmentée de 60 secondes à 1800 secondes, soit environ 30 minutes.
+* La possibilité de rechercher la mise à jour de la langue spécifique a été ajoutée, c'est-à-dire qu'il est possible de publier une mise à jour pour les fichiers de langue uniquement afin qu'ils soient facilement mis à jour, en particulier si une mise à jour est publiée à partir du programme et que la traduction d'une langue n'a pas été effectuée. terminé si le traducteur est occupé et ainsi de suite, mais jusqu'à présent cette fonctionnalité n'est pas prise en charge Langue arabe, vous pouvez rechercher des mises à jour manuellement à partir du menu principal, ou activer l'option pour vérifier la mise à jour de la langue au démarrage, la vérification est effectuée sur la base de la langue du programme, c'est-à-dire que si la langue du programme est l'anglais, il n'y a pas de mises à jour pour une langue autre que l'anglais.
+* Vous pouvez désormais lire à partir de n'importe quel lien direct, c'est-à-dire que la lecture à partir d'un lien n'est pas limitée à YouTube uniquement.
+De même, si vous exécutez quelque chose via un lien et que vous avez son fichier de traduction srt sur l'ordinateur et que vous ouvrez le fichier srt, il sera lu sans problème, c'est-à-dire que la chose traduite n'a pas besoin d'être sur votre ordinateur.
+* Désormais, lorsque vous ouvrez un fichier de sous-titres : seuls les fichiers srt apparaîtront à la place de tous les fichiers
+* Le programme prend désormais en charge les langues turque, française et espagnole.
