@@ -57,8 +57,8 @@ control+w: Closes everything in the program, folder, or YouTube results, and sto
 alt+windows+h: to hide/ show the program window.
 The settings window is self-explanatory, because most of the options are described, and they are straightforward.
 You can contact me through the about menu to give me your suggestions or inform me about a problem.
-##changes
-###changes1.3
+#changes
+#changes1.3
 * The program now open source
 * Now when you run the program and it is already running it will tell you instead of nothing.
 * Now when you search in YouTube and select the option to load results in a list, then let's say the fifth result is chosen to play, it will save the sequence of the result, and when you go to the next result, it starts from the sixth result, and so on with the automatic playback of the next clip.
