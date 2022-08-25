@@ -4,27 +4,25 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-08-24 17:56-0700\n"
-"PO-Revision-Date: 2022-08-24 18:20-0700\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: en\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=cp1256\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 2.4.3\n"
+
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:35
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:195
 msgid "لم يتم تشغيل ملف بعد..."
-msgstr "there is no file played"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:48
 msgid "هناك نسخة مِن البرنامج تعمل بالفعل"
-msgstr "There is a version of the program already running"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:48
 #: D:\progects\github\MPP\source\docs_handler.py:13
@@ -36,120 +34,120 @@ msgstr "There is a version of the program already running"
 #: D:\progects\github\MPP\source\gui\youtube.py:21
 #: D:\progects\github\MPP\source\gui\youtube.py:72
 msgid "خطأ"
-msgstr "error"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:87
 msgid "القائمة الرئيسية"
-msgstr "main menu"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:88
 msgid "الخيارات"
-msgstr "options"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:89
 msgid "يوتيوب"
-msgstr "youtube"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:90
 msgid "حول"
-msgstr "about"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:91
 msgid "دليل المستخدم: f1"
-msgstr "user guide: f1"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:92
 msgid "قناة البرنامج على تليجرام"
-msgstr "telegram channel"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:93
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:170
 msgid "حول البرنامج"
-msgstr "About the program"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:94
 msgid "التواصل معنا"
-msgstr "Contact us"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:95
 msgid "فتح ملف: ctrl+o"
-msgstr "open file: ctrl+o"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:96
 msgid "فتح مجلد: ctrl+f"
-msgstr "open folder: ctrl+f"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:97
 msgid "فتح ملف ترجمة (srt): ctrl+shift+s"
-msgstr "open subtitle file (srt): ctrl+shift+s"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:98
 msgid "البحث في يوتيوب: a"
-msgstr "search in YouTube: a"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:99
 msgid "سجل البحث: ctrl+h"
-msgstr "search history: ctrl+h"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:100
 msgid "عرض تعليقات المقطع الحالي: c"
-msgstr "Show comments for the current clip: c"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:101
 msgid "نسخ الوصف: ctrl+i"
-msgstr "copy description: ctrl+i"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:102
 msgid "تشغيل مِن رابط: y"
-msgstr "play from url: y"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:103
 msgid "المفضلة: f"
-msgstr "favorite: f"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:104
 msgid "إضافة للمفضلة: ctrl+p"
-msgstr "add to favorite: ctrl+p"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:105
 msgid "البحث في المجلد: s"
-msgstr "search in folder: s"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:106
 msgid "الذهاب إلى: g"
-msgstr "go to: g"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:107
 msgid "الإختيار العشوائي: ctrl+r"
-msgstr "random selection: ctrl+r"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:108
 msgid "الإعدادات: ctrl+s"
-msgstr "settings: ctrl+s"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:109
 msgid "البحث عن تحديثات"
-msgstr "search for updates"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:111
 msgid "التحقق مِن تحديث اللغة"
-msgstr "check for language update"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:112
 msgid "خروج"
-msgstr "exit"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:113
 msgid "تليجرام"
-msgstr "telegram"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:114
 msgid "فيسبوك"
-msgstr "facebook"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:115
 msgid "تويتر"
-msgstr "twitter"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:165
 msgid ""
@@ -157,58 +155,45 @@ msgid ""
 "{name}:\n"
 "الإصدار: {version}.\n"
 "المُطوِر: {author}.\n"
-"الوصف: برنامج يُسَهِل على مستخدمي قارئات الشاشة تشغيل مختلف الوسائط والتحكم بها بشكل "
-"سهل ومِن أي مكان من داخل البرنامج أو مِن خارجه مع إتاحة تحكمات النطق للمستخدم في "
-"حال أراد تفعيلها أو تعطيلها..."
+"الوصف: برنامج يُسَهِل على مستخدمي قارئات الشاشة تشغيل مختلف الوسائط والتحكم بها بشكل سهل ومِن أي مكان من داخل البرنامج أو مِن خارجه مع إتاحة تحكمات النطق للمستخدم في حال أراد تفعيلها أو تعطيلها..."
 msgstr ""
-"\n"
-"{name}:\n"
-"version: {version}.\n"
-"author: {author}.\n"
-"description: A program that makes it easier for screen reader users to play and "
-"control various media files easily and from anywhere from within the program or "
-"from outside, while providing speech controls to the user if he wants to activate "
-"or disable them..."
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:173
 msgid "يتم التحقق من وجود تحديث جديد ، يرجى الانتظار"
-msgstr "Checking for a new update, please wait"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:177
 msgid "فتح ملف"
-msgstr "open file"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:189
 msgid "قم بإختيار المجلد الذي تريد فتحه في البرنامج..."
-msgstr "Choose the folder you want to open in the program..."
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:199
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:333
 msgid "تم إعادة تشغيل المقطع"
-msgstr "The Track has been replayed"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:203
 msgid "تم الإيقاف المؤقت"
-msgstr "paused"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:205
 msgid "تم الإستئناف"
-msgstr "resumed"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:208
 msgid "تم إيقاف الملف"
-msgstr "file stoped"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:230
 msgid "لا يمكن تشغيل هذا المقطع"
-msgstr "This file cannot be played"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:250
-msgid ""
-"هل أنت متأكد بأنك تريد حذف الملف {f}. في حال تم الحذف لا يمكنك إسترجاعه مرةً أُخرى"
+msgid "هل أنت متأكد بأنك تريد حذف الملف {f}. في حال تم الحذف لا يمكنك إسترجاعه مرةً أُخرى"
 msgstr ""
-"Are you sure you want to delete the file {f}. If it is deleted, you cannot "
-"restore it again"
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:250
 #: D:\progects\github\MPP\source\gui\comments.py:48
@@ -217,250 +202,245 @@ msgstr ""
 #: D:\progects\github\MPP\source\gui\history.py:63
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:95
 msgid "تنبيه"
-msgstr "alert"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:256
 msgid "تم حذف {f}"
-msgstr "{f} deleted"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:277
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:282
 msgid "لم يتم التشغيل من يوتيوب"
-msgstr "Not playing from YouTube"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:285
 msgid "تم نسخ الوصف إلى الحافظة"
-msgstr "description copyed to clipboard"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:286
 msgid "لا يوجد وصف لنسخه"
-msgstr "There is no description to copy"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:320
 msgid "تم تعطيل التشغيل العشوائي"
-msgstr "Random play is disabled"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:323
 msgid "تم تفعيل التشغيل العشوائي"
-msgstr "Random play is enabled"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:339
 msgid "تم تعيين أقصى قيمة للسرعة"
-msgstr "The maximum speed value is set"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:341
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:349
 msgid "تم تعيين السرعة على {rate}"
-msgstr "Speed ​​is set to {rate}"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:347
 msgid "تم تعيين أدنى قيمة للسرعة"
-msgstr "The minimum speed value is set"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:376
 msgid "تم إلغاء كتم الصوت"
-msgstr "sound un muted"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:379
 msgid "تم كتم الصوت"
-msgstr "sound muted"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:381
 msgid "لا يمكن كتم الصوت"
-msgstr "cannot mute the sound."
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:386
 msgid "تم إنتهاء تشغيل المقطع"
-msgstr "the track has finish playing"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:389
-msgid ""
-"{title}, المدة: {duration}, الوقت المُنقَضي: {elapsed}, مستوى الصوت الحالي: {volume}"
+msgid "{title}, المدة: {duration}, الوقت المُنقَضي: {elapsed}, مستوى الصوت الحالي: {volume}"
 msgstr ""
-"{title}, Duration: {duration}, Elapsed time: {elapsed}, current volume level: "
-"{volume}"
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:451
 msgid "الرابط"
-msgstr "url"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:451
 msgid "قم بإدخال الرابط المُراد تشغيله"
-msgstr "Enter the url you want to play"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:488
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:497
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:535
 msgid "يتمفتح المجلد {} / {}"
-msgstr "opening the folder {} / {}"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:489
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:498
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:536
 msgid "لا يوجد هناك مجلد"
-msgstr "There is no folder"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:493
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:522
 msgid "تم الإعادة من المقطع الأول"
-msgstr "restored from the first track"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:501
 msgid "تم الإنتقال إلى آخِر ملف"
-msgstr "Moved to last file"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:518
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:526
 msgid "لا توجد هناك قائمة"
-msgstr "There is no list"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:529
 msgid "تم الإنتقال إلى آخِر مقطع"
-msgstr "moved to last track"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:537
 msgid "اكتب رقم الملف لتشغيله, 0/{l}"
-msgstr "type the file number to play it, 0/{l}"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:537
 msgid "الذهاب إلى"
-msgstr "go to"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:542
 msgid "تم الإعادة من الملف الأول"
-msgstr "Restored from the first file"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:547
 msgid "تم تعطيل التكرار"
-msgstr "Repeat is disabled"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:550
 msgid "تم تفعيل التكرار"
-msgstr "Repeat is enabled"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:556
 msgid "تم تعطيل تشغيل الملف التالي"
-msgstr "Playback of the next file is disabled"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:559
 msgid "تم تمكين تشغيل الملف التالي"
-msgstr "Next file playback is enabled"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:564
 msgid "تم إظهار البرنامج"
-msgstr "Program has been shown"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:566
 msgid "تم إخفاء البرنامج, اضغط على الإختصار العام لديك + h لإظهاره"
-msgstr "The program is hidden, press your global shortcut + h to show it"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:623
 msgid "تم تعيين نقطة البداية"
-msgstr "The starting point has been set"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:627
 msgid "تم تعيين نقطة النهاية"
-msgstr "The end point is set"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:629
 msgid "لا يتناسَق وقت نقطة البداية مع وقت نقطة النهاية"
-msgstr "The start point time does not match the end point time"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:632
 msgid "تم إيقاف تكرار المقطع المحدد"
-msgstr "Repeating of the selected clip has been stopped"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:634
 msgid "تم تمكين تكرار المقطع المحدد"
-msgstr "Selected clip repeat is enabled"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:671
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:677
-#, fuzzy
-#| msgid "تم تعيين السرعة على {rate}"
 msgid "تم تعيين السرعة على {s}"
-msgstr "Speed ​​is set to {rate}"
+msgstr ""
 
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:683
 #: D:\progects\github\MPP\source\MediaPlayerPro.py:689
 msgid "تم تعيين مستوى الصوت على {v}%"
-msgstr "volume set to {v}%"
+msgstr ""
 
 #: D:\progects\github\MPP\source\docs_handler.py:13
 msgid "تعذر العثور على ملف المساعدة"
-msgstr "Help file could not be found"
+msgstr ""
 
 #: D:\progects\github\MPP\source\globals.py:34
 msgid "دقيقة واحدة"
-msgstr "one minute"
+msgstr ""
 
 #: D:\progects\github\MPP\source\globals.py:36
 msgid "دقيقتان"
-msgstr "two minutes"
+msgstr ""
 
 #: D:\progects\github\MPP\source\globals.py:38
 msgid "{} دقائق"
-msgstr "{} minutes"
+msgstr ""
 
 #: D:\progects\github\MPP\source\globals.py:40
 msgid "{} دقيقة"
-msgstr "{} minute"
+msgstr ""
 
 #: D:\progects\github\MPP\source\globals.py:43
 msgid "ثانية"
-msgstr "second"
+msgstr ""
 
 #: D:\progects\github\MPP\source\globals.py:45
 msgid "ثانيتين"
-msgstr "two seconds"
+msgstr ""
 
 #: D:\progects\github\MPP\source\globals.py:47
 msgid "{} ثواني"
-msgstr "{} Seconds"
+msgstr ""
 
 #: D:\progects\github\MPP\source\globals.py:49
 msgid "{} ثانية"
-msgstr "{} second"
+msgstr ""
 
 #: D:\progects\github\MPP\source\globals.py:52
 msgid "ساعة"
-msgstr "hour"
+msgstr ""
 
 #: D:\progects\github\MPP\source\globals.py:54
 msgid "ساعتان"
-msgstr "two hours"
+msgstr ""
 
 #: D:\progects\github\MPP\source\globals.py:56
 msgid "{} ساعات"
-msgstr "{} hours"
+msgstr ""
 
 #: D:\progects\github\MPP\source\globals.py:58
 msgid "{} ساعة"
-msgstr "{} hour"
+msgstr ""
 
 #: D:\progects\github\MPP\source\globals.py:62
 msgid "{} و{}"
-msgstr "{} and {}"
+msgstr ""
 
 #: D:\progects\github\MPP\source\globals.py:64
 msgid "{} و{} و{}"
-msgstr "{} and {} and {}"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\comments.py:10
 msgid "التعليقات"
-msgstr "comments"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\comments.py:14
 msgid "قائمة التعليقات"
-msgstr "comments list"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\comments.py:17
 msgid "نص التعليق"
-msgstr "Comment text"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\comments.py:19
 msgid "نسخ التعليق"
-msgstr "Comment copy"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\comments.py:21
 #: D:\progects\github\MPP\source\gui\favorite.py:31
@@ -469,101 +449,97 @@ msgstr "Comment copy"
 #: D:\progects\github\MPP\source\gui\search.py:107
 #: D:\progects\github\MPP\source\gui\youtube.py:49
 msgid "إغلاق"
-msgstr "close"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\comments.py:34
 #: D:\progects\github\MPP\source\gui\comments.py:64
 msgid "{content}, المُعلق: {author}, {published}"
-msgstr "{content}, commenter: {author}, {published}"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\comments.py:48
 msgid "لا تتوفر تعليقات لِهذا الفيديو"
-msgstr "There are no comments for this video"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\comments.py:59
 msgid "يتم تحميل المزيد من التعليقات"
-msgstr "loading more comments"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\comments.py:61
 msgid "لا يوجد هناك المزيد من التعليقات"
-msgstr "There are no more comments"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\comments.py:67
 msgid "اكتمل تحميل المزيد من التعليقات"
-msgstr "more comments loaded"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\comments.py:78
 msgid "أشهر"
-msgstr "Months"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\comments.py:79
 msgid "شهر"
-msgstr "Month"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\comments.py:80
 msgid "يوم"
-msgstr "day"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\comments.py:81
 msgid "أيام"
-msgstr "days"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\comments.py:82
 msgid "إسبوع"
-msgstr "week"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\comments.py:83
 msgid "أسابيع"
-msgstr "weeks"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\comments.py:84
 msgid "سنة"
-msgstr "year"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\comments.py:85
 msgid "سنين"
-msgstr "years"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\comments.py:87
 msgid "منذ {t1} {t2}"
-msgstr "{t1} {t2} a go"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:15
 msgid "المفضلة"
-msgstr "favorite"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:19
 msgid "الفئات"
-msgstr "Categories"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:22
 msgid "قائمة المفضلة"
-msgstr "favorite list"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:25
 msgid "فتح جميع العناصر كقائمة"
-msgstr "Open all items as a list"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:27
 #: D:\progects\github\MPP\source\gui\favorite.py:170
 msgid "إضافة فئة جديدة"
-msgstr "Add a new category"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:29
 msgid "حذف الفئة"
-msgstr "delete category"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:57
-msgid ""
-"في حال تم الضغط فوق نعم, سيتم حذف الفئة {c} مع العناصر في داخل هذه الفئة, هل تريد "
-"الحذف؟"
+msgid "في حال تم الضغط فوق نعم, سيتم حذف الفئة {c} مع العناصر في داخل هذه الفئة, هل تريد الحذف؟"
 msgstr ""
-"If Yes is clicked, the {c} category will be deleted along with the items within "
-"this category. Do you want to delete?"
 
 #: D:\progects\github\MPP\source\gui\favorite.py:70
 msgid "لقد تم حذف الفئة بنجاح"
-msgstr "Category has been deleted successfully"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:70
 #: D:\progects\github\MPP\source\gui\history.py:60
@@ -571,578 +547,482 @@ msgstr "Category has been deleted successfully"
 #: D:\progects\github\MPP\source\gui\language_update.py:94
 #: D:\progects\github\MPP\source\gui\updater.py:108
 msgid "نجاح"
-msgstr "success"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:77
 #: D:\progects\github\MPP\source\gui\favorite.py:167
 #: D:\progects\github\MPP\source\gui\favorite.py:183
 #: D:\progects\github\MPP\source\gui\favorite.py:201
 msgid "الإسم"
-msgstr "name"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:77
 #: D:\progects\github\MPP\source\gui\favorite.py:183
 #: D:\progects\github\MPP\source\gui\favorite.py:201
 msgid "قم بإدخال إسم الفئة المراد إضافتها"
-msgstr "Enter the name of the category to be added"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:96
 msgid "{t}, يبدأ المقطع عند ({p}), النوع ({iu}), تم الإضافة في ({time})."
-msgstr "{t}, The track starts at ({p}), type ({iu}), added in ({time})."
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:96
 msgid "رابط"
-msgstr "url"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:96
 msgid "ملف"
-msgstr "file"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:101
 msgid "حذف"
-msgstr "delete"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:101
 msgid "هل تريد إزالة {t} مِن المفضلة?"
-msgstr "Do you want to remove {t} from the favorite?"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:160
 msgid "إضافة {t} إلى المفضلة"
-msgstr "add {t} to favorite"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:165
 msgid "اختر الفئة"
-msgstr "Choose category"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:169
 msgid "إضافة"
-msgstr "add"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:172
 #: D:\progects\github\MPP\source\gui\input_box.py:18
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:30
 msgid "إلغاء"
-msgstr "cancel"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:181
-msgid ""
-"لا توجد هناك فئات متوفرة, يبدو تم حذف جميع الفئات مع الفئة الإفتراضية )الفئة "
-"الإفتراضية(, في حال لا يوجد هناك أي فئة متوفرة, لا يمكن إضافة عناصر للمفضلة, هل "
-"تريد إنشاء فئة الآن?"
+msgid "لا توجد هناك فئات متوفرة, يبدو تم حذف جميع الفئات مع الفئة الإفتراضية )الفئة الإفتراضية(, في حال لا يوجد هناك أي فئة متوفرة, لا يمكن إضافة عناصر للمفضلة, هل تريد إنشاء فئة الآن?"
 msgstr ""
-"There are no categories available, it seems that all categories have been deleted "
-"with the default category (default category), if there is no category available, "
-"it is not possible to add items to favorites, do you want to create a category "
-"now?"
 
 #: D:\progects\github\MPP\source\gui\favorite.py:181
 msgid "لم يتم العثور على فئات"
-msgstr "No categories found"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:220
 msgid "الفئة الإفتراضية"
-msgstr "default category"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:227
 msgid "تم الإضافة إلى المفضلة"
-msgstr "added to favorite"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\favorite.py:241
 msgid "تم إضافة الفئة بنجاح"
-msgstr "Category added successfully"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\help_dialog.py:5
 msgid "دليل الإستخدام"
-msgstr "user guide"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\history.py:14
 msgid "سجل البحث"
-msgstr "search history"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\history.py:18
 msgid "التاريخ"
-msgstr "Date"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\history.py:20
 #: D:\progects\github\MPP\source\gui\search.py:99
 msgid "نتائج البحث"
-msgstr "search results"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\history.py:22
 msgid "حذف التاريخ المحدد"
-msgstr "Delete the selected date"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\history.py:24
 msgid "محو السجل"
-msgstr "clear history"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\history.py:52
-msgid ""
-"في حال تم الضغط فوق نعم, سيتم حذف سجل البحث بأكمله ولا يمكنك إسترجاعه مرةً أخرى, "
-"هل تريد الحذف؟"
+msgid "في حال تم الضغط فوق نعم, سيتم حذف سجل البحث بأكمله ولا يمكنك إسترجاعه مرةً أخرى, هل تريد الحذف؟"
 msgstr ""
-"If you click Yes, the entire search history will be deleted and you cannot "
-"retrieve it again. Do you want to delete?"
 
 #: D:\progects\github\MPP\source\gui\history.py:60
 msgid "لقد تم حذف جميع سجل البحث"
-msgstr "All search history has been deleted"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\history.py:63
-msgid ""
-"في حال تم الضغط فوق نعم, سيتم حذف التاريخ المحدد ولا يمكنك إسترجاعه مرةً أخرى, هل "
-"تريد الحذف؟"
+msgid "في حال تم الضغط فوق نعم, سيتم حذف التاريخ المحدد ولا يمكنك إسترجاعه مرةً أخرى, هل تريد الحذف؟"
 msgstr ""
-"If you click Yes, the selected date will be deleted and you cannot retrieve it "
-"again. Do you want to delete?"
 
 #: D:\progects\github\MPP\source\gui\history.py:72
 msgid "لقد تم حذف التاريخ المحدد مِن سجل البحث"
-msgstr "The selected date has been deleted from the search history"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\input_box.py:19
 msgid "موافق"
-msgstr "ok"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\input_box.py:29
 msgid "تم الإلغاء"
-msgstr "canceled"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\language_update.py:20
 #: D:\progects\github\MPP\source\gui\updater.py:33
-msgid ""
-"لم نتمكن من الوصول إلى خدمة التحديثات, قد تكون هناك مشكلة مؤقتة, أو مشكلة في "
-"الإتصال لديك, تأكد مِن الإتصال بالأنترنت ثم عاود مجددًا."
+msgid "لم نتمكن من الوصول إلى خدمة التحديثات, قد تكون هناك مشكلة مؤقتة, أو مشكلة في الإتصال لديك, تأكد مِن الإتصال بالأنترنت ثم عاود مجددًا."
 msgstr ""
-"We could not reach the update service, there may be a temporary problem, or "
-"connection problem, make sure that you are connected to the Internet and try "
-"again later."
 
 #: D:\progects\github\MPP\source\gui\language_update.py:24
 msgid "تم إكتشاف هناك تحديث جديد للغة {lang} هل تريد التحديث الآن?"
 msgstr ""
-"A new update for language {lang} has been detected. Do you want to update now?"
 
 #: D:\progects\github\MPP\source\gui\language_update.py:24
 msgid "هناك تحديث جديد للغة"
-msgstr "There is a new language update"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\language_update.py:28
 msgid "لديك أحدث تحديث للغة"
-msgstr "you have the latest language update"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\language_update.py:28
 msgid "لم يتم العثور على تحديث"
-msgstr "No update found"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\language_update.py:30
 #: D:\progects\github\MPP\source\gui\updater.py:43
 msgid "حدث خطأ أثناء محاولة الإتصال بخدمة التحديثات, يرجى المحاولة لاحقًا"
 msgstr ""
-"An error occurred while trying to connect to the update service, please try again "
-"later"
 
 #: D:\progects\github\MPP\source\gui\language_update.py:30
 #: D:\progects\github\MPP\source\gui\updater.py:43
 msgid "خطأ في الإتصال"
-msgstr "connection error"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\language_update.py:37
 #: D:\progects\github\MPP\source\gui\updater.py:48
 msgid "يتم تحميل التحديثات"
-msgstr "downloading updates"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\language_update.py:40
 #: D:\progects\github\MPP\source\gui\updater.py:51
 msgid "حالة التحميل"
-msgstr "download status"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\language_update.py:43
 #: D:\progects\github\MPP\source\gui\updater.py:54
 msgid "إيقاف التحميل"
-msgstr "stop download"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\language_update.py:85
 #: D:\progects\github\MPP\source\gui\updater.py:100
 msgid "حدث خطأ أثناء عملية التحديث ، يرجى المحاولة مرة أخرى في وقت لاحق."
 msgstr ""
-"An error occurred while trying to connect to the update service, please try again "
-"later"
 
 #: D:\progects\github\MPP\source\gui\language_update.py:89
 #: D:\progects\github\MPP\source\gui\updater.py:105
 msgid "يتم تحميل التحديث {}"
-msgstr "downloading update {}"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\language_update.py:94
-msgid ""
-"تم تحميل التحديث بنجاح, انقر فوق موافق لإعادة تشغيل البرنامج وتطبيق التحديث "
-"الجديد للغة"
+msgid "تم تحميل التحديث بنجاح, انقر فوق موافق لإعادة تشغيل البرنامج وتطبيق التحديث الجديد للغة"
 msgstr ""
-"The update has been downloaded successfully, click OK to restart the program and "
-"apply the new language update"
 
 #: D:\progects\github\MPP\source\gui\search.py:42
 msgid "بواسطة {b} "
-msgstr "by {b}"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\search.py:82
 msgid "عدد المشاهدات {}"
-msgstr "Views {}"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\search.py:84
 msgid "بث مباشر"
-msgstr "live"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\search.py:88
 msgid "المدة: {}"
-msgstr "Duration: {}"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\search.py:94
 msgid "البحث في المجلد"
-msgstr "search in folder"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\search.py:97
 #: D:\progects\github\MPP\source\gui\youtube.py:42
 msgid "كلمة البحث"
-msgstr "search word"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\search.py:105
 msgid "بحث"
-msgstr "search"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\search.py:116
 msgid "قم بإدخال كلمة بحث أولا"
-msgstr "Enter a search word first"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\search.py:123
 msgid "لا توجد نتائج"
-msgstr "No results"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\search.py:123
 msgid "لم يتم العثور على نتائج مطابِقة لكلمة البحث هذه"
-msgstr "No results were found for this search word"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\search.py:126
 msgid "نتيجة واحدة"
-msgstr "one result"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\search.py:128
 msgid "نتيجتان"
-msgstr "two results"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\search.py:130
 msgid "نتائج"
-msgstr "results"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\search.py:131
 msgid "نتائج البحث عن {w}, هناك {rc} {rc2}"
-msgstr "Search results for {w}, there are {rc} {rc2}"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\search.py:153
 msgid "فتح مسار الملف"
-msgstr "Open file path"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\search.py:154
 msgid "نسخ مسار الملف"
-msgstr "copy file path"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:14
 msgid "إعدادات البرنامج"
-msgstr "Program settings"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:17
 msgid "اختر ما تريد تعديله من الإعدادات"
-msgstr "Choose what you want to modify from the settings"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:20
 msgid "الإعدادات العامة"
-msgstr "General Settings"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:22
 msgid "إعدادات النطق"
-msgstr "speech settings"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:24
 msgid "إعدادات الترجمات"
-msgstr "Subtitles settings"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:26
 msgid "إعدادات الإختصارات العامة"
-msgstr "global shortcut settings"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:27
 msgid "حفظ الإعدادات"
-msgstr "Save settings"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:95
-msgid ""
-"لقد قمت بتغيير بعض الإعدادات التي تتطلب إعادة تشغيل البرنامج لتطبيقها, هل تريد "
-"إعادة تشغيل البرنامج الآن؟"
+msgid "لقد قمت بتغيير بعض الإعدادات التي تتطلب إعادة تشغيل البرنامج لتطبيقها, هل تريد إعادة تشغيل البرنامج الآن؟"
 msgstr ""
-"You have changed some settings that require a restart of the program to apply, do "
-"you want to restart the program now?"
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:102
 msgid "لغة البرنامج, يتطلب هذا الأمر إعادة تشغيل البرنامج كَي تتطبق الإعدادات"
 msgstr ""
-"Program language, this option requires a restart of the program for the settings "
-"to take effect"
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:105
 msgid "عدد الثواني للتقديم"
-msgstr "number of seconds to forward/rewind"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:112
 msgid "التحقق من وجود تحديثات عند البدئ"
-msgstr "Check for updates at startup"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:114
 msgid "التحقق مِن تحديثات اللغة عند البدء"
-msgstr "Check for language updates at startup"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:116
-msgid ""
-"تحميل المسار كاملًا عند فتح ملف, في حال تفعيل هذا الخيار, عند فتح أي ملف, سيقوم "
-"البرنامج بفتح الملف مع المجلد كاملًا في البرنامج, هذا يسبب بطء في التحميل"
+msgid "تحميل المسار كاملًا عند فتح ملف, في حال تفعيل هذا الخيار, عند فتح أي ملف, سيقوم البرنامج بفتح الملف مع المجلد كاملًا في البرنامج, هذا يسبب بطء في التحميل"
 msgstr ""
-"load the full path when opening a file, if this option is enabled, when opening "
-"any file, the program will open the file with the entire folder in the program, "
-"this causes a slow load"
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:118
-msgid ""
-"حفظ آخر مقطع مع الموضع عند الخروج, يقوم هذا الخيار بالتحقق مِن آخر مقطع تم تشغيله "
-"عند البدئ, ثم يقوم بتشغيله والإنتقال إلى النقطة التي تم الوقوف عندها."
+msgid "حفظ آخر مقطع مع الموضع عند الخروج, يقوم هذا الخيار بالتحقق مِن آخر مقطع تم تشغيله عند البدئ, ثم يقوم بتشغيله والإنتقال إلى النقطة التي تم الوقوف عندها."
 msgstr ""
-"Save the last clip with the position on exit, this option checks the last clip "
-"played at start, then plays it and moves to the point where it was stopped"
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:120
 msgid "تشغيل أول ملف بعد فتح مجلد"
-msgstr "Play the first file after opening folder"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:122
 msgid "تفعيل سجل البحث"
-msgstr "enable search history"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:128
 msgid "نطق الإيقاف المؤقت والإستئناف"
-msgstr "speak play / pause"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:130
 msgid "نطق مستوى الصوت عند تغييره"
-msgstr "speak the volume when changing it"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:132
 msgid "نطق الوقت المنقضي عند التقديم والتأخير"
-msgstr "speak the elapsed time when forward and rewind"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:134
 msgid "النطق عند إعادة تشغيل المقطع"
-msgstr "speak track replayed"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:136
 msgid "نطق معدل السرعة عند تغييره"
-msgstr "Speak the speed rate when changing it"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:142
 msgid "control موصى إستخدامه في windows11 مع الإختصارات الأخرا alt و windows"
 msgstr ""
-"control, is recommended for use in windows 11 with other shortcuts alt and windows"
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:146
 msgid "استبدال الأزرار page_up / page_down بالأزرار tab / shift+tab"
-msgstr "Replace the page up / page down buttons with the tab / shift+tab buttons"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:161
 msgid "قرائة الترجمات"
-msgstr "Read subtitles"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:162
 msgid "تحميل ملف الترجمة تلقائيًا"
-msgstr "automatically load the subtitle file"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:163
 msgid "استخدام sapi5 لِقِراءة الترجمات"
-msgstr "Use sapi5 to read subtitles"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:164
 msgid "اختر الصوت"
-msgstr "Choose the voice"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:166
 msgid "اختبار"
-msgstr "test"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:167
 msgid "سرعة القِراءة"
-msgstr "speed rate"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\settings_dialog.py:169
 msgid "مستوى الصوت"
-msgstr "volume level"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\updater.py:37
 msgid "تم العثور على تحديث جديد"
-msgstr "A new update has been found"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\updater.py:37
 msgid "هناك تحديث جديد {name} الإصدار {ver} هل تريد التحديث الآن؟"
-msgstr "There is a new update {name} version {ver} Do you want to update now?"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\updater.py:41
 msgid "لديك أحدث إصدار مِن MediaPlayerPro"
-msgstr "You have the latest version of MediaPlayerPro"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\updater.py:41
 msgid "لم يتم العثور على تحديثات"
-msgstr "No updates found"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\updater.py:108
 msgid "تم تحميل التحديث بنجاح, انقر فوق موافق لِتبدأ عملية التثبيت."
-msgstr "Update downloaded successfully, click OK to start the installation process."
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\updater.py:114
 msgid "يتم تثبيت التحديث"
-msgstr "installing update"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\updater.py:118
-msgid ""
-"حدث خطأ غير متوقع عند محاولة فتح الملف للتثبيت، أعد تنزيل التحديث مرة أخرى، وإذا "
-"استمرت المشكلة، فقم بالإتصال بالمطور لحلها"
+msgid "حدث خطأ غير متوقع عند محاولة فتح الملف للتثبيت، أعد تنزيل التحديث مرة أخرى، وإذا استمرت المشكلة، فقم بالإتصال بالمطور لحلها"
 msgstr ""
-"An unexpected error occurred when trying to open the file for installation, re "
-"download the update again, and if the problem persists, contact the developer to "
-"solve it"
 
 #: D:\progects\github\MPP\source\gui\youtube.py:21
 msgid "لقد أدخلت رابط غير صالح."
-msgstr "You have entered an invalid url."
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\youtube.py:25
 msgid ""
 "\n"
-": :  يتم التشغيل مِن يوتيوب: {title}\n"
+"\t\t يتم التشغيل مِن يوتيوب: {title}\n"
 "\n"
-": : المشاهدات: {views}\n"
+"\t\tالمشاهدات: {views}\n"
 "\n"
-": : المالك: {author}\n"
+"\t\tالمالك: {author}\n"
 "\n"
-": : عدد الإعجابات: {likes}\n"
+"\t\tعدد الإعجابات: {likes}\n"
 "\n"
-": : الوصف: {description}\n"
-": "
+"\t\tالوصف: {description}\n"
+"\t"
 msgstr ""
-"\n"
-": :  playing from youtube: {title}\n"
-"\n"
-": : Views: {views}\n"
-"\n"
-": : author: {author}\n"
-"\n"
-": : likes: {likes}\n"
-"\n"
-": : description: {description}"
 
 #: D:\progects\github\MPP\source\gui\youtube.py:37
 msgid "البحث في يوتيوب"
-msgstr "Search in YouTube"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\youtube.py:44
 msgid "قائمة النتائج"
-msgstr "results list"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\youtube.py:48
 msgid "تحميل جميع النتائج الحالية في قائمة"
-msgstr "Load all current results in a list"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\youtube.py:68
 msgid "يتم البحث عن {q}"
-msgstr "searching for  {q}"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\youtube.py:72
-msgid ""
-"حدث خطأ أثناء محاولة البحث, قد تكون هناك مشكلة بالإتصال, إذا استمرت المشكلة "
-"بالظهور قم بمراسلة المطور لحل المشكلة"
+msgid "حدث خطأ أثناء محاولة البحث, قد تكون هناك مشكلة بالإتصال, إذا استمرت المشكلة بالظهور قم بمراسلة المطور لحل المشكلة"
 msgstr ""
-"An error occurred while trying to search, there may be a connection problem, if "
-"the problem continues to appear, contact the developer to solve the problem"
 
 #: D:\progects\github\MPP\source\gui\youtube.py:75
 msgid "اكتمل تحميل النتائج"
-msgstr "Results loading complete"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\youtube.py:140
 msgid "يتم تحميل المزيد من النتائج"
-msgstr "Loading more results"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\youtube.py:142
 msgid "لا توجد نتائج أُخرى"
-msgstr "There are no other results"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\youtube.py:144
 msgid "تم تحميل المزيد من النتائج"
-msgstr "More results loaded"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\youtube.py:158
-msgid "فتح الفيديو في المتصفح: v"
-msgstr "Open the video in the browser : v"
+msgid "فتح الفيديو في المتصفح\tv"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\youtube.py:159
-msgid "فتح القناة في المتصفح: c"
-msgstr "Open the channel in the browser : c"
+msgid "فتح القناة في المتصفح\tc"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\youtube.py:160
-msgid "نسخ رابط الفيديو: u"
-msgstr "copy video link : u"
+msgid "نسخ رابط الفيديو\tu"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\youtube.py:161
-msgid "نسخ رابط القناة: l"
-msgstr "copy channel link: l"
+msgid "نسخ رابط القناة\tl"
+msgstr ""
 
 #: D:\progects\github\MPP\source\gui\youtube.py:172
 #: D:\progects\github\MPP\source\gui\youtube.py:176
 msgid "يتم الفتح في المتصفح"
-msgstr "opening in browser"
+msgstr ""
 
 #: D:\progects\github\MPP\source\scripts\subtitle.py:17
 msgid "اختيار ملف ترجمة (.srt)|*.srt"
-msgstr "Choose a translation file (.srt)|*.srt"
+msgstr ""
 
 #: D:\progects\github\MPP\source\scripts\subtitle.py:30
 msgid "تم تحميل ملف الترجمة {subfile}"
-msgstr "The subtitle file {subfile} loaded."
+msgstr ""
 
-#~ msgid "بطيء"
-#~ msgstr "slow"
-
-#~ msgid "بطيء جدا"
-#~ msgstr "very slow"
-
-#~ msgid "سريع"
-#~ msgstr "fast"
-
-#~ msgid "سريع جدا"
-#~ msgstr "Very fast"
-
-#~ msgid "متوسط"
-#~ msgstr "Average"
-
-#, fuzzy
-#~| msgid "قائمة التعليقات"
-#~ msgid "ترتيب التعليقات حسب:"
-#~ msgstr "comments list"
-
-#~ msgid ""
-#~ "في حال تم الضغط فوق نعم, سيتم حذف جميع العناصر في المفضلة, ولا يمكنك إسترجاعهم "
-#~ "مرةً أُخرى, هل تريد الحذف؟"
-#~ msgstr ""
-#~ "If you click Yes, all the items in your favourites will be deleted, and you "
-#~ "cannot get them back. Do you want to delete?"
-
-#~ msgid "لقد تم حذف جميع عناصر المفضلة"
-#~ msgstr "All favourites have been deleted"
-
-#~ msgid "البحث عن {q}"
-#~ msgstr "search for  {q}"

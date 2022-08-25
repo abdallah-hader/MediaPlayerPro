@@ -14,7 +14,7 @@ def load(path):
 		g.current_subtitle[g.time_to_ms(dt.datetime.utcfromtimestamp(i.start//1000).strftime("%H:%M:%S"))] = {"text":i.text.replace(r"\N", "\n"), "start":dt.datetime.utcfromtimestamp(i.start//1000).strftime("%H:%M:%S"), "end":dt.datetime.utcfromtimestamp(i.end//1000).strftime("%H:%M:%S")}
 
 def Select():
-		path=wx.FileSelector(_("اختيار ملف ترجمة (.srt)|*.srt"))
+		path=wx.FileSelector(_("اختيار ملف ترجمة (.srt)|*.srt"), wildcard="|*.srt")
 		if not path: return
 		load(path)
 

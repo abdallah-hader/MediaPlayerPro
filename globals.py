@@ -1,6 +1,10 @@
 import application
 import wx
 from settingsconfig import get
+import re
+
+programPath = ""
+
 tracks_list=[] #a list to save the links if from youtube, or paths from folder.
 FavoriteLength={} #a dictionary to save the lengths (elapsed) of loaded favorite category
 FavoriteLoaded = False # a bool variable to check if folder loaded or a favorite category to use the next / previous currectly
@@ -18,6 +22,8 @@ youtube_url="" # the current playing media url, using to get comments etc.
 youtube_file_info = ""
 youtube_description = ""
 youtube_list=[]
+sapi = None # sapi object to give more control
+fromUrl = False
 
 def time_formatting( t):
 	t = t.split(":")
@@ -67,3 +73,7 @@ def time_to_ms(timestamp):
 	for i in range(1, len(timestamp)+1):
 			ms += timestamp[-i] * 1000*60**(i-1)
 	return ms
+
+def IsYoutubeUrl(string):
+	pattern = re.compile("^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$") # youtube links regular expression pattern
+	return pattern.search(string)

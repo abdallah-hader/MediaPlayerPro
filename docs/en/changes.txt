@@ -1,0 +1,114 @@
+#changes1.3
+* The program now open source
+* Now when you run the program and it is already running it will tell you instead of nothing.
+* Now when you search in YouTube and select the option to load results in a list, then let's say the fifth result is chosen to play, it will save the sequence of the result, and when you go to the next result, it starts from the sixth result, and so on with the automatic playback of the next clip.
+* Another library was used to control sapi 5, and it may solve some problems that some face, such as controlling volume and speed.
+Also, modifying the sapi5 settings did not require a restart of the program.
+Also, now you can set the speed and volume from outside the settings, by pressing f5/f6 to control the speaking speed, f7/f8 to control the volume.
+* Solve an issue where some shortcuts sometimes crash.
+* Solve the problem of not being able to open settings after updating or deleting settings.
+* Search history issues have been resolved.
+* Solve the problem of muting the program after running it, which appeared to some people.
+* Now you can run the program via the run window by typing mpp and the program will start directly.
+* The acceleration and deceleration abbreviations for the clip have been changed from - and = to shift+down-arrow and shift+up-arrow-to-acceleration, since some brothers have reported that their keyboards do not have these marks due to their language.
+* Additional keys for forward/rewind have been added as follows:
+shift+right arrow: / left arrow: forward / backward by 10 seconds.
+control+right arrow: / left arrow: forward/delay by 15 seconds.
+control+shift+right arrow: / left arrow: forward / backward by 30 seconds.
+alt+right arrow: / left arrow: forward/backward one minute.
+As for the right arrow and the left, you can adjust the desired duration from the settings, and the possibility of customization has been increased from 60 seconds to 1800 seconds, which is approximately 30 minutes.
+* The ability to search for the specific language update has been added, i.e. it is possible to issue an update for language files only so that they are easily updated, especially if an update is issued from the program and the translation of a language has not been completed if the translator is busy and so on, but so far this feature is not supported Arabic language, you can search for updates manually from the main menu, or activate the option to check the language update when starting, the verification is done on the basis of the program language, that is, if the program language is English, it does not come with updates for a language other than English.
+* Now you can play from any direct link, that is, playback from a link is not limited to YouTube only.
+Likewise, if you run anything through a link and you have its srt translation file on the computer and you open the srt file, it will be read without problems, that is, the translated thing is not required to be on your computer.
+* Now when you open a subtitle file: only srt files will appear instead of all files
+* The program now supports Turkish, French and Spanish languages.
+#changes 1.2
+This update brought some new features and improvements.
+1: Added the feature of reading subtitle files:
+This feature is definitely well known, but let's talk about it a little bit ☺
+This feature enables you to read the subtitle files that come with movies or series, or various things for which subtitle files are available.
+You can play the clip, then press control+shift+s to access the subtitle file selection dialog, browse and click on the subtitle file.
+NVDA Screen Reader will automatically manage the task of pronunciation, subtitle pronunciation, but, you can dispense with NVDA screen reader by selecting SAPI5 as the reader for your subtitle file.
+First, we open Settings and go to Subtitles Settings section.
+In this section there are some settings that you can adjust and they are as follows:
+* Read subtitles: When this option is disabled, the screen reader will stop speaking the subtitles, even if they are available.
+* Automatically load the subtitle file: If this option is enabled, the program will check if there is a subtitle file in the same path with the same name as the file that was played, if available, it will run the subtitle file.
+* Use sapi5 to read subtitles: When this option is selected, subtitle files will be spoken by sapi5 and not by NVDA.
+* Choose the voice: from this box you can choose the voice to be used, note that only the sounds installed on sapi5 appear here.
+* Test: To test the sound after adjusting its speed and volume.
+* Reading speed: to choose the speed of speak, there are 5 speeds available at the moment.
+* Volume level: to choose the volume level between 0.1 to 1.0.
+At the moment, the volume option is unread, but I will try to solve this problem with the next update.
+2: Favorites have been redesigned to be better than before.
+Where you can now create categories and add different categorys to favorite.
+After entering the favorite, the window will be in the following order:
+* Categories: Through this selection box, you can move between the previously created categories. A default category comes with the name of the default category.
+* Favorites list, here the items for the category that were selected from the categories box appear. When you look at any category, it will automatically show its items in this list.
+The way to display the information about the clip added to the favourites has been changed. After standing on it, it is enough to press f1 to find out its information.
+* Open all items as a list: If this button is pressed, the program will open all items in the list in the form of a list, and you can move between them with the next and previous button, which is by default pageup / pagedown.
+Note, at the moment when you open all items as a list, when you exit the program and come back it does not open the selected category.
+* Add a new category: You can create a new category through this button, after pressing it, it will prompt you to type a name for this category, then press OK.
+* Delete Category: With this option, you can delete the category with the items in this category.
+* Close: To close the window.
+3: When you click on the “Add to Favorites” option, or press the shortcut control+p, a window will appear as follows:
+* Choose the category: to choose the category to which you want to add the clip.
+* Name: to change the default name, which is the file name automatically, note, this name appears in the favourites.
+* Add, to add the track.
+* Add a new category: Also from here you can create a new category.
+* Close: to close the window and cancel.
+4:The Comments window has been redesigned, now a dialog appears above the main window, and the items are arranged as follows:
+* Comments list, is the same list in which comments appear.
+* Comment text: In this edit field, the comment appears as a text and not a list item, so you can navigate by words and characters easily, when you stand on a comment, the comment will automatically become in this text field.
+* Copy Comment: To copy the selected comment to the clipboard.
+* Close: to close the window.
+5 : You can now copy the description of the video by pressing the shortcut control+i.
+# Changes in 1.1
+1: Favorite added:
+And its idea in a nutshell: You can add the current clip to it, and when you add it and play it from the favorites list, it will start from the point at which the favorites were added.
+I suppose I have a 10-minute clip, then I added the clip to my favorites when I was at the fifth minute.
+The clip will start playing from the fifth minute when I play it from favorite list.
+If we want to add the clip from the beginning, we have to stop at the beginning of the file, pause it, and then add it.
+You can add the clip to favorites by pressing control+p.
+And to open favorites with the letter f.
+The Favorites window contains the Favorites list, which contains previously added items, also a button to clear favorites and a button to close, and to delete an item from the favorites by pressing the delete key on it.
+2: The ability to speed up or slow down the clip has been added, and the value is between 0.5 to 2.0, you can control it by pressing the minus sign (-) to slow down and the equal sign (=) to speed up.
+3: The following options have been added in the speak settings:
+* Speak when replaying the clip: If it is disabled, the clip will be played back when you press the shortcut without saying the clip replayed.
+* speak the speed rate when changing it. If it is disabled, the speed rate is not spoken when pressing the shortcuts.
+4: The problem of not being able to play the clip after its end has been resolved if the repeat clip and play next clip features are disabled. Now that the clip is finished, you can press the spacebar to replay it.
+5: Added a feature to repeat a duration to be determined from the clip being played:
+For example, we have a two-minute clip, and we want to make the program run and repeat only the duration from 30 seconds to a minute, so we put the starting point at the desired time, for example 30 seconds, and then we put the end point at 60 seconds, in this case, it will Playing, from the second 30, and when it reaches the 60 second it will rewind the clip to the 30 second.
+To use this feature, do the following:
+First play the clip and forward or get to the start time in any way, then press the spacebar to pause the clip, this is an optional step, but it's for accuracy.
+Then we press the letter q until the starting point is selected.
+Then we play the clip and advance or reach the time we want to repeat when we reach it, then stop the clip again and press w to finish the selection.
+Now we can press f2 to activate the repeating mode for the specified duration, and to stop the repeat we must press f2 again.
+After disabling it, it will keep the specified duration, so if you press the same shortcut at any time it will repeat the specified duration.
+And in the event that the mode of repeating a certain period is activated, you can advance and rewind, and this depends on the specified period, with us, if we specify the period of repetition from 30 seconds to a minute, if we present the clip and reach a minute that does not exceed it, as well as with rewind, and also with restarting the clip, it will Restart from the starting point.
+You cannot present the clip in numbers when repeating a certain duration mode is enabled.
+Note, it does not matter if you specify the end point first and then specify the starting point after, but it is important that the time is correct, that is, the time of the starting point is less than the time of the end point.
+6: The random feature has been added, if there is a folder, or a list of results,And the move to the next file feature was enabled and then the random play feature was activated. Instead of running the next file/result, the program will randomly choose between the first file/result to the last file/result in the list.
+You can enable or disable this option by pressing control+r
+7: The issue of not playing a file from the folder search results has been resolved if you disable the option to play the first file after load a folder.
+8: The YouTube search window has been redesigned:
+Where if you press the letter a, it will show you the search window in YouTube, if you do a previous search, the list of search results will be visible and the cursor will be on the result that was previously selected, then if we go back by pressing shift+tab, you will find an edit field to search again, in case you didn’t You search previously, the same window will open and the focus will be on the search field, and you will not see a list of search results and the checkbox that carries the results in a list until after the search.
+9: Added an option in the shortcuts settings and added it to replace the next and previous buttons pageup and page down with the buttons tab and shift+tab, but unfortunately there seems to be a problem with this shortcut with the global shortcuts, so I made the global shortcut is z for the previous and x for the next, of course with the general shortcut that set or default windows+alt, it might be a strange shortcut, but that's what I can do for now.
+10: A search history has been added, in which searches are preserved, that is, if you search in YouTube, the search word will be stored in it, and the record is a window that contains an options box to choose the date. Every day it creates a new date in the event of a search In YouTube that day, and a list containing the search words, if the enter button is pressed, it will search for the specified search word.
+Also there is a button to delete only the selected date, and another button to delete the entire history.
+You can disable keeping a search word in history in the general settings.
+11: New menus have been added to the program to make it easier for people who do not want to deal with shortcuts.
+You can access it via the alt menu key.
+which is next:
+Options list:
+It contains the following options:
+* add to favorite, the shortcut control+p performs the same function.
+* Search in the folder.
+* go to, to go to a file by sequencing it between files.
+* Random play, control+r performs the same function.
+Youtube Menu:
+This menu contains options for YouTube only, and they are as follows:
+* Search in YouTube.
+* Play from link.
+* Search history, control+h does the same thing.
+* View the comments of the current clip.
+12: The program will now work on two 32/64 bit systems.

@@ -96,10 +96,10 @@ class main(wx.Frame):
 		open_folder = MainMenu.Append(-1, _("فتح مجلد: ctrl+f"))
 		open_subtitle = MainMenu.Append(-1, _("فتح ملف ترجمة (srt): ctrl+shift+s"))
 		youtube_search=YoutubeMenu.Append(-1, _("البحث في يوتيوب: a"))
-		from_url = YoutubeMenu.Append(-1, _("تشغيل مِن رابط: y"))
 		history = YoutubeMenu.Append(-1, _("سجل البحث: ctrl+h"))
 		GetComments = YoutubeMenu.Append(-1, _("عرض تعليقات المقطع الحالي: c"))
 		CopyDescription = YoutubeMenu.Append(-1, _("نسخ الوصف: ctrl+i"))
+		from_url = OptionsMenu.Append(-1, _("تشغيل مِن رابط: y"))
 		ShowFavorite = OptionsMenu.Append(-1, _("المفضلة: f"))
 		addfavorite =OptionsMenu.Append(-1, _("إضافة للمفضلة: ctrl+p"))
 		folder_search = OptionsMenu.Append(-1, _("البحث في المجلد: s"))
@@ -132,7 +132,7 @@ class main(wx.Frame):
 		self.Bind(wx.EVT_MENU, self.CheckForUpdates, update)
 		self.Bind(wx.EVT_MENU, self.OnClose, close)
 		self.Bind(wx.EVT_MENU, self.OnFolder, open_folder)
-		self.Bind(wx.EVT_MENU, self.play_from_youtube, from_url)
+		self.Bind(wx.EVT_MENU, self.PlayFromUrl, from_url)
 		self.Bind(wx.EVT_MENU, lambda e: settings_dialog.settingsgui(self), settings)
 		self.Bind(wx.EVT_MENU, self.AboutMessage, about_the_program)
 		self.Bind(wx.EVT_MENU, self.ShowUserGuide, user_guide)
@@ -389,6 +389,7 @@ class main(wx.Frame):
 		return speak(_("{title}, المدة: {duration}, الوقت المُنقَضي: {elapsed}, مستوى الصوت الحالي: {volume}").format(duration=g.player.get_duration(), title=g.player.title, elapsed=g.player.get_elapsed(), volume=g.player.volume))
 
 	def OnClose(self, event):
+#		print(g.fromUrl)
 		self.threadloop.stop()
 		if not g.player==None and g.player.repeate_some: g.player.repeate_some=False
 		try:
@@ -398,7 +399,7 @@ class main(wx.Frame):
 		if g.player==None or g.FavoriteLoaded: return wx.Exit()
 		if not get("save_at_exit"): return wx.Exit()
 		position = g.player.media.get_position()
-		if g.playing_from_youtube:
+		if g.playing_from_youtube or g.fromUrl:
 			data=[g.player.title, g.player.url, position, g.tracks_list, True,]
 		else: data=[g.player.filename, position, False]
 		with shelve.open(os.path.join(datapath, "data")) as f:
@@ -415,8 +416,8 @@ class main(wx.Frame):
 					self.new_track(f["data"][0])
 					g.player.media.set_position(float(f['data'][1]))
 				else:
-					self.play_from_youtube(f["data"][1], True)
-					g.youtube_url=f["data"][1]
+					self.PlayFromUrl(f["data"][1], True)
+					g.youtube_url=f["data"][1] if g.IsYoutubeUrl(f["data"][1]) else None
 					g.player.media.set_position(float(f['data'][2]))
 					g.tracks_list=f["data"][3]
 		except Exception as e:
@@ -445,39 +446,41 @@ class main(wx.Frame):
 		if not from_option: g.index=0
 		self.loading=False
 
-	def play_from_youtube(self, url="", HasUrl=False):
-		if HasUrl:
-			data=youtube.get_url(url)
-		else:
-			link = input_box.Input(self, _("الرابط"), _("قم بإدخال رابط اليوتيوب المُراد تشغيله"))
+	def PlayFromUrl(self, url="", HasUrl=False):
+		if not HasUrl:
+			link = input_box.Input(self, _("الرابط"), _("قم بإدخال الرابط المُراد تشغيله"))
 			if link.canceled: return
-			url=link.text()
+			url = link.text()
+		g.fromUrl = True
+		if g.IsYoutubeUrl(url):
 			g.youtube_url=url
-			data=youtube.get_url(link.text())
-		try:
-			link=data[0]
-		except:
-			return
-		title=data[2]
-		g.youtube_file_info=data[1]
+			data=youtube.get_url(url)
+			try:
+				link=data[0]
+			except:
+				return
+			title=data[2]
+			g.youtube_file_info=data[1]
 		if g.player is None:
-				g.player=media_player.Player(link, self.GetHandle())
-				g.playing_from_youtube=True
+			g.player=media_player.Player(url if not g.IsYoutubeUrl(url) else link, self.GetHandle())
+			try:
 				self.Title=f"{title} {application.name}"
 				g.player.title=title
-				g.player.url=url
-				return
+			except:pass
+			g.player.url=url
+			g.playing_from_youtube=True if g.IsYoutubeUrl(url) else False
+			return
 		try:
 			g.player.media.stop()
 		except: pass
-		g.player.set_media(link)
-		g.playing_from_youtube=True
+		g.player.set_media(url if not g.IsYoutubeUrl(url) else link)
+		g.playing_from_youtube=True if g.IsYoutubeUrl(url) else False
 		self.Title=f"{title} {application.name}"
 		g.player.title=title
 		g.player.url=url
 		g.folder_path=""
 		g.player.media.play()
-		g.youtube_url=url
+		g.youtube_url=url if g.IsYoutubeUrl(url) else None
 		with open(self.temp, "w") as t:
 			t.write("youtube:::=false")
 
@@ -517,7 +520,7 @@ class main(wx.Frame):
 		if g.index>=len(g.tracks_list):
 			g.index=0
 			speak(_("تم الإعادة من المقطع الأول"))
-		threading.Thread(target=self.play_from_youtube, args=[g.tracks_list[g.index][1], True]).start()
+		threading.Thread(target=self.PlayFromUrl, args=[g.tracks_list[g.index][1], True]).start()
 
 	def previous_youtube_video(self, event=None):
 		if len(g.tracks_list)<2: return speak(_("لا توجد هناك قائمة"))
@@ -525,7 +528,7 @@ class main(wx.Frame):
 			g.index=len(g.tracks_list)
 			speak(_("تم الإنتقال إلى آخِر مقطع"))
 		g.index-=1
-		threading.Thread(target=self.play_from_youtube, args=[g.tracks_list[g.index][1], True]).start()
+		threading.Thread(target=self.PlayFromUrl, args=[g.tracks_list[g.index][1], True]).start()
 
 
 	def goto(self, event=None):
@@ -721,7 +724,7 @@ class main(wx.Frame):
 		self.Bind(wx.EVT_HOTKEY, self.OnFolder, self.OpenFolderId)
 		self.Bind(wx.EVT_HOTKEY, self.goto, self.GotoId)
 		self.Bind(wx.EVT_HOTKEY, self.ShowHide, id=self.ShowHideId)
-		self.Bind(wx.EVT_HOTKEY, self.play_from_youtube, id=self.YoutubeId)
+		self.Bind(wx.EVT_HOTKEY, self.PlayFromUrl, id=self.YoutubeId)
 		self.Bind(wx.EVT_HOTKEY, self.go_to_next, id=self.NextId)
 		self.Bind(wx.EVT_HOTKEY, self.go_to_previous, id=self.PreviousId)
 		self.Bind(wx.EVT_HOTKEY, self.set_repeate, id=self.RepeateId)
