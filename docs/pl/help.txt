@@ -1,0 +1,61 @@
+#Media Player Pro
+<Program przeznaczony dla użytkowników czytników ekranu nvda.
+Ten program odtwarza różne pliki multimedialne i ułatwia ich kontrolę dostępną w 100% za pomocą czytników ekranu.
+Gdzie użytkownik w łatwy sposób, dostosowuje to, czego chce od mowy w programie.
+Program obsługuje różne formaty multimediów, w tym:
+.mp3, .ogg, .wav, .m4a, .mp4.
+itp.
+# Funkcje programu:
+1: Sterowanie mową, w którym możesz wybrać, co chcesz z dostępnych ustawień mowy, które są następujące:
+* Mów pauza / wznowienie.
+* Mów czas, który upłynął podczas przewijania do przodu i do tyłu.
+* Mów głośność, gdy ją kontrolujesz.
+2: Możesz otworzyć cały folder w programie i dość łatwo poruszać się po plikach, a funkcje związane z folderami są następujące:
+* Funkcja usuwania pliku jest dostępna z poziomu programu.
+* Funkcja wyszukiwania folderów, możesz uruchomić plik z wyników wyszukiwania, a także skopiować ścieżkę pliku lub przejść do ścieżki pliku i umieścić na nim kursor za pomocą menu kontekstowego.
+3: Załaduj cały folder po otwarciu pliku: Ta funkcja umożliwia otwarcie całego folderu zawierającego odtwarzany plik.
+4: Zapisz ostatnio odtwarzany plik z pozycją, w której został zatrzymany, po uruchomieniu program ponownie otworzy plik i przejdzie do pozycji, w której został zatrzymany, również jeśli otworzysz folder w jakikolwiek sposób, otworzy ponownie folder, gdy uruchamiasz program z jego skrótu, a także możesz wyłączyć tę funkcję w ustawieniach.
+5: Przejdź do pliku, wpisując numer pliku w folderze.
+6: Odtwarzaj klipy z YouTube za pośrednictwem łącza wideo.
+7: Wyszukaj w YouTube: Dzięki tej funkcji możesz wyszukiwać filmy w YouTube i odtwarzać je w programie. Możesz także skopiować łącze wideo lub łącze kanału zawierającego wideo, otworzyć wideo w przeglądarce lub otworzyć kanał w przeglądarce.
+Okno wyszukiwania YouTube zawiera pole wyboru, aby załadować wszystkie pobrane wyniki do listy i staje się kontrolowane jako folder, możesz przechodzić między wynikami, a wynik zostanie odtworzony automatycznie.
+Funkcje folderów dotyczą również powyższej funkcji, jeśli program zostanie zamknięty, zachowa te wyniki i zwróci je po otwarciu programu.
+Przez załadowane wyniki rozumiem wyniki na liście, im więcej wyników przesuniesz na koniec listy, tym więcej wyników zostanie załadowanych.
+8: Przeczytaj komentarze do filmów z YouTube z poziomu programu.
+Na początku zostanie przesłanych tylko 20 komentarzy, a gdy dojdziesz do końca listy, zostanie przesłanych więcej. Ma to na celu uniknięcie problemów w przypadku dużej liczby komentarzy.
+9: Wybierz przewijanie do przodu o 1/60 sekundy, możesz to określić w ustawieniach i możesz przewijać klip przez numery, a nie numery boczne, mam na myśli te górne, które znajdują się na górze klawiatury.
+10: Funkcja powtarzania klipu, czyli po jego zakończeniu klip zostanie odtworzony ponownie.
+11: Przejdź do funkcji następnego klipu: Funkcja powtarzania klipu musi być wyłączona, aby ta funkcja działała,i ta funkcja dotyczy folderów i wyników wyszukiwania, jeśli są dostępne.
+12: Kontroluj większość funkcji programu za pomocą globalnych skrótów z możliwością ukrycia okna programu.
+Możesz otwierać pliki za pomocą opcji, którą program tworzy w menu kontekstowym po zainstalowaniu.
+Program można również tymczasowo ustawić jako program domyślny ręcznie.
+utwory z YouTube są odtwarzane jako dźwięk, a nie wideo.
+
+# Skróty programu:
+Umieszcza skróty programu od wewnątrz, a skrót z zewnątrz przeciwko niemu.
+Skrót kontrol z programu globalnego jest domyślnie dostarczany z alt+Kontrol.
+Ten skrót nie jest zgodny z systemem Windows 11, więc możesz zmienić ten skrót w ustawieniach i zaleca się ustawienie alt + windows + Kontrol, aby działał poprawnie.
+Powie ci każdy skrót, potem globalny skrót do niego, ale tylko akronim, nie wspominając o alt+Kontrol.
+Strzałka w lewo/w prawo: do przewijania do przodu/do tyłu, a także samego skrótu globalnego.
+Strzałka w górę / w dół: do sterowania głośnością: 0/200%, a także sam skrót ogólny.
+strona w górę/strona w dół: aby przejść do następnej/poprzedniej ścieżki, a także samego globalnego skrótu.
+strona główna: aby przejść do początku klipu, globalny skrót jest taki sam.
+spacja: aby wstrzymać/wznowić, globalny skrót jest taki sam.
+m: aby wyciszyć, globalny skrót v.
+n: Aby włączyć lub wyłączyć funkcję przechodzenia do następnego pliku.
+c: Wyświetla komentarze, jeśli jest odtwarzany film z YouTube.
+g: aby przejść do pliku po jego numerze w folderze, czyli kolejności między plikami, skrót globalny: j.
+s: wyszukiwanie w folderze.
+O: Aby wyszukać w YouTube, globalny skrót jest taki sam.
+y: aby odtworzyć klip z YouTube za pośrednictwem łącza, skrót globalny: l.
+r: Aby włączyć lub wyłączyć funkcję powtarzania klipu, skrót globalny: e.
+i: Aby uzyskać informacje o odtwarzanym utworze, globalny skrót jest taki sam.
+Delete/Delete na klawiaturze numerycznej: aby usunąć odtwarzaną ścieżkę, ta funkcja działa w tej chwili tylko z folderami, globalny skrót jest taki sam.
+Kontrol+o: aby otworzyć plik, globalny skrót o.
+Kontrol+f: aby otworzyć folder, skrót globalny: s.
+Kontrol+s: Otwiera ustawienia.
+Kontrol+w: Zamyka wszystko w programie, folderze lub wynikach YouTube i zatrzymuje odtwarzanie klipu.
+alt+windows+h: ukrywa/pokazuje okno programu.
+
+Okno ustawień jest oczywiste, ponieważ większość opcji jest opisana i są one proste.
+Możesz skontaktować się ze mną za pośrednictwem menu Informacje, aby przekazać mi swoje sugestie lub poinformować mnie o problemie.

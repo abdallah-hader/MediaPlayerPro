@@ -1,0 +1,113 @@
+#zmiany w wersji 1.3
+* Program jest teraz open source
+* Teraz, gdy uruchomisz program, który już działa, zamiast nic, powie ci.
+* Teraz, gdy wyszukujesz w YouTube i wybierasz opcję załadowania wyników na listę, powiedzmy, że do odtworzenia wybrano piąty wynik, zapisze on sekwencję wyniku, a kiedy przejdziesz do następnego wyniku, zaczyna się od szósty wynik i tak dalej z automatycznym odtwarzaniem następnego klipu.
+* Inna biblioteka była używana do kontrolowania sapi 5 i może rozwiązać niektóre problemy, z którymi borykają się niektórzy, takie jak kontrolowanie głośności i szybkości.
+Również modyfikacja ustawień sapi5 nie wymagała restartu programu.
+Ponadto, teraz możesz ustawić szybkość i głośność spoza ustawień, naciskając f5/f6, aby kontrolować szybkość mówienia, f7/f8, aby kontrolować głośność.
+* Rozwiązano problem polegający na tym, że niektóre skróty czasami się zawieszają.
+* Rozwiązano problem braku możliwości otwarcia ustawień po aktualizacji lub usunięciu ustawień.
+* Problemy z historią wyszukiwania zostały rozwiązane.
+* Rozwiązano problem wyciszania programu po jego uruchomieniu, który pojawiał się u niektórych osób.
+* Teraz możesz uruchomić program za pomocą okna uruchamiania, wpisując mpp, a program uruchomi się bezpośrednio.
+* Skróty przyspieszania i zwalniania w klipie zostały zmienione z - i = na shift+strzałka-w dół i shift+strzałka-w górę-na-przyspieszenie, ponieważ niektórzy bracia zgłosili, że ich klawiatury nie mają tych znaków ze względu na ich język .
+* Dodatkowe klawisze przewijania do przodu/do tyłu zostały dodane w następujący sposób:
+shift+strzałka w prawo: / strzałka w lewo: do przodu / do tyłu o 10 sekund.
+Kontrol+strzałka w prawo: / strzałka w lewo: do przodu/opóźnienie o 15 sekund.
+Kontrol+shift+strzałka w prawo: / strzałka w lewo: do przodu/do tyłu o 30 sekund.
+alt+strzałka w prawo: / strzałka w lewo: do przodu/do tyłu o minutę.
+Jeśli chodzi o prawą i lewą strzałkę, możesz dostosować żądany czas w ustawieniach, a możliwość dostosowania została zwiększona z 60 sekund do 1800 sekund, czyli około 30 minut.
+* Dodano możliwość wyszukiwania aktualizacji dla konkretnego języka, tzn. możliwe jest wydawanie aktualizacji tylko dla plików językowych, aby można je było łatwo zaktualizować, zwłaszcza jeśli aktualizacja jest wydana z programu, a tłumaczenie języka nie zostało została zakończona, jeśli tłumacz jest zajęty itp., ale jak dotąd ta funkcja nie jest obsługiwana język arabski, możesz wyszukać aktualizacje ręcznie z menu głównego lub aktywować opcję sprawdzania aktualizacji języka podczas uruchamiania, weryfikacja odbywa się na podstawa języka programu, to znaczy, jeśli językiem programu jest angielski, nie zawiera aktualizacji dla języka innego niż angielski.
+* Teraz możesz odtwarzać z dowolnego bezpośredniego łącza, co oznacza, że ​​odtwarzanie z łącza nie ogranicza się tylko do YouTube.
+Podobnie, jeśli uruchomisz coś przez łącze i masz plik tłumaczenia srt na komputerze i otworzysz plik srt, zostanie on odczytany bez problemów, to znaczy przetłumaczona rzecz nie musi znajdować się na twoim komputerze.* Teraz, gdy otworzysz plik z napisami: zamiast wszystkich plików pojawią się tylko pliki srt
+* Program obsługuje teraz języki turecki, francuski i hiszpański.
+#zmiany w wersji 1.2
+Ta aktualizacja przyniosła kilka nowych funkcji i ulepszeń.
+1: Dodano funkcję odczytu plików z napisami:
+Ta funkcja jest zdecydowanie dobrze znana, ale porozmawiajmy o niej trochę ☺
+Ta funkcja umożliwia odczytywanie plików napisów dołączonych do filmów lub seriali lub różnych rzeczy, dla których dostępne są pliki napisów.
+Możesz odtworzyć klip, a następnie nacisnąć Kontrol+shift+s, aby uzyskać dostęp do okna dialogowego wyboru pliku z napisami, przeglądać i kliknąć plik z napisami.
+Czytnik ekranu NVDA automatycznie zarządza zadaniem wymowy, wymowy napisów, ale możesz zrezygnować z czytnika ekranu NVDA, wybierając SAPI5 jako czytnik pliku z napisami.
+Najpierw otwieramy Ustawienia i przechodzimy do sekcji Ustawienia napisów.
+W tej sekcji można dostosować następujące ustawienia:
+* Czytaj napisy: Gdy ta opcja jest wyłączona, czytnik ekranu przestanie odczytywać napisy, nawet jeśli są dostępne.
+* Automatycznie ładuj plik z napisami: Jeśli ta opcja jest włączona, program sprawdzi, czy w tej samej ścieżce znajduje się plik z napisami o tej samej nazwie co odtwarzany plik, jeśli jest dostępny, uruchomi plik z napisami.
+* Użyj sapi5 do odczytu napisów: Gdy ta opcja jest zaznaczona, pliki z napisami będą czytane przez sapi5, a nie przez NVDA.
+* Wybierz głos: z tego pola możesz wybrać głos, który ma być używany, zwróć uwagę, że pojawiają się tutaj tylko dźwięki zainstalowane w sapi5.
+* Test: Aby przetestować dźwięk po dostosowaniu jego prędkości i głośności.
+* Szybkość czytania: aby wybrać szybkość mówienia, dostępnych jest obecnie 5 prędkości.
+* Poziom głośności: aby wybrać poziom głośności od 0,1 do 1,0.
+W tej chwili opcja głośności jest nieodczytywana, ale postaram się rozwiązać ten problem przy następnej aktualizacji.
+2: Ulubione zostały przeprojektowane, aby były lepsze niż wcześniej.
+Gdzie możesz teraz tworzyć kategorie i dodawać różne kategorie do ulubionych.
+Po wejściu do ulubionych okno będzie wyglądać następująco:
+* Kategorie: Za pomocą tego pola wyboru możesz przechodzić między wcześniej utworzonymi kategoriami. Kategoria domyślna ma nazwę kategorii domyślnej.
+* Lista Ulubione, tutaj pojawiają się pozycje dla kategorii, które zostały wybrane z pola kategorii. Gdy spojrzysz na dowolną kategorię, automatycznie wyświetli ona swoje pozycje na tej liście.
+Zmieniono sposób wyświetlania informacji o klipie dodanym do ulubionych. Po staniu na nim wystarczy nacisnąć f1, aby poznać jego informacje.
+* Otwórz wszystkie elementy jako listę: Jeśli ten przycisk zostanie wciśnięty, program otworzy wszystkie elementy na liście w formie listy, a między nimi można się poruszać za pomocą przycisku następny i poprzedni, którym domyślnie jest pageup / pagedown .
+Uwaga, w momencie, gdy otworzysz wszystkie elementy jako listę,po wyjściu z programu i powrocie nie otwiera on wybranej kategorii.
+* Dodaj nową kategorię: Możesz utworzyć nową kategorię za pomocą tego przycisku, po jego naciśnięciu pojawi się monit o wpisanie nazwy dla tej kategorii, a następnie naciśnij OK.
+* Usuń kategorię: Za pomocą tej opcji możesz usunąć kategorię z elementami w tej kategorii.
+* Zamknij: Aby zamknąć okno.
+3: Po kliknięciu opcji „Dodaj do ulubionych” lub naciśnięciu skrótu Kontrol + p pojawi się następujące okno:
+* Wybierz kategorię: aby wybrać kategorię, do której chcesz dodać klip.
+* Nazwa: aby zmienić domyślną nazwę, która jest automatycznie nazwą pliku, pamiętaj, że ta nazwa pojawia się w ulubionych.
+* Dodaj, aby dodać utwór.
+* Dodaj nową kategorię: Również tutaj możesz utworzyć nową kategorię.
+* Zamknij: aby zamknąć okno i anulować.
+4: Okno komentarzy zostało przeprojektowane, teraz nad głównym oknem pojawia się okno dialogowe, a elementy są ułożone w następujący sposób:
+* Lista komentarzy to ta sama lista, na której pojawiają się komentarze.
+* Tekst komentarza: w tym polu edycyjnym komentarz pojawia się jako tekst, a nie element listy, więc możesz łatwo nawigować po słowach i znakach, gdy staniesz na komentarzu, komentarz automatycznie znajdzie się w tym polu tekstowym.
+* Kopiuj komentarz: Aby skopiować wybrany komentarz do schowka.
+* Zamknij: aby zamknąć okno.
+5 : Możesz teraz skopiować opis wideo, naciskając skrót kontrolny + i.
+# Zmiany w wersji 1.1
+1: Dodano ulubione:
+A jego idea w pigułce: Możesz dodać do niego bieżący klip, a kiedy go dodasz i odtworzysz z listy ulubionych, rozpocznie się od miejsca, w którym dodane zostały ulubione.
+Przypuszczam, że mam 10-minutowy klip, a potem dodałem go do ulubionych, gdy byłem w piątej minucie.
+Klip rozpocznie odtwarzanie od piątej minuty, gdy odtwarzam go z listy ulubionych.
+Jeśli chcemy dodać klip od początku, musimy zatrzymać się na początku pliku, zatrzymać go, a następnie dodać.
+Możesz dodać klip do ulubionych, naciskając Kontrol+p.
+I aby otworzyć ulubione z literą f.
+Okno Ulubione zawiera listę Ulubione, która zawiera wcześniej dodane elementy, a także przycisk do usuwania ulubionych i przycisk do zamykania i usuwania pozycji z ulubionych poprzez naciśnięcie na niej klawisza kasowania.
+2: Dodano możliwość przyspieszenia lub spowolnienia klipu, a wartość wynosi od 0,5 do 2,0, można nią sterować, naciskając znak minus (-), aby zwolnić, i znak równości (=), aby przyspieszyć .
+3: W ustawieniach mowy dodano następujące opcje:
+* Mów podczas odtwarzania klipu: Jeśli jest wyłączona, klip zostanie odtworzony po naciśnięciu skrótu bez mówienia o odtwarzaniu klipu.
+* mów szybkość podczas zmiany. Jeśli jest wyłączona, prędkość nie jest wypowiadana podczas naciskania skrótów.
+4: Problem braku możliwości odtworzenia klipu po jego zakończeniu został rozwiązany, jeśli funkcje powtarzania klipu i odtwarzania następnego klipu są wyłączone. Teraz, gdy klip jest gotowy,możesz nacisnąć spację, aby odtworzyć go ponownie.
+5: Dodano funkcję powtarzania czasu trwania, który ma być określony na podstawie odtwarzanego klipu:
+Na przykład mamy dwuminutowy klip i chcemy, aby program działał i powtarzał tylko czas trwania od 30 sekund do minuty, więc punkt początkowy ustawiamy w żądanym czasie, na przykład 30 sekund, a następnie umieść punkt końcowy na 60 sekundach, w tym przypadku rozpocznie się odtwarzanie od drugiej 30, a gdy osiągnie 60 sekund, przewinie klip do 30 sekundy.
+Aby użyć tej funkcji, wykonaj następujące czynności:
+Najpierw odtwórz klip i przejdź do przodu lub w jakikolwiek sposób przejdź do czasu rozpoczęcia, a następnie naciśnij spację, aby wstrzymać klip. Jest to krok opcjonalny, ale służy dokładności.
+Następnie naciskamy literę q aż do wybrania punktu początkowego.
+Następnie odtwarzamy klip i przechodzimy do przodu lub osiągamy czas, który chcemy powtórzyć, gdy do niego dojdziemy, a następnie ponownie zatrzymujemy klip i naciskamy w, aby zakończyć wybór.
+Teraz możemy nacisnąć f2, aby aktywować tryb powtarzania na określony czas, a aby zatrzymać powtarzanie, musimy ponownie nacisnąć f2.
+Po wyłączeniu będzie zachowywał określony czas, więc jeśli w dowolnym momencie naciśniesz ten sam skrót, powtórzy on określony czas.
+A w przypadku, gdy włączony jest tryb powtarzania określonego okresu, można przewijać do przodu i do tyłu, a to zależy od określonego okresu, u nas, jeśli określimy okres powtarzania od 30 sekund do minuty, jeśli przedstawimy klip i osiągnął minutę, która go nie przekracza, a także przy przewijaniu do tyłu, a także przy ponownym uruchomieniu klipu, rozpocznie się ponownie od punktu początkowego.
+Nie można prezentować klipu w liczbach, gdy włączony jest tryb powtarzania określonego czasu trwania.
+Uwaga: nie ma znaczenia, czy najpierw określisz punkt końcowy, a następnie punkt początkowy, ale ważne jest, aby czas był prawidłowy, to znaczy czas punktu początkowego był krótszy niż czas punktu końcowego.
+6: Dodano funkcję losową, jeśli istnieje folder lub lista wyników. Włączono funkcję przejścia do następnego pliku, a następnie aktywowano funkcję odtwarzania losowego. Zamiast uruchamiać następny plik/wynik, program losowo wybierze pomiędzy pierwszym plikiem/wynikiem a ostatnim plikiem/wynikiem na liście.
+Możesz włączyć lub wyłączyć tę opcję, naciskając Kontrol+r
+7: Problem braku odtwarzania pliku z wyników wyszukiwania folderów został rozwiązany, jeśli wyłączysz opcję odtwarzania pierwszego pliku po załadowaniu folderu.
+8: Okno wyszukiwania YouTube zostało przeprojektowane:
+Gdzie, jeśli naciśniesz literę a, pokaże ci okno wyszukiwania w YouTube, jeśli wykonasz poprzednie wyszukiwanie, lista wyników wyszukiwania będzie widoczna, a kursor znajdzie się na wyniku, który został wcześniej wybrany, to jeśli pójdziemy z powrotem naciskając shift+tab, znajdziesz pole edycyjne do ponownego wyszukiwania, jeśli nie szukałeś wcześniej, otworzy się to samo okno, a fokus znajdzie się na polu wyszukiwania,i nie zobaczysz listy wyników wyszukiwania oraz pola wyboru zawierającego wyniki na liście dopiero po zakończeniu wyszukiwania.
+9: Dodano opcję w ustawieniach skrótów i dodano ją, aby zastąpić następny i poprzedni przycisk pageup i page down za pomocą przycisków tab i shift+tab, ale niestety wydaje się, że jest problem z tym skrótem ze skrótami globalnymi, więc ja zrobiłem globalny skrót to z dla poprzedniego i x dla następnego, oczywiście z ogólnym skrótem ustawionym lub domyślnym Windows + alt, może to być dziwny skrót, ale na razie mogę to zrobić.
+10: Dodano historię wyszukiwania, w której zachowywane są wyszukiwania, to znaczy, jeśli szukasz w YouTube, wyszukiwane słowo zostanie w nim zapisane, a rekord jest oknem zawierającym pole opcji do wyboru daty. Każdego dnia tworzy nową datę w przypadku wyszukiwania w YouTube tego dnia oraz listę zawierającą wyszukiwane słowa, jeśli przycisk Enter zostanie naciśnięty, wyszuka określone wyszukiwane słowo.
+Jest też przycisk do usuwania tylko wybranej daty i inny przycisk do usuwania całej historii.
+Możesz wyłączyć zapisywanie wyszukiwanego słowa w historii w ustawieniach ogólnych.
+11: Do programu dodano nowe menu, aby ułatwić pracę osobom, które nie chcą zajmować się skrótami.
+Możesz uzyskać do niego dostęp za pomocą klawisza menu alt.
+co jest następne:
+Lista opcji:
+Zawiera następujące opcje:
+* dodaj do ulubionych, skrót kontrol+p wykonuje tę samą funkcję.
+* Szukaj w folderze.
+* przejdź do, aby przejść do pliku poprzez sekwencjonowanie go między plikami.
+* Odtwarzanie losowe, Kontrol+r wykonuje tę samą funkcję.
+Menu Youtube'a:
+To menu zawiera opcje tylko dla YouTube i są one następujące:
+* Szukaj w YouTube.
+* Odtwórz z linku.
+* Historia wyszukiwania, Kontrol+h robi to samo.
+* Zobacz komentarze do bieżącego klipu.
+12: Program będzie teraz działał na dwóch systemach 32/64 bitowych.
