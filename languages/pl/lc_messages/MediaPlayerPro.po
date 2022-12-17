@@ -1,0 +1,826 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2022-12-17 20:28+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Poedit 2.2\n"
+"POT-Creation-Date: \n"
+
+msgid ""
+"\n"
+": :  يتم التشغيل مِن يوتيوب: {title}\n"
+"\n"
+": : المشاهدات: {views}\n"
+"\n"
+": : المالك: {author}\n"
+"\n"
+": : عدد الإعجابات: {likes}\n"
+"\n"
+": : الوصف: {description}\n"
+": "
+msgstr ""
+"\n"
+": : odtwarzanie z YouTube: {title} \n"
+"\n"
+": : Wyświetlenia: {views} \n"
+"\n"
+": : autor: {author} \n"
+"\n"
+": : Polubienia: {likes} \n"
+"\n"
+": : opis: {description} "
+
+msgid ""
+"\n"
+"{name}:\n"
+"الإصدار: {version}.\n"
+"المُطوِر: {author}.\n"
+"الوصف: برنامج يُسَهِل على مستخدمي قارئات الشاشة تشغيل مختلف الوسائط والتحكم بها "
+"بشكل سهل ومِن أي مكان من داخل البرنامج أو مِن خارجه مع إتاحة تحكمات النطق "
+"للمستخدم في حال أراد تفعيلها أو تعطيلها..."
+msgstr ""
+"\n"
+"{name}:\n"
+"wersja: {version}.\n"
+"Autor: {author}.\n"
+"opis: Program, który ułatwia użytkownikom czytników ekranu odtwarzanie i "
+"kontrolowanie różnych plików multimedialnych łatwo i z dowolnego miejsca z "
+"wewnątrz programu lub z zewnątrz, zapewniając jednocześnie kontrolę mowy "
+"użytkownikowi, jeśli chce ją aktywować lub wyłączyć..."
+
+msgid "control موصى إستخدامه في windows11 مع الإختصارات الأخرا alt و windows"
+msgstr ""
+"control, jest zalecany do użytku w systemie Windows 11 z innymi skrótami Alt i "
+"Windows"
+
+msgid "{content}, المُعلق: {author}, {published}"
+msgstr "{content}, komentator: {author}, {published}"
+
+msgid ""
+"{title}, المدة: {duration}, الوقت المُنقَضي: {elapsed}, مستوى الصوت الحالي: "
+"{volume}"
+msgstr ""
+"{title}, Czas trwania: {duration}, Czas, który upłynął}, bieżący poziom "
+"głośności: {volume}"
+
+msgid "{t}, يبدأ المقطع عند ({p}), النوع ({iu}), تم الإضافة في ({time})."
+msgstr "{t}, Utwór rozpoczyna się w ({p}), typ ({iu}), dodany w ({time})."
+
+msgid "{} ثانية"
+msgstr "{} sekund"
+
+msgid "{} ثواني"
+msgstr "{} Sekundy"
+
+msgid "{} دقائق"
+msgstr "{} minut"
+
+msgid "{} دقيقة"
+msgstr "{} minuty"
+
+msgid "{} ساعات"
+msgstr "{} godzin"
+
+msgid "{} ساعة"
+msgstr "{} godziny"
+
+msgid "{} و{}"
+msgstr "{} i {}"
+
+msgid "{} و{} و{}"
+msgstr "{} i {} i {}"
+
+msgid "أسابيع"
+msgstr "tygodni"
+
+msgid "أشهر"
+msgstr "Miesięcy"
+
+msgid "أيام"
+msgstr "dni"
+
+msgid "إسبوع"
+msgstr "tydzień"
+
+msgid "إضافة"
+msgstr "dodaj"
+
+msgid "إضافة {t} إلى المفضلة"
+msgstr "Dodaj {t} do ulubionych"
+
+msgid "إضافة فئة جديدة"
+msgstr "Dodaj nową kategorię"
+
+msgid "إضافة للمفضلة: ctrl+p"
+msgstr "Dodaj do ulubionych: Ctrl+P"
+
+msgid "إعدادات الإختصارات العامة"
+msgstr "Globalne ustawienia skrótów"
+
+msgid "إعدادات البرنامج"
+msgstr "Ustawienia programu"
+
+msgid "إعدادات الترجمات"
+msgstr "Ustawienia napisów"
+
+msgid "إعدادات النطق"
+msgstr "Ustawienia mowy"
+
+msgid "إغلاق"
+msgstr "Zamknij"
+
+msgid "إلغاء"
+msgstr "Anuluj"
+
+msgid "إيقاف التحميل"
+msgstr "Zatrzymaj pobieranie"
+
+msgid "اختبار"
+msgstr "test"
+
+msgid "اختر الصوت"
+msgstr "Wybierz głos"
+
+msgid "اختر الفئة"
+msgstr "Wybierz głos"
+
+msgid "اختر ما تريد تعديله من الإعدادات"
+msgstr "Wybierz, co chcesz zmodyfikować w ustawieniach"
+
+msgid "اختيار ملف ترجمة (.srt)|*.srt"
+msgstr "Wybierz plik tłumaczenia (.srt)|*.srt"
+
+msgid "استبدال الأزرار page_up / page_down بالأزرار tab / shift+tab"
+msgstr "Zastąp przyciski strony w górę / w dół przyciskami tab / shift + tab"
+
+msgid "استخدام sapi5 لِقِراءة الترجمات"
+msgstr "Użyj sapi5 do czytania napisów"
+
+msgid "اكتب رقم الملف لتشغيله, 0/{l}"
+msgstr "Wpisz numer pliku, aby go odtworzyć, 0/{l}"
+
+msgid "اكتمل تحميل المزيد من التعليقات"
+msgstr "Więcej załadowanych komentarzy"
+
+msgid "اكتمل تحميل النتائج"
+msgstr "Ładowanie wyników zakończone"
+
+msgid "الإختيار العشوائي: ctrl+r"
+msgstr "Wybór losowy: Ctrl + R"
+
+msgid "الإسم"
+msgstr "nazwa"
+
+msgid "الإعدادات العامة"
+msgstr "Ustawienia ogólne"
+
+msgid "الإعدادات: ctrl+s"
+msgstr "Ustawienia: Ctrl+S"
+
+msgid "البحث عن تحديثات"
+msgstr "wyszukaj aktualizacje"
+
+msgid "البحث في المجلد"
+msgstr "szukaj w folderze"
+
+msgid "البحث في المجلد: s"
+msgstr "szukaj w folderze: s"
+
+msgid "البحث في يوتيوب"
+msgstr "Szukaj w YouTube"
+
+msgid "البحث في يوتيوب: a"
+msgstr "wyszukaj w YouTube: a"
+
+msgid "التاريخ"
+msgstr "Data"
+
+msgid "التحقق من وجود تحديثات عند البدئ"
+msgstr "Sprawdź dostępność aktualizacji podczas uruchamiania"
+
+msgid "التحقق مِن تحديث اللغة"
+msgstr "sprawdź aktualizację języka"
+
+msgid "التحقق مِن تحديثات اللغة عند البدء"
+msgstr "Sprawdź dostępność aktualizacji językowych podczas uruchamiania"
+
+msgid "التعليقات"
+msgstr "Komentarze"
+
+msgid "التواصل معنا"
+msgstr "Kontakt ze mną"
+
+msgid "الخيارات"
+msgstr "opcje"
+
+msgid "الذهاب إلى"
+msgstr "idź do"
+
+msgid "الذهاب إلى: g"
+msgstr "idź do: g"
+
+msgid "الرابط"
+msgstr "adres url"
+
+msgid "الفئات"
+msgstr "Kategorie"
+
+msgid "الفئة الإفتراضية"
+msgstr "domyślna kategoria"
+
+msgid "القائمة الرئيسية"
+msgstr "Menu główne"
+
+msgid "المدة: {}"
+msgstr "Czas trwania: {}"
+
+msgid "المفضلة"
+msgstr "ulubione"
+
+msgid "المفضلة: f"
+msgstr "ulubione: f"
+
+msgid "النطق عند إعادة تشغيل المقطع"
+msgstr "odtwórz ścieżkę mowy"
+
+msgid "بث مباشر"
+msgstr "na żywo"
+
+msgid "بحث"
+msgstr "szukaj"
+
+msgid "بواسطة {b} "
+msgstr "przez {b} "
+
+msgid ""
+"تحميل المسار كاملًا عند فتح ملف, في حال تفعيل هذا الخيار, عند فتح أي ملف, سيقوم "
+"البرنامج بفتح الملف مع المجلد كاملًا في البرنامج, هذا يسبب بطء في التحميل"
+msgstr ""
+"Załaduj pełną ścieżkę podczas otwierania pliku, jeśli ta opcja jest włączona, "
+"podczas otwierania dowolnego pliku program otworzy plik z całym folderem w "
+"programie, powoduje to powolne ładowanie"
+
+msgid "تحميل جميع النتائج الحالية في قائمة"
+msgstr "Załaduj wszystkie bieżące wyniki do listy"
+
+msgid "تحميل ملف الترجمة تلقائيًا"
+msgstr "Automatyczne ładowanie pliku napisów"
+
+msgid "تشغيل أول ملف بعد فتح مجلد"
+msgstr "Odtwórz pierwszy plik po otwarciu folderu"
+
+msgid "تشغيل مِن رابط: y"
+msgstr "Odtwórz z adresu URL: y"
+
+msgid "تعذر العثور على ملف المساعدة"
+msgstr "Nie można odnaleźć pliku pomocy"
+
+msgid "تفعيل سجل البحث"
+msgstr "Włącz historię wyszukiwania"
+
+msgid "تليجرام"
+msgstr "telegram"
+
+msgid "تم إخفاء البرنامج, اضغط على الإختصار العام لديك + h لإظهاره"
+msgstr "Program jest ukryty, naciśnij skrót globalny + h, aby go wyświetlić"
+
+msgid "تم إضافة الفئة بنجاح"
+msgstr "Kategoria dodana pomyślnie"
+
+msgid "تم إظهار البرنامج"
+msgstr "Pokazano program"
+
+msgid "تم إعادة تشغيل المقطع"
+msgstr "Klip został ponownie uruchomiony"
+
+msgid "تم إكتشاف هناك تحديث جديد للغة {lang} هل تريد التحديث الآن?"
+msgstr ""
+"Wykryto nową aktualizację dla języka {lang}. Czy chcesz zaktualizować teraz?"
+
+msgid "تم إلغاء كتم الصوت"
+msgstr "Dźwięk niewyciszony"
+
+msgid "تم إنتهاء تشغيل المقطع"
+msgstr "Odtwarzanie klipu zostało zakończone"
+
+msgid "تم إيقاف الملف"
+msgstr "Plik zatrzymany"
+
+msgid "تم إيقاف تكرار المقطع المحدد"
+msgstr "Zatrzymano powtarzanie zaznaczonego klipu"
+
+msgid "تم الإستئناف"
+msgstr "Wznowione"
+
+msgid "تم الإضافة إلى المفضلة"
+msgstr "Dodano do ulubionych"
+
+msgid "تم الإعادة من المقطع الأول"
+msgstr "Przywrócone z pierwszego klipu"
+
+msgid "تم الإعادة من الملف الأول"
+msgstr "Przywrócone z pierwszego pliku"
+
+msgid "تم الإلغاء"
+msgstr "Anulowane"
+
+msgid "تم الإنتقال إلى آخِر مقطع"
+msgstr "przeniesiony do ostatniego utworu"
+
+msgid "تم الإنتقال إلى آخِر ملف"
+msgstr "Przeniesiono do ostatniego pliku"
+
+msgid "تم الإيقاف المؤقت"
+msgstr "wstrzymane"
+
+msgid "تم العثور على تحديث جديد"
+msgstr "Znaleziono nową aktualizację"
+
+msgid ""
+"تم تحميل التحديث بنجاح, انقر فوق موافق لإعادة تشغيل البرنامج وتطبيق التحديث "
+"الجديد للغة"
+msgstr ""
+"Aktualizacja została pomyślnie pobrana, kliknij OK, aby ponownie uruchomić "
+"program i zastosować nową aktualizację językową"
+
+msgid "تم تحميل التحديث بنجاح, انقر فوق موافق لِتبدأ عملية التثبيت."
+msgstr ""
+"Aktualizacja pobrana pomyślnie, kliknij OK, aby rozpocząć proces instalacji."
+
+msgid "تم تحميل المزيد من النتائج"
+msgstr "Załadowano więcej wyników"
+
+msgid "تم تحميل ملف الترجمة {subfile}"
+msgstr "Załadowano plik z napisami {subfile}."
+
+msgid "تم تعطيل التشغيل العشوائي"
+msgstr "Odtwarzanie losowe jest wyłączone"
+
+msgid "تم تعطيل التكرار"
+msgstr "Powtarzanie jest wyłączone"
+
+msgid "تم تعطيل تشغيل الملف التالي"
+msgstr "Odtwarzanie następnego pliku jest wyłączone"
+
+msgid "تم تعيين أدنى قيمة للسرعة"
+msgstr "Minimalna wartość prędkości jest ustawiona"
+
+msgid "تم تعيين أقصى قيمة للسرعة"
+msgstr "Maksymalna wartość prędkości jest ustawiona"
+
+msgid "تم تعيين السرعة على {rate}"
+msgstr "Prędkość jest ustawiona na {rate}"
+
+msgid "تم تعيين السرعة على {s}"
+msgstr "Prędkość jest ustawiona na {s}"
+
+msgid "تم تعيين مستوى الصوت على {v}%"
+msgstr "głośność ustawiona na {v}%"
+
+msgid "تم تعيين نقطة البداية"
+msgstr "Punkt startowy został ustalony"
+
+msgid "تم تعيين نقطة النهاية"
+msgstr "Punkt końcowy jest ustawiony"
+
+msgid "تم تفعيل التشغيل العشوائي"
+msgstr "Odtwarzanie losowe jest włączone"
+
+msgid "تم تفعيل التكرار"
+msgstr "Funkcja powtarzania jest włączona"
+
+msgid "تم تمكين تشغيل الملف التالي"
+msgstr "Odtwarzanie następnego pliku jest włączone"
+
+msgid "تم تمكين تكرار المقطع المحدد"
+msgstr "Powtarzanie wybranego klipu jest włączone"
+
+msgid "تم حذف {f}"
+msgstr "{f} usunięty"
+
+msgid "تم كتم الصوت"
+msgstr "dźwięk wyciszony"
+
+msgid "تم نسخ الوصف إلى الحافظة"
+msgstr "opis skopiowany do schowka"
+
+msgid "تنبيه"
+msgstr "ostrzeżenie"
+
+msgid "تويتر"
+msgstr "twitter"
+
+msgid "ثانية"
+msgstr "sekunda"
+
+msgid "ثانيتين"
+msgstr "dwie sekundy"
+
+msgid "حالة التحميل"
+msgstr "stan pobierania"
+
+msgid "حدث خطأ أثناء عملية التحديث ، يرجى المحاولة مرة أخرى في وقت لاحق."
+msgstr ""
+"Wystąpił błąd podczas próby połączenia z usługą aktualizacji, proszę spróbować "
+"ponownie później."
+
+msgid "حدث خطأ أثناء محاولة الإتصال بخدمة التحديثات, يرجى المحاولة لاحقًا"
+msgstr ""
+"Wystąpił błąd podczas próby połączenia z usługą aktualizacji, spróbuj ponownie "
+"później"
+
+msgid ""
+"حدث خطأ أثناء محاولة البحث, قد تكون هناك مشكلة بالإتصال, إذا استمرت المشكلة "
+"بالظهور قم بمراسلة المطور لحل المشكلة"
+msgstr ""
+"Wystąpił błąd podczas próby wyszukiwania, może występować problem z "
+"połączeniem, jeśli problem nadal się pojawia, skontaktuj się z programistą, aby "
+"rozwiązać problem"
+
+msgid ""
+"حدث خطأ غير متوقع عند محاولة فتح الملف للتثبيت، أعد تنزيل التحديث مرة أخرى، "
+"وإذا استمرت المشكلة، فقم بالإتصال بالمطور لحلها"
+msgstr ""
+"Wystąpił nieoczekiwany błąd podczas próby otwarcia pliku do instalacji, "
+"ponownie pobierz aktualizację, a jeśli problem będzie się powtarzał, skontaktuj "
+"się z programistą, aby go rozwiązać"
+
+msgid "حذف"
+msgstr "usuń"
+
+msgid "حذف التاريخ المحدد"
+msgstr "Usuń wybraną datę"
+
+msgid "حذف الفئة"
+msgstr "usuń kategorię"
+
+msgid ""
+"حفظ آخر مقطع مع الموضع عند الخروج, يقوم هذا الخيار بالتحقق مِن آخر مقطع تم "
+"تشغيله عند البدئ, ثم يقوم بتشغيله والإنتقال إلى النقطة التي تم الوقوف عندها."
+msgstr ""
+"Zapisz ostatni klip z pozycją przy wyjściu, ta opcja sprawdza ostatni klip "
+"odtwarzany na początku, a następnie odtwarza go i przesuwa do punktu, w którym "
+"został zatrzymany."
+
+msgid "حفظ الإعدادات"
+msgstr "Zapisz ustawienia"
+
+msgid "حول"
+msgstr "about"
+
+msgid "حول البرنامج"
+msgstr "O programie"
+
+msgid "خروج"
+msgstr "Wyjście"
+
+msgid "خطأ"
+msgstr "błąd"
+
+msgid "خطأ في الإتصال"
+msgstr "błąd połączenia"
+
+msgid "دقيقة واحدة"
+msgstr "jedna minuta"
+
+msgid "دقيقتان"
+msgstr "dwie minuty"
+
+msgid "دليل الإستخدام"
+msgstr "podręcznik użytkownika"
+
+msgid "دليل المستخدم: f1"
+msgstr "podręcznik użytkownika: f1"
+
+msgid "رابط"
+msgstr "adres url"
+
+msgid "ساعة"
+msgstr "godzina"
+
+msgid "ساعتان"
+msgstr "dwie godziny"
+
+msgid "سجل البحث"
+msgstr "Historia Wyszukiwania"
+
+msgid "سجل البحث: ctrl+h"
+msgstr "Historia Wyszukiwania: ctrl + h"
+
+msgid "سرعة القِراءة"
+msgstr "wskaźnik prędkości"
+
+msgid "سنة"
+msgstr "rok"
+
+msgid "سنين"
+msgstr "lata"
+
+msgid "شهر"
+msgstr "Miesiąc"
+
+msgid "عدد الثواني للتقديم"
+msgstr "liczba sekund przewijania do przodu/do tyłu"
+
+msgid "عدد المشاهدات {}"
+msgstr "Wyświetlenia {}"
+
+msgid "عرض تعليقات المقطع الحالي: c"
+msgstr "Pokaż komentarze do bieżącego klipu: c"
+
+msgid "فتح الفيديو في المتصفح: v"
+msgstr "Otwórz wideo w przeglądarce: v"
+
+msgid "فتح القناة في المتصفح: c"
+msgstr "Otwórz kanał w przeglądarce: c"
+
+msgid "فتح جميع العناصر كقائمة"
+msgstr "Otwórz wszystkie elementy jako listę"
+
+msgid "فتح مجلد: ctrl+f"
+msgstr "Otwórz folder: Ctrl+F"
+
+msgid "فتح مسار الملف"
+msgstr "Otwórz ścieżkę pliku"
+
+msgid "فتح ملف"
+msgstr "Otwórz plik"
+
+msgid "فتح ملف ترجمة (srt): ctrl+shift+s"
+msgstr "Otwórz plik napisów (SRT): Ctrl + Shift + S"
+
+msgid "فتح ملف: ctrl+o"
+msgstr "Otwórz plik: Ctrl+O"
+
+msgid ""
+"في حال تم الضغط فوق نعم, سيتم حذف التاريخ المحدد ولا يمكنك إسترجاعه مرةً أخرى, "
+"هل تريد الحذف؟"
+msgstr ""
+"Jeśli klikniesz Tak, wybrana data zostanie usunięta i nie będzie można jej "
+"ponownie odzyskać. Chcesz usunąć?"
+
+msgid ""
+"في حال تم الضغط فوق نعم, سيتم حذف الفئة {c} مع العناصر في داخل هذه الفئة, هل "
+"تريد الحذف؟"
+msgstr ""
+"Jeśli zostanie kliknięty przycisk Tak, kategoria {c} zostanie usunięta wraz z "
+"elementami w ramach tej kategorii. Chcesz usunąć?"
+
+msgid ""
+"في حال تم الضغط فوق نعم, سيتم حذف سجل البحث بأكمله ولا يمكنك إسترجاعه مرةً أخرى, "
+"هل تريد الحذف؟"
+msgstr ""
+"Jeśli klikniesz Tak, cała historia wyszukiwania zostanie usunięta i nie będzie "
+"można jej ponownie odzyskać. Chcesz usunąć?"
+
+msgid "فيسبوك"
+msgstr "facebook"
+
+msgid "قائمة التعليقات"
+msgstr "Lista komentarzy"
+
+msgid "قائمة المفضلة"
+msgstr "Lista ulubionych"
+
+msgid "قائمة النتائج"
+msgstr "Lista wyników"
+
+msgid "قرائة الترجمات"
+msgstr "Czytaj napisy"
+
+msgid "قم بإختيار المجلد الذي تريد فتحه في البرنامج..."
+msgstr "Wybierz folder, który chcesz otworzyć w programie..."
+
+msgid "قم بإدخال إسم الفئة المراد إضافتها"
+msgstr "Wprowadź nazwę kategorii, która ma zostać dodana"
+
+msgid "قم بإدخال الرابط المُراد تشغيله"
+msgstr "Wpisz adres URL, który chcesz odtworzyć"
+
+msgid "قم بإدخال كلمة بحث أولا"
+msgstr "Najpierw wpisz szukane słowo"
+
+msgid "قناة البرنامج على تليجرام"
+msgstr "Kanał telegramu"
+
+msgid "كلمة البحث"
+msgstr "wyszukaj słowo"
+
+msgid "لا تتوفر تعليقات لِهذا الفيديو"
+msgstr "Brak komentarzy do tego filmu"
+
+msgid "لا توجد نتائج"
+msgstr "Brak wyników"
+
+msgid "لا توجد نتائج أُخرى"
+msgstr "Nie ma innych wyników"
+
+msgid ""
+"لا توجد هناك فئات متوفرة, يبدو تم حذف جميع الفئات مع الفئة الإفتراضية )الفئة "
+"الإفتراضية(, في حال لا يوجد هناك أي فئة متوفرة, لا يمكن إضافة عناصر للمفضلة, هل "
+"تريد إنشاء فئة الآن?"
+msgstr ""
+"Brak dostępnych kategorii, wygląda na to, że wszystkie kategorie zostały "
+"usunięte wraz z kategorią domyślną (default category), jeśli nie ma dostępnej "
+"kategorii, nie można dodać elementów do ulubionych, czy chcesz teraz utworzyć "
+"kategorię?"
+
+msgid "لا توجد هناك قائمة"
+msgstr "Nie ma listy"
+
+msgid "لا يتناسَق وقت نقطة البداية مع وقت نقطة النهاية"
+msgstr "Czas punktu początkowego nie odpowiada czasowi punktu końcowego"
+
+msgid "لا يمكن تشغيل هذا المقطع"
+msgstr "Nie można odtworzyć tego pliku"
+
+msgid "لا يمكن كتم الصوت"
+msgstr "nie można wyciszyć dźwięku"
+
+msgid "لا يوجد هناك المزيد من التعليقات"
+msgstr "Nie ma więcej komentarzy"
+
+msgid "لا يوجد هناك مجلد"
+msgstr "Nie ma folderu"
+
+msgid "لا يوجد وصف لنسخه"
+msgstr "Nie ma opisu do skopiowania"
+
+msgid "لديك أحدث إصدار مِن MediaPlayerPro"
+msgstr "Masz najnowszą wersję MediaPlayerPro"
+
+msgid "لديك أحدث تحديث للغة"
+msgstr "Masz najnowszą aktualizację językową"
+
+msgid "لغة البرنامج, يتطلب هذا الأمر إعادة تشغيل البرنامج كَي تتطبق الإعدادات"
+msgstr ""
+"Język programu, ta opcja wymaga ponownego uruchomienia programu, aby ustawienia "
+"zaczęły obowiązywać"
+
+msgid "لقد أدخلت رابط غير صالح."
+msgstr "Wpisałeś nieprawidłowy adres URL."
+
+msgid "لقد تم حذف التاريخ المحدد مِن سجل البحث"
+msgstr "Wybrana data została usunięta z historii wyszukiwania"
+
+msgid "لقد تم حذف الفئة بنجاح"
+msgstr "Kategoria została pomyślnie usunięta"
+
+msgid "لقد تم حذف جميع سجل البحث"
+msgstr "Cała historia wyszukiwania została usunięta"
+
+msgid ""
+"لقد قمت بتغيير بعض الإعدادات التي تتطلب إعادة تشغيل البرنامج لتطبيقها, هل تريد "
+"إعادة تشغيل البرنامج الآن؟"
+msgstr ""
+"Zmieniłeś niektóre ustawienia, które wymagają ponownego uruchomienia programu, "
+"aby je zastosować, czy chcesz teraz ponownie uruchomić program?"
+
+msgid ""
+"لم نتمكن من الوصول إلى خدمة التحديثات, قد تكون هناك مشكلة مؤقتة, أو مشكلة في "
+"الإتصال لديك, تأكد مِن الإتصال بالأنترنت ثم عاود مجددًا."
+msgstr ""
+"Nie można połączyć się z usługą aktualizacji, może występować tymczasowy "
+"problem lub problem z połączeniem, upewnij się, że masz połączenie z Internetem "
+"i spróbuj ponownie później."
+
+msgid "لم يتم التشغيل من يوتيوب"
+msgstr "Brak odtwarzania z YouTube"
+
+msgid "لم يتم العثور على تحديث"
+msgstr "Nie znaleziono aktualizacji"
+
+msgid "لم يتم العثور على تحديثات"
+msgstr "No updates found"
+
+msgid "لم يتم العثور على فئات"
+msgstr "Nie znaleziono kategorii"
+
+msgid "لم يتم العثور على نتائج مطابِقة لكلمة البحث هذه"
+msgstr "Nie znaleziono wyników dla tego szukanego słowa"
+
+msgid "لم يتم تشغيل ملف بعد..."
+msgstr "nie ma pliku do odtwarzania."
+
+msgid "محو السجل"
+msgstr "Wyczyść historię"
+
+msgid "مستوى الصوت"
+msgstr "poziom głośności"
+
+msgid "ملف"
+msgstr "plik"
+
+msgid "منذ {t1} {t2}"
+msgstr "{t1} {t2} a go"
+
+msgid "موافق"
+msgstr "ok"
+
+msgid "نتائج"
+msgstr "Wyniki"
+
+msgid "نتائج البحث"
+msgstr "Wyniki wyszukiwania"
+
+msgid "نتائج البحث عن {w}, هناك {rc} {rc2}"
+msgstr "Wyniki wyszukiwania dla {w}, są {rc} {rc2}"
+
+msgid "نتيجة واحدة"
+msgstr "jeden wynik"
+
+msgid "نتيجتان"
+msgstr "Dwa wyniki"
+
+msgid "نجاح"
+msgstr "sukces"
+
+msgid "نسخ التعليق"
+msgstr "Kopiuj komentarz"
+
+msgid "نسخ الوصف: ctrl+i"
+msgstr "kopiuj opis: ctrl+i"
+
+msgid "نسخ رابط الفيديو: u"
+msgstr "kopiuj link wideo: u"
+
+msgid "نسخ رابط القناة: l"
+msgstr "kopiuj link do kanału: l"
+
+msgid "نسخ مسار الملف"
+msgstr "kopiuj ścieżkę do pliku"
+
+msgid "نص التعليق"
+msgstr "Tekst komentarza"
+
+msgid "نطق الإيقاف المؤقت والإستئناف"
+msgstr "odtwarzaj mowę / zatrzymaj"
+
+msgid "نطق الوقت المنقضي عند التقديم والتأخير"
+msgstr "mów czas, który upłynął podczas przewijania do przodu i do tyłu"
+
+msgid "نطق مستوى الصوت عند تغييره"
+msgstr "Mów głośność podczas jej zmiany"
+
+msgid "نطق معدل السرعة عند تغييره"
+msgstr "Mów szybkość podczas jej zmiany"
+
+msgid ""
+"هل أنت متأكد بأنك تريد حذف الملف {f}. في حال تم الحذف لا يمكنك إسترجاعه مرةً أُخرى"
+msgstr ""
+"Czy na pewno chcesz usunąć plik {f}. Jeśli zostanie usunięty, nie będzie można "
+"go przywrócić ponownie"
+
+msgid "هل تريد إزالة {t} مِن المفضلة?"
+msgstr "Czy chcesz usunąć {t} z ulubionych?"
+
+msgid "هناك تحديث جديد {name} الإصدار {ver} هل تريد التحديث الآن؟"
+msgstr ""
+"Pojawiła się nowa aktualizacja {name} wersja {ver} Czy chcesz zaktualizować "
+"teraz?"
+
+msgid "هناك تحديث جديد للغة"
+msgstr "Wprowadzono nową aktualizację językową"
+
+msgid "هناك نسخة مِن البرنامج تعمل بالفعل"
+msgstr "Istnieje już uruchomiona wersja programu"
+
+msgid "يتم البحث عن {q}"
+msgstr "szukanie {q}"
+
+msgid "يتم التحقق من وجود تحديث جديد ، يرجى الانتظار"
+msgstr "Sprawdzanie nowej aktualizacji, proszę czekać"
+
+msgid "يتم الفتح في المتصفح"
+msgstr "Otwieranie w przeglądarce"
+
+msgid "يتم تثبيت التحديث"
+msgstr "Instalowanie aktualizacji"
+
+msgid "يتم تحميل التحديث {}"
+msgstr "Pobieranie aktualizacji {}"
+
+msgid "يتم تحميل التحديثات"
+msgstr "Pobieranie aktualizacji"
+
+msgid "يتم تحميل المزيد من التعليقات"
+msgstr "Ładowanie więcej komentarzy"
+
+msgid "يتم تحميل المزيد من النتائج"
+msgstr "Ładowanie większej liczby wyników"
+
+msgid "يتمفتح المجلد {} / {}"
+msgstr "otwieranie folderu {} / {}"
+
+msgid "يوتيوب"
+msgstr "youtube"
+
+msgid "يوم"
+msgstr "dzień"
