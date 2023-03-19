@@ -15,10 +15,12 @@ def speak(msg):
 
 class sapi:
 	def __init__(self):
-		from NBSapi import NBSapi
-		self.engine=NBSapi()
-		voices=self.get_voices()
-		voices_list=[i for i in voices]
+		try:
+			from NBSapi import NBSapi
+			self.engine=NBSapi()
+			voices=self.get_voices()
+			voices_list=[i for i in voices]
+		except: return
 		try:
 			self.set_voice(int(get("voice", "subtitles")))
 		except:
@@ -28,27 +30,40 @@ class sapi:
 		self.set_speed(int(get("speed", "subtitles")))
 
 	def get_voices(self):
-		voices_object=self.engine.GetVoices()
-		voices={}
-		for voice in voices_object:
-			voices[voice["Name"]] = [voice["Id"], voice["Language"]]
-		return voices
+		try:
+			voices_object=self.engine.GetVoices()
+			voices={}
+			for voice in voices_object:
+				voices[voice["Name"]] = [voice["Id"], voice["Language"]]
+			return voices
+		except: return
 
 	def set_voice(self, index):
-		return self.engine.SetVoice(index)
+		try:
+			return self.engine.SetVoice(index)
+		except: pass
 
 	def get_speed(self):
-		return self.engine.GetRate()
+		try:
+			return self.engine.GetRate()
+		except: pass
 
 	def set_speed(self, value):
-		return self.engine.SetRate(value)
+		try:
+			return self.engine.SetRate(value)
+		except: pass
 
 	def get_volume(self):
-		return self.engine.GetVolume()
+		try:
+			return self.engine.GetVolume()
+		except: pass
 
 	def set_volume(self, value):
-		return self.engine.SetVolume(value)
+		try:
+			return self.engine.SetVolume(value)
+		except: pass
 
 	def speak(self, text):
-#		speak("ok")
-		return self.engine.Speak(text)
+		try:
+			return self.engine.Speak(text)
+		except: pass

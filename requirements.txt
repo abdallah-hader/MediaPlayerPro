@@ -3,6 +3,7 @@ pyperclip
 requests
 python-vlc
 psutil
-youtubesearchpython
+youtube-search-python
 NBSapi
 pysubs2
+youtube-transcript-api

@@ -74,7 +74,7 @@ class favoritegui(wx.Dialog):
 
 	def OnAddCategory(self, event):
 		f=favorite()
-		c=InputBox.Input(self, _("الإسم"), _("قم بإدخال إسم الفئة المراد إضافتها"))
+		c=input_box.Input(self, _("الإسم"), _("قم بإدخال إسم الفئة المراد إضافتها"))
 		if c.canceled: return
 		f.AddCategory(c.text())
 
@@ -126,7 +126,7 @@ class favoritegui(wx.Dialog):
 			g.youtube_file_info=data[1]
 			g.playing_from_youtube=True
 			if g.player==None:
-				g.player=MediaPlayer.Player(link, wx.GetApp().GetTopWindow().GetHandle())
+				g.player=media_player.Player(link, wx.GetApp().GetTopWindow().GetHandle())
 				g.set_title(title)
 				g.player.title=title
 				g.player.url=g.youtube_url
@@ -180,7 +180,7 @@ class AddFavorite(wx.Dialog):
 		else:
 			msg=wx.MessageBox(_("لا توجد هناك فئات متوفرة, يبدو تم حذف جميع الفئات مع الفئة الإفتراضية )الفئة الإفتراضية(, في حال لا يوجد هناك أي فئة متوفرة, لا يمكن إضافة عناصر للمفضلة, هل تريد إنشاء فئة الآن?"), _("لم يتم العثور على فئات"), style=wx.YES_NO, parent=self)
 			if msg==wx.YES:
-				c=InputBox.Input(self, _("الإسم"), _("قم بإدخال إسم الفئة المراد إضافتها"))
+				c=input_box.Input(self, _("الإسم"), _("قم بإدخال إسم الفئة المراد إضافتها"))
 				if c.canceled: return self.Destroy()
 				self.f.AddCategory(c.text())
 				self.category.Append(c.text())
@@ -198,7 +198,7 @@ class AddFavorite(wx.Dialog):
 		self.Destroy()
 
 	def OnAddCategory(self, event):
-		c=InputBox.Input(self, _("الإسم"), _("قم بإدخال إسم الفئة المراد إضافتها"))
+		c=input_box.Input(self, _("الإسم"), _("قم بإدخال إسم الفئة المراد إضافتها"))
 		if c.canceled: return self.Destroy()
 		self.f.AddCategory(c.text())
 		self.category.Clear()

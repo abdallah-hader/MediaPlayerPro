@@ -3,6 +3,7 @@ import os
 
 spath=os.path.join(os.getenv("appdata"), "Media Player Pro")
 datapath=os.path.join(spath, "data")
+playlistspath = os.path.join(spath, "playlists")
 
 defaults={
 	"programpath":"C:/Program Files (x86)/MediaPlayerPro",
@@ -18,6 +19,7 @@ defaults={
 	"next_track":False,
 	"history":True,
 	"random_play":False,
+	"country":"none",
 	"speak_play_pause":True,
 	"speakfr":True,
 	"speakv":True,
@@ -55,6 +57,10 @@ def init_config():
 		pass
 	try:
 		os.mkdir(os.path.join(spath, "data"))
+	except FileExistsError:
+		pass
+	try:
+		os.mkdir(playlistspath)
 	except FileExistsError:
 		pass
 	if not os.path.exists(os.path.join(spath, "settings.ini")):

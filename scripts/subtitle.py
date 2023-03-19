@@ -5,14 +5,15 @@ import globals as g
 import wx
 import os
 
-def load(path):
+
+def load(path, temp=False):
 	try:
 		data=pysubs2.load(path, encoding="utf-8")
 	except:
 		data=pysubs2.load(path, encoding="ansi")
 	for i in data:
 		g.current_subtitle[g.time_to_ms(dt.datetime.utcfromtimestamp(i.start//1000).strftime("%H:%M:%S"))] = {"text":i.text.replace(r"\N", "\n"), "start":dt.datetime.utcfromtimestamp(i.start//1000).strftime("%H:%M:%S"), "end":dt.datetime.utcfromtimestamp(i.end//1000).strftime("%H:%M:%S")}
-
+	os.remove(path) if temp else None
 def Select():
 		path=wx.FileSelector(_("اختيار ملف ترجمة (.srt)|*.srt"), wildcard="|*.srt")
 		if not path: return

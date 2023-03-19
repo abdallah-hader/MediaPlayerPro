@@ -1,11 +1,12 @@
 import wx
 import os
-from settingsconfig import get, new
-import sys
+from settingsconfig import get, new, spath
+import sys, zipfile
 from language import supported_languages
 from scripts.Speak import speak
 from threading import Thread
 import globals as g
+from datetime import datetime
 
 languages = {index:language for language, index in enumerate(supported_languages.values())}
 
@@ -24,6 +25,8 @@ class settingsgui(wx.Dialog):
 		tab1.AddPage(self.subtitles, _("إعدادات الترجمات"))
 		self.hotkeys=HotKeys(tab1)
 		tab1.AddPage(self.hotkeys, _("إعدادات الإختصارات العامة"))
+		self.backup = backup(tab1)
+		tab1.AddPage(self.backup, _("النسخ الأحتياطي والإستعادة"))
 		ok=wx.Button(p, -1, _("حفظ الإعدادات"))
 		ok.Bind(wx.EVT_BUTTON, self.OnOk)
 		ok.SetDefault()
@@ -78,13 +81,19 @@ class settingsgui(wx.Dialog):
 			restart=True
 		if not int(get("volume", "subtitles")) == self.subtitles.volume.Selection+1:
 			new("volume", self.subtitles.volume.Selection+1, "subtitles")
-			g.sapi.set_volume(self.subtitles.volume.Selection+1)
+			try:
+				g.sapi.set_volume(self.subtitles.volume.Selection+1)
+			except: pass
 		if not int(get("voice", "subtitles")) == self.subtitles.voice.Selection:
 			new("voice", self.subtitles.voice.Selection, "subtitles")
-			g.sapi.set_voice(self.subtitles.voice.Selection)
+			try:
+				g.sapi.set_voice(self.subtitles.voice.Selection)
+			except: pass
 		if not int(get("speed", "subtitles")) == self.subtitles.speed_choice.Selection:
 			new("speed", self.subtitles.speed_choice.Selection, "subtitles")
-			g.sapi.set_speed(self.subtitles.speed_choice.Selection)
+			try:
+				g.sapi.set_speed(self.subtitles.speed_choice.Selection)
+			except: pass
 		if not get("sapi", "subtitles") == self.subtitles.sapi.Value:
 			new("sapi", self.subtitles.sapi.Value, "subtitles")
 		if not get("autodetect", "subtitles") == self.subtitles.AutoDetect.Value:
@@ -169,9 +178,11 @@ class subtitles(wx.Panel):
 		wx.StaticText(self, -1, _("مستوى الصوت"), name="sapi")
 		self.volume=wx.Choice(self, -1, name="sapi")
 		self.volume.Set([str(i)+"%" for i in range(1, 101)])
-		voices = g.sapi.get_voices()
-		voices_list=[i for i in voices]
-		self.voice.Set(voices_list)
+		try:
+			voices = g.sapi.get_voices()
+			voices_list=[i for i in voices]
+			self.voice.Set(voices_list)
+		except: pass
 		try:
 			self.voice.Selection = int(get("voice", "subtitles"))
 			self.volume.Selection = int(get("volume", "subtitles"))
@@ -192,6 +203,7 @@ class subtitles(wx.Panel):
 		self.speed_choice.Selection=int(get("speed", "subtitles"))
 		self.Sapi = g.sapi
 
+
 	def OnCheckBox(self, event):
 		if self.sapi.Value==False:
 			for i in self.GetChildren():
@@ -201,15 +213,80 @@ class subtitles(wx.Panel):
 				i.Show() if i.Name=="sapi" else None
 
 	def OnTest(self, event):
-		if self.Sapi.engine.GetStatus() == 2:
-			return
-		voice = self.voice.Selection
-		speed = self.speed_choice.Selection+1
-		volume = self.volume.Selection+1
-		self.Sapi.set_voice(voice)
-		self.Sapi.set_speed(speed)
-		self.Sapi.set_volume(volume)
-		text="Hello, I am a voice this program using me to read subtitles files, this is an experiment that enables you to know if my voice is clear in reading, thanks for testing me."
-		if "leila" in self.voice.StringSelection.lower() or "mehdi" in self.voice.StringSelection.lower() or "nizar" in self.voice.StringSelection.lower() or "salma" in self.voice.StringSelection.lower():
-			text="مرحبا, أنا صوت يقوم بإستخدامي هذا البرنامج لِقراءة ملفات الترجمة, هذه تجربة تمكنك من معرفة في حال كان صوتي واضحًا في القراءة, شكرًا على تجربتي."
-		Thread(target=self.Sapi.speak, args=[text]).start()
+		try:
+			if self.Sapi.engine.GetStatus() == 2:
+				return
+			voice = self.voice.Selection
+			speed = self.speed_choice.Selection+1
+			volume = self.volume.Selection+1
+			self.Sapi.set_voice(voice)
+			self.Sapi.set_speed(speed)
+			self.Sapi.set_volume(volume)
+			text="Hello, I am a voice this program using me to read subtitles files, this is an experiment that enables you to know if my voice is clear in reading, thanks for testing me."
+			if "leila" in self.voice.StringSelection.lower() or "mehdi" in self.voice.StringSelection.lower() or "nizar" in self.voice.StringSelection.lower() or "salma" in self.voice.StringSelection.lower():
+				text="مرحبا, أنا صوت يقوم بإستخدامي هذا البرنامج لِقراءة ملفات الترجمة, هذه تجربة تمكنك من معرفة في حال كان صوتي واضحًا في القراءة, شكرًا على تجربتي."
+			Thread(target=self.Sapi.speak, args=[text]).start()
+		except: pass
+
+class backup(wx.Panel):
+	def __init__(self, parent):
+		wx.Panel.__init__(self, parent)
+		create = wx.Button(self, -1, _("إنشاء نسخة إحتياطية"))
+		restore = wx.Button(self, -1, _("إستعادة نسخة إحتياطية"))
+		create.Bind(wx.EVT_BUTTON, lambda e:CreateBackup(self))
+		restore.Bind(wx.EVT_BUTTON, self.OnRestore)
+
+	def OnRestore(self, event):
+		path = wx.FileSelector(_("قم بإختيار نسخة إحتياطية لإستعادتها"), wildcard="|*.zip", parent=self)
+		if not path:return
+		file = zipfile.ZipFile(path, "r")
+		msg = wx.MessageBox(_("إذا قمت بالنقر فوق نعم: ستتم استعادة النسخة الاحتياطية المحددة ، ولا يمكنك التراجع عن هذا الإجراء. هل أنت متأكد أنك تريد استعادة النسخة الاحتياطية؟"), _("تحذير"), style=wx.YES_NO, parent=self)
+		if msg==wx.YES:
+			file.extractall(spath)
+			file.close()
+			wx.MessageBox(_("تم استعادة النسخة الاحتياطية بنجاح ، انقر فوق موافق لإعادة تشغيل البرنامج."), _("نجاح"), parent=self)
+			return os.execl(sys.executable, sys.executable)
+
+
+class CreateBackup(wx.Dialog):
+	def __init__(self, parent):
+		super().__init__(parent, -1, title=_("قم بتحديد الخيارات المرادة, وتحديد المسار في حال كنت تريد تغييره, ثم اضغط فوق موافق للبدأ في أخذ نسخة إحتياطية"))
+		p = wx.Panel(self)
+		self.otherSettings = wx.CheckBox(p, -1, _("تضمين بيانات المفضلة وبعض البيانات الأخرى مثل قوائم التشغيل"))
+		self.otherSettings.Value = True
+		self.settings = wx.CheckBox(p, -1, _("تضمين الإعدادات الحالية"))
+		self.settings.Value = True
+		wx.StaticText(p, -1, _("مسار حفظ النسخة الإحتياطية"))
+		self.path = wx.TextCtrl(p, -1)
+		self.path.Value = os.path.join(os.getenv("userprofile"), "Documents")
+		browse = wx.Button(p, -1, _("تصفح"))
+		browse.Bind(wx.EVT_BUTTON, self.OnBrowse)
+		start =wx.Button(p, -1, _("موافق"))
+		start.Bind(wx.EVT_BUTTON, self.OnStart)
+		cancel = wx.Button(p, wx.ID_CANCEL, _("إلغاء"))
+		self.Show()
+
+	def OnBrowse(self, event):
+		directory = wx.DirDialog(self, _("قم بتحديد مسار الحفظ"), self.path.Value)
+		result = directory.ShowModal()
+		if result != wx.ID_CANCEL:
+			self.path.Value = directory.GetPath()
+
+	def OnStart(self, event):
+		os.chdir(spath)
+		files = os.listdir()
+		if not files: return
+		time = datetime.now().strftime(" - %d_%m_%Y %I %p")
+		fn = f"media player pro backup {time}.zip"
+		file = zipfile.ZipFile(os.path.join(self.path.Value,fn), "w")
+		for f in files:
+			if os.path.isfile(f):
+				file.write(f) if self.settings.Value else None
+			else:
+				if not self.otherSettings.Value: continue
+				files2 = os.listdir(f)
+				if not files2: continue
+				for f2 in files2:
+					file.write(os.path.join(f, f2))
+		file.close()
+		wx.MessageBox(_("تم أخذ نسخة إحتياطية بنجاح, يمكنك إستعادتها مِن الإعدادات/النسخ الإحتياطي والإستعادة/إستعادة نسخة إحتياطية, مسار النسخة الإحتياطية {path}").format(path=self.path.Value), _("نجاح"), parent=self.Parent)

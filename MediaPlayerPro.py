@@ -15,12 +15,15 @@ from scripts import media_player, instance_running, thread, subtitle
 from vlc import State, Media, VLCException
 import vlc
 from scripts.Speak import speak
-from scripts.Speak import sapi
+try:
+	from scripts.Speak import sapi
+except: pass	
 from settingsconfig import*
 from language import init_translation
-from gui import youtube, search, input_box, history, comments, favorite, help_dialog, updater, settings_dialog, language_update
+from gui import youtube, search, input_box, history, comments, favorite, help_dialog, updater, settings_dialog, language_update, jump_to_time, playlists
 import application
 
+#sys.stderr = open("errors.log", "w")
 init_translation("MediaPlayerPro") #init the translation for the program
 init_config() #initialize the program settings file
 g.path = os.getcwd()
@@ -56,7 +59,9 @@ class main(wx.Frame):
 		self.SetSize(wx.DisplaySize())
 		self.Maximize(True)
 		g.parent=self
-		g.sapi = sapi()
+		try:
+			g.sapi = sapi()
+		except: g.sapi = None
 		threading.Thread(target=updater.cfu, args=[True]).start() if get("check_for_updates_at_startup") else None
 		if get("language")!="ar":
 			threading.Thread(target=language_update.lcfu).start() if get("languageupdates") else None
@@ -96,15 +101,20 @@ class main(wx.Frame):
 		open_folder = MainMenu.Append(-1, _("فتح مجلد: ctrl+f"))
 		open_subtitle = MainMenu.Append(-1, _("فتح ملف ترجمة (srt): ctrl+shift+s"))
 		youtube_search=YoutubeMenu.Append(-1, _("البحث في يوتيوب: a"))
-		history = YoutubeMenu.Append(-1, _("سجل البحث: ctrl+h"))
+		trend = YoutubeMenu.Append(-1, _("الفيديوهات الرائجة: ctrl+shift+t"))
+		translations = YoutubeMenu.Append(-1, _("ترجمات الفيديو: ctrl+t"))
 		GetComments = YoutubeMenu.Append(-1, _("عرض تعليقات المقطع الحالي: c"))
 		CopyDescription = YoutubeMenu.Append(-1, _("نسخ الوصف: ctrl+i"))
 		from_url = OptionsMenu.Append(-1, _("تشغيل مِن رابط: y"))
+		history = YoutubeMenu.Append(-1, _("سجل البحث: ctrl+h"))
+		addToPlayList = OptionsMenu.Append(-1, _("إضافة إلى قائمة تشغيل: alt+l"))
+		playLists = OptionsMenu.Append(-1, _("قوائم التشغيل: ctrl+l"))
 		ShowFavorite = OptionsMenu.Append(-1, _("المفضلة: f"))
 		addfavorite =OptionsMenu.Append(-1, _("إضافة للمفضلة: ctrl+p"))
 		folder_search = OptionsMenu.Append(-1, _("البحث في المجلد: s"))
 		go_to = OptionsMenu.Append(-1, _("الذهاب إلى: g"))
 		random_choos = OptionsMenu.Append(-1, _("الإختيار العشوائي: ctrl+r"))
+		jumpToTime = OptionsMenu.Append(-1, _("الإنتقال إلى وقت: ctrl+j"))
 		settings = MainMenu.Append(-1, _("الإعدادات: ctrl+s"))
 		update=MainMenu.Append(-1, _("البحث عن تحديثات"))
 		if get("language")!="ar":
@@ -120,6 +130,7 @@ class main(wx.Frame):
 		self.Bind(wx.EVT_MENU, self.GetComments, GetComments)
 		self.Bind(wx.EVT_MENU, self.ShowHistory, history)
 		self.Bind(wx.EVT_MENU, self.add_to_favorite, addfavorite)
+		self.Bind(wx.EVT_MENU, self.OnAddToPlayList, addToPlayList)
 		self.Bind(wx.EVT_MENU, self.search, folder_search)
 		self.Bind(wx.EVT_MENU, self.goto, go_to)
 		self.Bind(wx.EVT_MENU, self.ytsearch, youtube_search)
@@ -136,6 +147,10 @@ class main(wx.Frame):
 		self.Bind(wx.EVT_MENU, lambda e: settings_dialog.settingsgui(self), settings)
 		self.Bind(wx.EVT_MENU, self.AboutMessage, about_the_program)
 		self.Bind(wx.EVT_MENU, self.ShowUserGuide, user_guide)
+		self.Bind(wx.EVT_MENU, lambda e: youtube.trend(self), trend)
+		self.Bind(wx.EVT_MENU, lambda e:youtube.translations(self), translations)
+		self.Bind(wx.EVT_MENU, lambda e:jump_to_time.Jump(self), jumpToTime)
+		self.Bind(wx.EVT_MENU, lambda e:playlists.PlaylistsDialog(self), playLists)
 		self.SetMenuBar(menubar)
 		shortcuts = wx.AcceleratorTable((
 			(wx.ACCEL_CTRL, ord("O"), openfile.GetId()),
@@ -153,8 +168,18 @@ class main(wx.Frame):
 			(0, ord("G"), go_to.GetId()),
 			(wx.ACCEL_CTRL, ord("R"), random_choos.GetId()),
 			(wx.ACCEL_CTRL, ord("S"), settings.GetId()),
+			(wx.ACCEL_CTRL+wx.ACCEL_SHIFT, ord("T"), trend.GetId()),
+			(wx.ACCEL_CTRL, ord("T"), translations.GetId()),
+			(wx.ACCEL_CTRL, ord("J"), jumpToTime.GetId()),
+			(wx.ACCEL_CTRL, ord("L"), playLists.GetId()),
+			(wx.ACCEL_ALT, ord("L"), addToPlayList.GetId()),
 		))
 		self.SetAcceleratorTable(shortcuts)
+	@has_player
+	def OnAddToPlayList(self, event):
+		if g.playing_from_youtube: return
+		select = playlists.SelectPlaylist(self, g.player.filename)
+
 
 	def ShowUserGuide(self, event):
 		value=docs_handler.get_doc()
@@ -176,6 +201,23 @@ class main(wx.Frame):
 	def OnOpen(self, event):
 		path=wx.FileSelector(_("فتح ملف"),parent=self)
 		if not path: return
+		if os.path.splitext(path)[1].lower()==".m3u":
+			try:
+				g.player.media.stop()
+				g.player.filename=""
+				g.player.url=""
+				g.player.startpoint=None
+				g.player.endpoint=None
+				g.player.repeate_some=False
+				g.player=None
+			except: pass
+			g.filePath = ""
+			g.folder_path=""
+			g.tracks_list=[]
+			g.playing_from_youtube=False
+			g.player=media_player.Player(hwnd=self.GetHandle(), mu=True)
+			g.player.LoadM3U(path)
+			return
 		self.new_track(path)
 		g.tracks_list=[]
 		self.load_dir(path) if get("load_directory_file") else None
@@ -208,8 +250,11 @@ class main(wx.Frame):
 			speak(_("تم إيقاف الملف")) if get("speak_play_pause") else None
 
 	def new_track(self, fn):
+		g.filePath = fn
+		g.current_subtitle = {}
 		self.Title=f"{os.path.basename(fn)} {application.name}"
 		if g.playing_from_youtube: g.playing_from_youtube=not g.playing_from_youtube
+		if g.m3u: g.m3u=not g.m3u
 		g.current_subtitle = {}
 		subtitle.auto_detect(fn) if get("autodetect", "subtitles") else None
 		if g.player is None:
@@ -299,6 +344,7 @@ class main(wx.Frame):
 	@has_player
 	def rewind(self, event=None, count=None):
 		position = g.player.media.get_position()
+		print(position)
 		if g.player.repeate_some:
 			g.player.media.set_position(position-g.player.seek(int(get("seek")) if not count else count))
 			if g.player.media.get_position()<g.player.startpoint:
@@ -389,14 +435,13 @@ class main(wx.Frame):
 		return speak(_("{title}, المدة: {duration}, الوقت المُنقَضي: {elapsed}, مستوى الصوت الحالي: {volume}").format(duration=g.player.get_duration(), title=g.player.title, elapsed=g.player.get_elapsed(), volume=g.player.volume))
 
 	def OnClose(self, event):
-#		print(g.fromUrl)
 		self.threadloop.stop()
 		if not g.player==None and g.player.repeate_some: g.player.repeate_some=False
 		try:
 			os.remove(self.temp)
 		except:
 			pass
-		if g.player==None or g.FavoriteLoaded: return wx.Exit()
+		if g.player==None or g.FavoriteLoaded or g.m3u: return wx.Exit()
 		if not get("save_at_exit"): return wx.Exit()
 		position = g.player.media.get_position()
 		if g.playing_from_youtube or g.fromUrl:
@@ -503,12 +548,16 @@ class main(wx.Frame):
 		self.new_track(f"{g.folder_path}/{g.tracks_list[g.index]}") if not g.FavoriteLoaded else 		self.new_track(f"{g.tracks_list[g.index]}")
 
 	def go_to_previous(self, event=None):
-		if not g.playing_from_youtube:
+		if g.m3u:
+			return g.player.mprevious()
+		elif not g.playing_from_youtube:
 			self.previous()
 		else:
 			self.previous_youtube_video()
 
 	def go_to_next(self, event=None):
+		if g.m3u:
+			return g.player.mnext()
 		if not g.playing_from_youtube:
 			self.next()
 		else:
@@ -534,7 +583,7 @@ class main(wx.Frame):
 	def goto(self, event=None):
 		if self.loading: return speak(_("يتمفتح المجلد {} / {}").format(self.opened, self.length))
 		if len(g.tracks_list)<2 or g.folder_path=="": return speak(_("لا يوجد هناك مجلد"))
-		number=InputBox.Input(self, _("الذهاب إلى"), _("اكتب رقم الملف لتشغيله, 0/{l}").format(l=len(g.tracks_list)), Max=len(g.tracks_list), num=True, position=g.index)
+		number=input_box.Input(self, _("الذهاب إلى"), _("اكتب رقم الملف لتشغيله, 0/{l}").format(l=len(g.tracks_list)), Max=len(g.tracks_list), num=True, position=g.index)
 		if number.canceled: return
 		g.index=number.text()
 		if g.index>=len(g.tracks_list):
@@ -584,6 +633,8 @@ class main(wx.Frame):
 				try:
 					g.player.media.stop()
 					g.player.filename=""
+					g.filePath = ""
+					g.m3u = False
 					g.player.url=""
 					g.player.startpoint=None
 					g.player.endpoint=None
@@ -663,7 +714,27 @@ class main(wx.Frame):
 			elif event.KeyCode in range(49, 58):
 				if g.player is not None and g.player.repeate_some: return
 				self.set_position_by_numbers(event.KeyCode)
+			elif key == wx.WXK_F4:
+				url = "https://www.youtube.com/watch?v=hQ75J8tdqZw"
+				video_id = "hQ75J8tdqZw"
+				transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
+				for transcript in transcript_list:
+					print(transcript)
+#					if transcript.language_code=="ar":
+#						arabic_transcript = transcript.fetch()
+#						arabic_transcript = "\n".join(						arabic_transcript)
+#						srt = SRTFormatter().format_transcript(arabic_transcript)
+#						temp_path = os.path.join(os.environ['TEMP'], 'srt.srt')
+#						with open(temp_path, "w") as f:
+#							f.write(srt)
+#						subtitle.load(temp_path)
+#						pyperclip.copy(srt)
+#					print(f"{transcript.language_code} {transcript.language}")
+
+
+				speak("ok")
 			elif key == wx.WXK_F5:
+				return speak(g.filePath)
 				current = int(get("speed", "subtitles"))
 				if current>0:
 					g.sapi.set_speed(current-1)
@@ -789,7 +860,15 @@ class main(wx.Frame):
 app=wx.App()
 FromPath=None
 if len(sys.argv)>1:
-	FromPath=" ".join(sys.argv[1::]).replace("\\", "/")
+	if sys.argv[-1] == "add_to_play_list":
+		sys.argv.remove(sys.argv[-1])
+		print(sys.argv)
+		path = " ".join(sys.argv[1::])
+		playlists.SelectPlaylist(None, path)
+	else:
+		FromPath=" ".join(sys.argv[1::]).replace("\\", "/")
+
+
 if __name__=="__main__":
 	main(FromPath)
 	app.MainLoop()

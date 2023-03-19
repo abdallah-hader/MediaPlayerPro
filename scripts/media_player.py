@@ -10,7 +10,9 @@ from threading import Thread
 from globals import time_formatting
 import globals as g
 from .Speak import speak
-from .Speak import sapi
+try:
+	from .Speak import sapi
+except: pass
 from gui.youtube import get_url
 from . import subtitle
 
@@ -18,8 +20,9 @@ instance = vlc.Instance()
 
 media_player = instance.media_player_new()
 
+
 class Player:
-	def __init__(self, filename, hwnd):
+	def __init__(self, filename="", hwnd=None, mu=False):
 		self.spoked=""
 		self.filename=filename
 		self.title=os.path.basename(self.filename)
@@ -30,8 +33,11 @@ class Player:
 		self.hwnd=hwnd
 		self.media=media_player
 		self.media.toggle_fullscreen()
-		self.sapi=sapi()
-		self.set_media(self.filename)
+		try:
+			self.sapi=sapi()
+		except: self.sapi = None
+		if not mu:
+			self.set_media(self.filename)
 		self.media.set_hwnd(self.hwnd)
 		try:
 			self.volume=int(get("volume"))
@@ -40,7 +46,8 @@ class Player:
 		self.manager = self.media.event_manager()
 		self.manager.event_attach(vlc.EventType.MediaPlayerEndReached,self.onEnd)
 		self.manager.event_attach(vlc.EventType.MediaPlayerPositionChanged, self.subtitleEvent)
-		self.media.play()
+		if not mu:
+			self.media.play()
 		self.media.audio_set_volume(self.volume)
 
 	def onEnd(self,event):
@@ -57,11 +64,14 @@ class Player:
 		except ZeroDivisionError:
 			return 0.03
 
-	def get_duration(self):
+	def get_duration(self, w=0):
 		duration = self.media.get_length()
 		if duration == -1 or not isinstance(duration, int):
 			return ""
-		return time_formatting(str(timedelta(seconds=duration//1000)))
+		if w==0:
+			return time_formatting(str(timedelta(seconds=duration//1000)))
+		else:
+			return str(timedelta(seconds=duration//1000))
 
 	def get_elapsed(self):
 		elapsed = self.media.get_time()
@@ -109,13 +119,43 @@ class Player:
 		else:
 			self.media.set_media(self.media.get_media())
 
+	def LoadM3U(self, path):
+		mp = instance.media_player_new()
+		m = instance.media_list_new([path])
+		self.m2 = instance.media_list_player_new()
+		self.m2.set_media_list(m)
+		self.m2.set_media_player(self.media)
+		self.m2.play()
+		g.m3u = True
+		media_player = self.m2.get_media_player()
+		mmedia = media_player.get_media()
+		self.title = mmedia.get_meta(vlc.Meta.Title)
+		g.set_title(self.title)
+
+	def mnext(self):
+		self.m2.next()
+		media_player = self.m2.get_media_player()
+		mmedia = media_player.get_media()
+		self.title = os.path.basename(mmedia.get_meta(vlc.Meta.Title))
+		g.set_title(self.title)
+		self.filename = mmedia.get_meta(vlc.Meta.Title)
+
+	def mprevious(self):
+		self.m2.previous()
+		media_player = self.m2.get_media_player()
+		mmedia = media_player.get_media()
+		self.title = os.path.basename(mmedia.get_meta(vlc.Meta.Title))
+		g.set_title(self.title)
+		self.filename = mmedia.get_meta(vlc.Meta.Title)
+
 	def set_media(self, m):
+		if g.m3u: g.m3u = False
 		sleep(0.01)
 		media = instance.media_new(m)
 		self.media.set_media(media)
 		self.title=os.path.basename(m)
 		self.filename=m
-
+		g.current_subtitle={}
 	def repeate_some_track(self):
 		while self.repeate_some:
 			if self.media.get_position()>self.endpoint:
@@ -139,7 +179,9 @@ class Player:
 			if get("sapi", "subtitles"):
 				if not text==self.spoked:
 					self.spoked=text
-					g.sapi.speak(text, )
+					try:
+						g.sapi.speak(text, )
+					except: pass
 			else:
 				speak(text) if text!=self.spoked else None
 			self.spoked=text
