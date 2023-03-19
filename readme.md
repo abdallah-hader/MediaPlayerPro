@@ -82,7 +82,7 @@ As for the right arrow and the left, you can adjust the desired duration from th
 Likewise, if you run anything through a link and you have its srt translation file on the computer and you open the srt file, it will be read without problems, that is, the translated thing is not required to be on your computer.
 * Now when you open a subtitle file: only srt files will appear instead of all files
 * The program now supports Turkish, French and Spanish languages.
-#changes 1.4
+# changes 1.4
 Before starting the changes, I was supposed to make an update a long time ago to solve the problem of not being able to play YouTube clips, which most developers who use youtube dl/yt-dlp libraries suffer from, but I apologize for the delay.
 also, in the previous version, a lot of people suffered from the problem of not being able to run the program. This was in fact after using a library to call sapi5 voices and use them. Until now, I have not found a better alternative than this library, but I will search. To solve this problem, I made two versions of the program, one containing The feature of reading translations using sapi5 and the other does not contain this feature. If the version does not work for you, download the version that does not contain the feature of reading translations using sapi 5.
 Changes in version 1.4:
