@@ -251,7 +251,7 @@ countries = {
 }
 countries = {v:k for k, v in countries.items()}
 
-APIKey = "AIzaSyCEXsh-68oxoE-pdWYEmaa8OwNoMsoFGJI"
+APIKey = ""
 pafy.set_api_key(APIKey)
 def get_url(url):
 	try:
